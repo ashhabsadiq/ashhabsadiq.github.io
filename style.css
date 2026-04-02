@@ -22,7 +22,7 @@ body {
   align-items: center;
   padding: 16px 60px;
   background: #020617;
-  font-size: 15.8px;           /* matched with 2nd ribbon */
+  font-size: 15.8px;
 }
 
 .logo {
@@ -92,7 +92,7 @@ body {
 }
 
 /* ===================== */
-/* SECONDARY NAV - Sticky + Even spacing + Pure white */
+/* SECONDARY NAV */
 /* ===================== */
 .secondary-nav {
   background: #020617;
@@ -106,12 +106,12 @@ body {
 .secondary-container {
   display: flex;
   flex-wrap: nowrap;
-  gap: 38px;                    /* increased for better spacing */
+  gap: 38px;
   white-space: nowrap;
 }
 
 .secondary-container a {
-  color: #ffffff;               /* pure white */
+  color: #ffffff;
   font-size: 15.8px;
   font-weight: 600;
   text-decoration: none;
@@ -123,18 +123,28 @@ body {
 }
 
 /* ===================== */
-/* SECTION HEADINGS */
+/* SECTION HEADINGS - Gradient + Icon */
 /* ===================== */
 .section h2 {
   font-family: 'Playfair Display', serif;
   font-size: 36px;
   margin-bottom: 30px;
   text-align: left;
+  color: transparent;
+  background: linear-gradient(90deg, #00ff9d, #00e5d4, #00b8ff);
+  -webkit-background-clip: text;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.section h2 i {
   color: #00e5d4;
+  font-size: 32px;
 }
 
 /* ===================== */
-/* CONTAINER */
+/* REST OF THE STYLES (unchanged) */
 /* ===================== */
 .container {
   width: 90%;
@@ -146,9 +156,6 @@ body {
   padding: 100px 0;
 }
 
-/* ===================== */
-/* CLICKABLE CARD */
-/* ===================== */
 .card-link {
   text-decoration: none;
   color: inherit;
