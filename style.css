@@ -367,7 +367,7 @@ body {
 /* AWARDS SECTION - Matches StoryMap style */
 /* ===================== */
 .award-text {
-  text-align: center;
+  text-align: justified;
   max-width: 800px;
   margin: 0 auto 40px auto;
   font-size: 18px;
