@@ -458,3 +458,26 @@ body {
 .extra-images img:hover {
   transform: scale(1.03);
 }
+
+/* ===================== */
+/* EXTRACURRICULAR - Justified bullets + White links */
+/* ===================== */
+.extra-text ul {
+  padding-left: 22px;
+  line-height: 1.75;
+  text-align: justify;           /* Justified bullets */
+}
+
+.extra-text ul li {
+  margin-bottom: 12px;
+  color: #cbd5f5;
+}
+
+.extra-text .company a {
+  color: #ffffff !important;     /* Pure white */
+  text-decoration: none;
+}
+
+.extra-text .company a:hover {
+  color: #00e5d4;
+}
