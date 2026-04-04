@@ -214,19 +214,20 @@ body {
 }
 
 /* ===================== */
-/* TECHNICAL SKILLS - Clean flowing pills */
+/* TECHNICAL SKILLS - Clean flowing pills (like your reference image) */
 /* ===================== */
 .skills-grid {
   display: flex;
   flex-wrap: wrap;
-  gap: 12px;
+  gap: 10px;                    /* reduced gap for better flow */
   justify-content: flex-start;
+  padding: 10px 0;
 }
 
 .skill-item {
   background: #1e293b;
   color: #e0f2fe;
-  padding: 10px 22px;
+  padding: 9px 20px;
   border-radius: 50px;
   font-size: 15px;
   white-space: nowrap;
