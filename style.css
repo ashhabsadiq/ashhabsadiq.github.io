@@ -483,14 +483,15 @@ body {
 }
 
 /* ===================== */
-/* CONTACT - Large centered buttons with proper margins */
+/* CONTACT - Evenly distributed full width */
 /* ===================== */
 .contact-buttons {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
-  gap: 24px;
+  justify-content: space-between;     /* Evenly spread left to right */
+  gap: 20px;
   margin-top: 50px;
+  width: 100%;                        /* Full container width */
 }
 
 .contact-btn {
@@ -498,14 +499,16 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 130px;
-  height: 130px;
+  width: 145px;
+  height: 145px;
   background: #1e293b;
-  border-radius: 18px;
+  border-radius: 20px;
   text-decoration: none;
   color: #e0f2fe;
   transition: all 0.3s ease;
-  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.35);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.35);
+  flex: 1;                            /* Helps even distribution */
+  min-width: 130px;
 }
 
 .contact-btn:hover {
@@ -515,11 +518,11 @@ body {
 }
 
 .contact-btn i {
-  font-size: 48px;           /* Much larger icons */
+  font-size: 58px;
   margin-bottom: 14px;
 }
 
 .contact-btn span {
-  font-size: 16.5px;         /* Larger text */
+  font-size: 17px;
   font-weight: 600;
 }
