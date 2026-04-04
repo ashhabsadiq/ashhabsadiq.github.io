@@ -112,7 +112,7 @@ body {
 
 .secondary-container a {
   color: #ffffff;
-  font-size: 15.8px;
+  font-size: 14px;
   font-weight: 600;
   text-decoration: none;
   transition: 0.3s;
@@ -130,8 +130,8 @@ body {
   font-size: 36px;
   margin-bottom: 30px;
   text-align: left;
-  color: transparent;
-  background: linear-gradient(90deg, #00ff9d, #00e5d4, #00b8ff);
+  color: #d2b34c;
+  /*background: linear-gradient(90deg, #00ff9d, #00e5d4, #00b8ff);*/
   -webkit-background-clip: text;
   display: flex;
   align-items: center;
