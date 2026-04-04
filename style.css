@@ -481,3 +481,45 @@ body {
 .extra-text .company a:hover {
   color: #00e5d4;
 }
+
+/* ===================== */
+/* CONTACT - Large Logo Buttons */
+/* ===================== */
+.contact-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 28px;
+  margin-top: 40px;
+}
+
+.contact-btn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 110px;
+  padding: 20px 10px;
+  background: #1e293b;
+  border-radius: 16px;
+  text-decoration: none;
+  color: #e0f2fe;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+.contact-btn:hover {
+  background: #3b82f6;
+  color: white;
+  transform: translateY(-6px);
+}
+
+.contact-btn i {
+  font-size: 42px;           /* Large icons */
+  margin-bottom: 12px;
+}
+
+.contact-btn span {
+  font-size: 15px;
+  font-weight: 600;
+}
