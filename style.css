@@ -1,27 +1,27 @@
 /* ===================== */
-/* RESET */
+/* RESET - Removes default browser margins and padding */
 /* ===================== */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+* {                          /* applies to every element */
+  margin: 0;                 /* removes default spacing */
+  padding: 0;                /* removes default padding */
+  box-sizing: border-box;    /* makes width/height include padding & border */
 }
 
-body {
+body {                       /* main background and text style */
   font-family: 'Inter', sans-serif;
-  background: #0f172a;
-  color: #e5e7eb; 
+  background: #0f172a;       /* dark blue background */
+  color: #e5e7eb;            /* light gray text */
 }
 
 /* ===================== */
 /* TOP NAVBAR */
 /* ===================== */
 .navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 16px 60px;
-  background: #020617;
+  display: flex;             /* puts logo and icons side by side */
+  justify-content: space-between; /* pushes logo to left, icons to right */
+  align-items: center;       /* vertical center alignment */
+  padding: 16px 60px;        /* left-right margin */
+  background: #020617;       /* very dark background */
   font-size: 15.8px;
 }
 
@@ -33,22 +33,22 @@ body {
 
 .social-icons {
   display: flex;
-  gap: 22px;
+  gap: 22px;                 /* space between icons */
 }
 
 .social-icons a {
   color: #cbd5f5;
   font-size: 26px;
-  transition: 0.3s;
+  transition: 0.3s;          /* smooth hover animation */
 }
 
 .social-icons a:hover {
-  color: #00e5d4;
-  transform: translateY(-3px);
+  color: #00e5d4;            /* cyan color on hover */
+  transform: translateY(-3px); /* lift up effect */
 }
 
 /* ===================== */
-/* HERO */
+/* HERO SECTION */
 /* ===================== */
 .hero {
   text-align: center;
@@ -70,8 +70,13 @@ body {
 
 .buttons {
   margin-top: 40px;
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
+/* Blue buttons */
 .btn {
   background: #1d4ed8;
   color: white;
@@ -91,18 +96,23 @@ body {
   font-weight: 500;
 }
 
-/* Golden CV Button */
+/* Golden CV Button - placed below the first two buttons */
+.cv-button-wrapper {
+  margin-top: 20px;          /* gap between button rows */
+  display: flex;
+  justify-content: center;
+}
+
 .btn-cv {
-  background: #d2b34c;
+  background: #d2b34c;       /* golden yellow */
   color: #0f172a;
-  padding: 14px 32px;
+  padding: 14px 34px;
   border-radius: 30px;
   text-decoration: none;
   font-weight: 600;
   font-size: 16.5px;
   transition: all 0.3s ease;
   box-shadow: 0 4px 12px rgba(210, 179, 76, 0.4);
-  margin-left: 10px;
 }
 
 .btn-cv:hover {
@@ -112,7 +122,7 @@ body {
 }
 
 /* ===================== */
-/* SECONDARY NAV */
+/* SECONDARY NAV (2nd ribbon) */
 /* ===================== */
 .secondary-nav {
   background: #020617;
@@ -126,13 +136,13 @@ body {
 .secondary-container {
   display: flex;
   flex-wrap: nowrap;
-  gap: 38px;
+  gap: 26px;                 /* reduced gap to prevent overflow */
   white-space: nowrap;
 }
 
 .secondary-container a {
   color: #ffffff;
-  font-size: 15.8px;
+  font-size: 14.5px;         /* slightly smaller to fit all names */
   font-weight: 600;
   text-decoration: none;
   transition: 0.3s;
@@ -143,7 +153,7 @@ body {
 }
 
 /* ===================== */
-/* SECTION HEADINGS */
+/* SECTION HEADINGS (h2) */
 /* ===================== */
 .section h2 {
   font-family: 'Playfair Display', serif;
@@ -151,7 +161,6 @@ body {
   margin-bottom: 30px;
   text-align: left;
   color: #00ffff;
- /* background: linear-gradient(90deg, #00ff9d, #00e5d4, #00b8ff);*/
   -webkit-background-clip: text;
   display: flex;
   align-items: center;
@@ -164,7 +173,7 @@ body {
 }
 
 /* ===================== */
-/* CONTAINER & SECTIONS */
+/* CONTAINER & GENERAL SECTION */
 /* ===================== */
 .container {
   width: 90%;
@@ -177,7 +186,7 @@ body {
 }
 
 /* ===================== */
-/* CARDS */
+/* CARDS (used everywhere) */
 /* ===================== */
 .card-link {
   text-decoration: none;
@@ -318,7 +327,7 @@ body {
 .card ul, .card ol {
   padding-left: 22px;
   margin: 8px 0 18px 0;
-  line-height: 1.15;
+  line-height: 1.75;
 }
 
 .card ul li, .card ol li {
@@ -514,4 +523,13 @@ body {
 .contact-btn span {
   font-size: 17px;
   font-weight: 600;
+}
+
+/* ===================== */
+/* RESEARCH & PROJECTS GRID - Compact cards */
+/* ===================== */
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 25px;
 }
