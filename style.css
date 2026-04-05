@@ -69,7 +69,7 @@ body {
 }
 
 .buttons {
-  margin-top: 40px;
+  margin-top: 50px;
 }
 
 .btn {
@@ -93,7 +93,7 @@ body {
 
 /* Golden CV Button with glow */
 .cv-button-wrapper {
-  margin-top: 20px;
+  margin-top: 50px;
   display: flex;
   justify-content: center;
 }
