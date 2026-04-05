@@ -91,9 +91,9 @@ body {
   font-weight: 500;
 }
 
-/* Golden CV Button - fixed glow and opens in new tab */
+/* Golden CV Button with glow */
 .cv-button-wrapper {
-  margin-top: 40px;
+  margin-top: 20px;
   display: flex;
   justify-content: center;
 }
@@ -107,7 +107,7 @@ body {
   font-weight: 600;
   font-size: 16.5px;
   transition: all 0.3s ease;
-  box-shadow: 0 4px 12px rgba(210, 179, 76, 0.4);   /* glow restored */
+  box-shadow: 0 4px 12px rgba(210, 179, 76, 0.4);
 }
 
 .btn-cv:hover {
@@ -155,7 +155,8 @@ body {
   font-size: 36px;
   margin-bottom: 30px;
   text-align: left;
-  color: #00ffff;
+  color: transparent;
+  background: linear-gradient(90deg, #00ff9d, #00e5d4, #00b8ff);
   -webkit-background-clip: text;
   display: flex;
   align-items: center;
@@ -178,7 +179,7 @@ h3 {
 
 h4 {
   font-size: 18px;
-  color: #d2b34c;
+  color: #d2b34c !important;   /* golden yellow - higher priority */
   margin-bottom: 14px;
   font-weight: 500;
 }
@@ -223,18 +224,18 @@ h5 {
   text-align: justify;
 }
 
-/* Fix blue underlined links everywhere */
-.card a, .extra-text h4 a, .project-grid .card h3 {
+/* Remove blue underline from all links */
+.card a, .project-grid a, .extra-text h4 a {
   color: #ffffff !important;
   text-decoration: none;
 }
 
-.card a:hover, .extra-text h4 a:hover {
+.card a:hover, .project-grid a:hover, .extra-text h4 a:hover {
   color: #00e5d4;
 }
 
 /* ===================== */
-/* ABOUT ME - Two column fix */
+/* ABOUT ME */
 /* ===================== */
 .about-wrapper {
   display: flex;
@@ -263,7 +264,7 @@ h5 {
 }
 
 /* ===================== */
-/* WORK & BULLETS */
+/* WORK EXPERIENCE */
 /* ===================== */
 .job-header {
   display: flex;
@@ -285,6 +286,12 @@ h5 {
   margin-bottom: 10px;
 }
 
+.card h4 {
+  margin: 18px 0 10px 0;
+  font-size: 16px;
+  color: #e0f2fe;
+}
+
 .card ul, .card ol {
   padding-left: 22px;
   margin: 8px 0 18px 0;
@@ -302,13 +309,13 @@ h5 {
 }
 
 .footnote {
-  font-size: 12px;
+  font-size: 13.5px;
   color: #94a3b8;
   margin-top: 12px;
 }
 
 /* ===================== */
-/* ALL OTHER SECTIONS (kept exactly as your last working version) */
+/* OTHER SECTIONS */
 /* ===================== */
 .skills-grid {
   display: flex;
