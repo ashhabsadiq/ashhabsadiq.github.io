@@ -91,7 +91,7 @@ body {
   font-weight: 500;
 }
 
-/* Golden CV Button */
+/* Golden CV Button - fixed glow and opens in new tab */
 .cv-button-wrapper {
   margin-top: 40px;
   display: flex;
@@ -107,11 +107,13 @@ body {
   font-weight: 600;
   font-size: 16.5px;
   transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(210, 179, 76, 0.4);   /* glow restored */
 }
 
 .btn-cv:hover {
   background: #f5d16e;
   transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(210, 179, 76, 0.5);
 }
 
 /* ===================== */
@@ -129,13 +131,13 @@ body {
 .secondary-container {
   display: flex;
   flex-wrap: nowrap;
-  gap: 26px;               /* reduced to prevent overflow */
+  gap: 26px;
   white-space: nowrap;
 }
 
 .secondary-container a {
   color: #ffffff;
-  font-size: 14.5px;       /* slightly smaller so all names fit */
+  font-size: 14.5px;
   font-weight: 600;
   text-decoration: none;
   transition: 0.3s;
@@ -166,22 +168,22 @@ body {
 }
 
 /* ===================== */
-/* NEW UNIFORM HEADING HIERARCHY (your request) */
+/* UNIFORM HEADING HIERARCHY */
 /* ===================== */
-h3 {                                      /* First line: Degree, Designation, Title */
+h3 {
   font-size: 20px;
-  color: #ffffff;                         /* pure white */
+  color: #ffffff;
   margin-bottom: 4px;
 }
 
-h4 {                                      /* Second line: Institution, Company, Club */
-  font-size: 20px;                        /* slightly smaller than h3 */
-  color: #d2b34c;                         /* golden yellow */
+h4 {
+  font-size: 18px;
+  color: #d2b34c;
   margin-bottom: 14px;
   font-weight: 500;
 }
 
-h5 {                                      /* Key Projects / Major Responsibilities */
+h5 {
   font-size: 15.5px;
   color: #f2f5ff;
   font-weight: 700;
@@ -221,17 +223,18 @@ h5 {                                      /* Key Projects / Major Responsibiliti
   text-align: justify;
 }
 
-.card a {
+/* Fix blue underlined links everywhere */
+.card a, .extra-text h4 a, .project-grid .card h3 {
   color: #ffffff !important;
   text-decoration: none;
 }
 
-.card a:hover {
+.card a:hover, .extra-text h4 a:hover {
   color: #00e5d4;
 }
 
 /* ===================== */
-/* ABOUT SECTION - Two column layout */
+/* ABOUT ME - Two column fix */
 /* ===================== */
 .about-wrapper {
   display: flex;
@@ -260,18 +263,13 @@ h5 {                                      /* Key Projects / Major Responsibiliti
 }
 
 /* ===================== */
-/* WORK EXPERIENCE & BULLETS */
+/* WORK & BULLETS */
 /* ===================== */
 .job-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin-bottom: 8px;
-}
-
-.job-header h3 {
-  margin: 0;
-  font-size: 20px;
 }
 
 .tenure {
@@ -287,17 +285,11 @@ h5 {                                      /* Key Projects / Major Responsibiliti
   margin-bottom: 10px;
 }
 
-.card h4 {
-  margin: 18px 0 10px 0;
-  font-size: 16px;
-  color: #e0f2fe;
-}
-
 .card ul, .card ol {
   padding-left: 22px;
   margin: 8px 0 18px 0;
   line-height: 1.75;
-  text-align: justify;           /* bullets justified */
+  text-align: justify;
 }
 
 .card ul li, .card ol li {
@@ -310,14 +302,13 @@ h5 {                                      /* Key Projects / Major Responsibiliti
 }
 
 .footnote {
-  font-size: 13.5px;
+  font-size: 12px;
   color: #94a3b8;
   margin-top: 12px;
 }
 
 /* ===================== */
-/* TECHNICAL SKILLS, CERTIFICATIONS, AWARDS, EXTRACURRICULAR, CONTACT */
-/* (kept exactly as your previous working version) */
+/* ALL OTHER SECTIONS (kept exactly as your last working version) */
 /* ===================== */
 .skills-grid {
   display: flex;
@@ -514,7 +505,6 @@ h5 {                                      /* Key Projects / Major Responsibiliti
   font-weight: 600;
 }
 
-/* Project grid (Research & Academic Projects) */
 .project-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
