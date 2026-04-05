@@ -98,7 +98,7 @@ body {                       /* main background and text style */
 
 /* Golden CV Button - placed below the first two buttons */
 .cv-button-wrapper {
-  margin-top: 20px;          /* gap between button rows */
+  margin-top: 40px;          /* gap between button rows */
   display: flex;
   justify-content: center;
 }
@@ -106,7 +106,7 @@ body {                       /* main background and text style */
 .btn-cv {
   background: #d2b34c;       /* golden yellow */
   color: #0f172a;
-  padding: 14px 34px;
+  padding: 12px 28px;
   border-radius: 30px;
   text-decoration: none;
   font-weight: 600;
@@ -136,7 +136,7 @@ body {                       /* main background and text style */
 .secondary-container {
   display: flex;
   flex-wrap: nowrap;
-  gap: 26px;                 /* reduced gap to prevent overflow */
+  gap: 24px;                 /* reduced gap to prevent overflow */
   white-space: nowrap;
 }
 
@@ -219,8 +219,8 @@ body {                       /* main background and text style */
 
 .card p {
   color: #f2f5ff;
-  font-size: 15.5px;
-  line-height: 1.7;
+  font-size: 17px;
+  line-height: 1.5;
   text-align: justify;
 }
 
