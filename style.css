@@ -581,12 +581,12 @@ h5 {
 
 /* Section heading icons (graduation cap, flask, etc.) */
 .light-mode .section h2 i {
-  color: #292929 !important;
+  color: #203864 !important;
 }
 
 /* Section headings */
 .light-mode .section h2 {
-  color: #292929;
+  color: #203864;
 }
 
 /* View Research button (outline + text) */
