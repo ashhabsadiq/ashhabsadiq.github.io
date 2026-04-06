@@ -180,7 +180,7 @@ h4 {
   font-size: 20px;
   color: #d2b34c !important;   /* golden yellow - higher priority */
   margin-bottom: 14px;
-  font-weight: 500;
+  /*font-weight: 500 */;
 }
 
 h5 {
