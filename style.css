@@ -534,23 +534,28 @@ h5 {
 }
 
 /* ===================== */
-/* LIGHT MODE THEME - FULLY FIXED (Background now changes everywhere) */
+/* LIGHT MODE THEME - FULLY UPDATED as requested */
 /* ===================== */
 .light-mode {
-  --bg: #fafadc;
+  --bg: #e8e3d8;
   --text: #333333;
   --card: #ffffff;
   --h4-color: #1e40af;
   --accent: #1d4ed8;
 }
 
-/* Main background & text - now forced everywhere */
+/* Main background & text - forced everywhere */
 .light-mode body {
   background: var(--bg) !important;
   color: var(--text) !important;
 }
 
-/* Force sections (the big padding areas) to light background */
+/* Hero section (the area between the two navbars) */
+.light-mode .hero {
+  background: var(--bg) !important;
+}
+
+/* Force all section padding areas */
 .light-mode .section {
   background: var(--bg) !important;
 }
@@ -571,7 +576,7 @@ h5 {
   color: #1e40af;
 }
 
-/* All cards & containers */
+/* All cards & containers with soft grey outer glow (PowerPoint-style) */
 .light-mode .card,
 .light-mode .research-card,
 .light-mode .cert-card,
@@ -580,7 +585,7 @@ h5 {
 .light-mode .contact-btn,
 .light-mode .skill-item {
   background: var(--card) !important;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12) !important;   /* soft grey outer glow */
 }
 
 /* All text (h1, h2, h3, h5, paragraphs, bullets, lists) */
