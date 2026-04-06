@@ -10,7 +10,7 @@
 body {
   font-family: 'Inter', sans-serif;
   background: #0f172a;
-  color: #e5e7eb; 
+  color: #e5e7eb;
 }
 
 /* ===================== */
@@ -223,13 +223,13 @@ h5 {
   text-align: justify;
 }
 
-/* Remove blue underline from all links */
-.card a, .project-grid a, .extra-text h4 a {
-  color: #ffffff !important;
+/* Remove blue underline from ALL links (including h4 links) */
+.card a, .extra-text h4 a, .project-grid a {
+  color: inherit !important;
   text-decoration: none;
 }
 
-.card a:hover, .project-grid a:hover, .extra-text h4 a:hover {
+.card a:hover, .extra-text h4 a:hover, .project-grid a:hover {
   color: #00e5d4;
 }
 
