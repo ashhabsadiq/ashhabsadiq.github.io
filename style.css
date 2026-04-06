@@ -684,29 +684,38 @@ h5 {
 }
 
 /* ===================== */
-/* RESPONSIVE DESIGN - FINAL MOBILE FIX */
+/* RESPONSIVE DESIGN - FINAL FIXED VERSION */
 /* ===================== */
 
 @media (max-width: 768px) {
-
   /* Wider overall content */
   .container {
     width: 95% !important;
     max-width: 1200px;
   }
 
-  /* Hide text logo on mobile, show hamburger instead */
-  .logo {
+  /* Hide old secondary navbar on mobile */
+  .secondary-nav {
     display: none;
   }
+
+  /* Show hamburger only on mobile */
   .hamburger {
     display: flex;
     align-items: center;
     gap: 8px;
     cursor: pointer;
   }
+  .logo {
+    display: none;   /* hide text logo on mobile */
+  }
 
-  /* Hamburger styles */
+  /* Hide checkbox completely */
+  #mobile-menu-toggle {
+    display: none;
+  }
+
+  /* Hamburger visual */
   .hamburger-label {
     display: flex;
     flex-direction: column;
@@ -724,8 +733,6 @@ h5 {
     font-weight: 600;
     color: #292929;
   }
-
-  /* Light mode hamburger color */
   .light-mode .hamburger-label span,
   .light-mode .hamburger-text {
     background: #292929;
@@ -741,7 +748,7 @@ h5 {
     height: 100vh;
     background: #020617;
     box-shadow: 4px 0 15px rgba(0, 0, 0, 0.3);
-    padding: 80px 20px 30px;
+    padding: 90px 20px 30px;
     display: flex;
     flex-direction: column;
     gap: 6px;
@@ -761,7 +768,7 @@ h5 {
     color: #00e5d4;
   }
 
-  /* Open menu when checkbox checked */
+  /* Open menu */
   #mobile-menu-toggle:checked ~ .mobile-menu {
     left: 0;
   }
@@ -772,13 +779,13 @@ h5 {
     line-height: 1.05;
   }
 
-  /* About Me - single column, photo BELOW heading */
+  /* About Me - photo below heading */
   .about-wrapper {
     flex-direction: column;
     gap: 25px;
   }
   .about-img {
-    order: 1;               /* photo comes after heading */
+    order: 2;
     text-align: center;
   }
   .about-img img {
@@ -786,7 +793,7 @@ h5 {
     margin: 0 auto;
   }
 
-  /* Research & Academic cards - comfortable width */
+  /* Research & Academic cards */
   .research-grid,
   .academic-grid {
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
