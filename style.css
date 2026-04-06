@@ -814,3 +814,95 @@ h5 {
     grid-template-columns: 1fr;   /* single column on very small phones */
   }
 }
+
+/* ===================== */
+/* MOBILE HAMBURGER MENU + WIDER LAYOUT */
+/* ===================== */
+
+/* Wider overall content on all devices */
+.container {
+  width: 95% !important;
+  max-width: 1200px;
+}
+
+/* Hamburger styles */
+.hamburger {
+  display: none;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  z-index: 1000;
+}
+.hamburger-label {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  width: 28px;
+}
+.hamburger-label span {
+  height: 3px;
+  background: #292929;
+  border-radius: 3px;
+  transition: 0.3s;
+}
+.hamburger-text {
+  font-size: 15px;
+  font-weight: 600;
+  color: #292929;
+}
+
+/* Mobile Menu Panel */
+.mobile-menu {
+  position: fixed;
+  top: 0;
+  left: -280px;
+  width: 280px;
+  height: 100vh;
+  background: #020617;
+  box-shadow: 4px 0 15px rgba(0, 0, 0, 0.3);
+  padding: 80px 20px 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  transition: left 0.4s ease;
+  z-index: 9999;
+  overflow-y: auto;
+}
+.mobile-menu a {
+  color: #ffffff;
+  font-size: 16px;
+  padding: 14px 20px;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+.mobile-menu a:hover {
+  background: #1e293b;
+  color: #00e5d4;
+}
+
+/* When checkbox is checked, open the menu */
+#mobile-menu-toggle:checked ~ .mobile-menu {
+  left: 0;
+}
+
+/* Show hamburger only on mobile */
+@media (max-width: 768px) {
+  .hamburger {
+    display: flex;
+  }
+  .secondary-nav {
+    display: none;               /* hide old navbar on mobile */
+  }
+}
+
+/* Make sure hero and sections are not too narrow */
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 46px;
+  }
+  .research-grid,
+  .academic-grid {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  }
+}
