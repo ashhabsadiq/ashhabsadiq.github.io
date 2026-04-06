@@ -62,7 +62,6 @@ body {
 }
 .buttons {
   margin-top: 50px;
-  display: flex;
 }
 .btn {
   background: #1d4ed8;
@@ -582,12 +581,12 @@ h5 {
 
 /* Section heading icons (graduation cap, flask, etc.) */
 .light-mode .section h2 i {
-  color: #1e40af !important;
+  color: #292929 !important;
 }
 
 /* Section headings */
 .light-mode .section h2 {
-  color: #1e40af;
+  color: #292929;
 }
 
 /* View Research button (outline + text) */
