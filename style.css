@@ -682,3 +682,122 @@ h5 {
 .theme-btn:hover {
   transform: rotate(30deg);
 }
+
+/* ===================== */
+/* RESPONSIVE DESIGN - MOBILE FRIENDLY */
+/* ===================== */
+
+/* Tablets and smaller (max 768px) */
+@media (max-width: 768px) {
+  
+  /* Navbar padding smaller */
+  .navbar, .secondary-nav {
+    padding: 14px 20px;
+  }
+  
+  /* Logo smaller on mobile */
+  .logo {
+    font-size: 18px;
+  }
+  
+  /* Secondary navbar - allow wrapping + smaller text */
+  .secondary-container {
+    flex-wrap: wrap;
+    gap: 12px;
+    justify-content: center;
+  }
+  .secondary-container a {
+    font-size: 13px;
+    padding: 6px 12px;
+  }
+  
+  /* Hero - smaller title and subtitle */
+  .hero {
+    padding: 100px 15px 80px;
+  }
+  .hero h1 {
+    font-size: 52px;
+    line-height: 1.1;
+  }
+  .hero p {
+    font-size: 18px;
+  }
+  
+  /* Buttons in hero - bigger and stacked */
+  .buttons {
+    margin-top: 30px;
+    flex-direction: column;
+    gap: 12px;
+  }
+  .btn, .btn-outline, .btn-cv {
+    width: 100%;
+    max-width: 280px;
+    margin: 0 auto;
+    padding: 14px 24px;
+    font-size: 16px;
+  }
+  
+  /* All section padding reduced */
+  .section {
+    padding: 70px 0;
+  }
+  
+  /* Cards and grids become single column on very small screens */
+  .research-grid,
+  .academic-grid,
+  .cert-grid,
+  .award-grid {
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+  
+  /* About me - stack text and image vertically */
+  .about-wrapper {
+    flex-direction: column;
+    gap: 30px;
+  }
+  .about-img img {
+    max-width: 220px;
+  }
+  
+  /* Work experience cards */
+  .job-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px;
+  }
+  .tenure {
+    font-size: 13px;
+  }
+  
+  /* Skills pills - smaller */
+  .skill-item {
+    font-size: 14.5px;
+    padding: 8px 16px;
+  }
+  
+  /* Contact buttons - smaller and centered */
+  .contact-buttons {
+    gap: 14px;
+  }
+  .contact-btn {
+    width: 110px;
+    height: 110px;
+  }
+  .contact-btn i {
+    font-size: 42px;
+  }
+  .contact-btn span {
+    font-size: 14px;
+  }
+}
+
+/* Extra small phones (max 480px) */
+@media (max-width: 480px) {
+  .hero h1 {
+    font-size: 42px;
+  }
+  .secondary-container a {
+    font-size: 12.5px;
+  }
+}
