@@ -532,3 +532,17 @@ h5 {
 .research-card a:hover {
   color: #00e5d4;
 }
+
+/* ===================== */
+/* ACADEMIC PROJECTS - 3 cards per row */
+/* ===================== */
+.academic-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));   /* 3 per row */
+  gap: 24px;
+}
+
+/* Slightly smaller title only for Academic Projects */
+.academic-grid .research-card h3 {
+  font-size: 18.5px;   /* reduced only here */
+}
