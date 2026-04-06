@@ -13,14 +13,21 @@
 <!-- TOP NAVBAR -->
 <header class="navbar">
   <div class="logo">Welcome to My Portfolio</div>
+
+  <!-- Hamburger Menu for Mobile -->
+  <div class="hamburger">
+    <input type="checkbox" id="mobile-menu-toggle">
+    <label for="mobile-menu-toggle" class="hamburger-label">
+      <span></span>
+      <span></span>
+      <span></span>
+    </label>
+    <span class="hamburger-text">Sections</span>
+  </div>
+
   <div class="social-icons">
-    <!-- GitHub -->
     <a href="https://github.com/ashhabsadiq" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
-    
-    <!-- Email -->
     <a href="mailto:sadiq.kuet.urp@gmail.com" title="Email"><i class="fas fa-envelope"></i></a>
-    
-    <!-- Brightness / Theme Toggle -->
     <button id="theme-toggle" class="theme-btn" title="Toggle Light/Dark Mode">
       <i class="fas fa-sun"></i>
     </button>
@@ -533,6 +540,20 @@ toggleBtn.addEventListener('click', () => {
   localStorage.setItem('theme', isLight ? 'light' : 'dark');
 });
 </script>  
+
+<!-- MOBILE MENU -->
+<nav class="mobile-menu">
+  <a href="#about">About Me</a>
+  <a href="#education">Education</a>
+  <a href="#research">Research Projects</a>
+  <a href="#projects">Academic Projects</a>
+  <a href="#experience">Work Experiences</a>
+  <a href="#skills">Technical Skills</a>
+  <a href="#certifications">Certifications</a>
+  <a href="#awards">Awards</a>
+  <a href="#extracurricular">Extracurriculars</a>
+  <a href="#contact">Contact</a>
+</nav>
   
 </body>
 </html>
