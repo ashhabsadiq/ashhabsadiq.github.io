@@ -651,14 +651,14 @@ h5 {
 .theme-btn {
   background: none;
   border: none;
-  color: #292929;
+  color: #cbd5f5;
   font-size: 26px;
   cursor: pointer;
   padding: 0;
   transition: 0.3s;
 }
 .light-mode .theme-btn {
-  color: #1e40af;
+  color: #292929;
 }
 .theme-btn:hover {
   transform: rotate(30deg);
