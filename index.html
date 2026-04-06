@@ -13,9 +13,16 @@
 <header class="navbar">
   <div class="logo">Welcome to My Portfolio</div>
   <div class="social-icons">
+    <!-- GitHub -->
     <a href="https://github.com/ashhabsadiq" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
-    <a href="https://linkedin.com/in/sadiqurp" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+    
+    <!-- Email -->
     <a href="mailto:sadiq.kuet.urp@gmail.com" title="Email"><i class="fas fa-envelope"></i></a>
+    
+    <!-- Brightness / Theme Toggle -->
+    <button id="theme-toggle" class="theme-btn" title="Toggle Light/Dark Mode">
+      <i class="fas fa-sun"></i>
+    </button>
   </div>
 </header>
 
@@ -498,5 +505,33 @@
   </div>
 </section>
 
+<script>
+// Theme toggle
+const toggleBtn = document.getElementById('theme-toggle');
+const body = document.body;
+
+function setTheme(isLight) {
+  if (isLight) {
+    body.classList.add('light-mode');
+    toggleBtn.innerHTML = '<i class="fas fa-moon"></i>';
+  } else {
+    body.classList.remove('light-mode');
+    toggleBtn.innerHTML = '<i class="fas fa-sun"></i>';
+  }
+}
+
+// Load saved preference
+if (localStorage.getItem('theme') === 'light') {
+  setTheme(true);
+}
+
+// Toggle on click
+toggleBtn.addEventListener('click', () => {
+  const isLight = !body.classList.contains('light-mode');
+  setTheme(isLight);
+  localStorage.setItem('theme', isLight ? 'light' : 'dark');
+});
+</script>  
+  
 </body>
 </html>
