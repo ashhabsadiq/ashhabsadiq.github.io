@@ -532,3 +532,93 @@ h5 {
 .research-card a:hover {
   color: #00e5d4;
 }
+
+/* ===================== */
+/* LIGHT MODE THEME - Updated as requested */
+/* ===================== */
+.light-mode {
+  --bg: #fafadc;
+  --text: #333333;
+  --card: #ffffff;
+  --h4-color: #1e40af;
+  --accent: #1d4ed8;
+}
+
+.light-mode body {
+  background: var(--bg);
+  color: var(--text);
+}
+
+.light-mode .navbar,
+.light-mode .secondary-nav {
+  background: #ffffff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.light-mode .logo,
+.light-mode .secondary-container a {
+  color: #333333;
+}
+
+.light-mode .section h2 {
+  color: #1e40af;
+}
+
+.light-mode .card,
+.light-mode .research-card,
+.light-mode .cert-card,
+.light-mode .award-item,
+.light-mode .extra-item,
+.light-mode .contact-btn {
+  background: var(--card);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+.light-mode h1,
+.light-mode h2,
+.light-mode h3,
+.light-mode h5,
+.light-mode p,
+.light-mode li,
+.light-mode .research-card p,
+.light-mode .award-text p {
+  color: var(--text);
+}
+
+.light-mode h4,
+.light-mode .research-meta,
+.light-mode .tenure,
+.light-mode .footnote,
+.light-mode .company,
+.light-mode .cert-info h4 {
+  color: var(--h4-color) !important;
+}
+
+.light-mode .keyword-tags .tag {
+  background: #f1f1f1;
+  color: #333333;
+}
+
+.light-mode .btn-cv {
+  background: #d2b34c;
+  color: #1e40af;
+}
+
+/* Theme toggle button */
+.theme-btn {
+  background: none;
+  border: none;
+  color: #cbd5f5;
+  font-size: 26px;
+  cursor: pointer;
+  padding: 0;
+  transition: 0.3s;
+}
+
+.light-mode .theme-btn {
+  color: #1e40af;
+}
+
+.theme-btn:hover {
+  transform: rotate(30deg);
+}
