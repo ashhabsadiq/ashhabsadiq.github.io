@@ -710,7 +710,7 @@ h5 {
     display: none;   /* hide text logo on mobile */
   }
 
-  /* Hide checkbox completely */
+  /* Hide checkbox visually */
   #mobile-menu-toggle {
     display: none;
   }
@@ -724,18 +724,19 @@ h5 {
   }
   .hamburger-label span {
     height: 3px;
-    background: #292929;
+    background: #cbd5f5;
     border-radius: 3px;
     transition: 0.3s;
+  }
+  .light-mode .hamburger-label span {
+    background: #292929;
   }
   .hamburger-text {
     font-size: 15px;
     font-weight: 600;
-    color: #292929;
+    color: #cbd5f5;
   }
-  .light-mode .hamburger-label span,
   .light-mode .hamburger-text {
-    background: #292929;
     color: #292929;
   }
 
@@ -756,6 +757,9 @@ h5 {
     z-index: 9999;
     overflow-y: auto;
   }
+  .light-mode .mobile-menu {
+    background: #faf8f4;
+  }
   .mobile-menu a {
     color: #ffffff;
     font-size: 16px;
@@ -763,9 +767,16 @@ h5 {
     border-radius: 8px;
     text-decoration: none;
   }
+  .light-mode .mobile-menu a {
+    color: #292929;
+  }
   .mobile-menu a:hover {
     background: #1e293b;
     color: #00e5d4;
+  }
+  .light-mode .mobile-menu a:hover {
+    background: #e5e7eb;
+    color: #203864;
   }
 
   /* Open menu */
@@ -773,13 +784,13 @@ h5 {
     left: 0;
   }
 
-  /* Hero title size */
+  /* Hero title */
   .hero h1 {
     font-size: 46px;
     line-height: 1.05;
   }
 
-  /* About Me - photo below heading */
+  /* About Me - photo below heading on mobile only */
   .about-wrapper {
     flex-direction: column;
     gap: 25px;
