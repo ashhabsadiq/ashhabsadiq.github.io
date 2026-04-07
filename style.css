@@ -694,6 +694,33 @@ h5 {
 /* RESPONSIVE DESIGN + BEAUTIFUL SIDE PANEL */
 /* ===================== */
 
+/* Mobile only */
+@media (max-width: 768px) {
+
+  /* Wider overall content */
+  .container {
+    width: 95% !important;
+    max-width: 1200px;
+  }
+  /* Hero title */
+  .hero h1 {
+    font-size: 46px;
+    line-height: 1.05;
+  }
+
+  /* About Me on mobile - hide photo completely */
+  .about-img {
+    display: none;
+  }
+
+  /* Research & Academic cards */
+  .research-grid,
+  .academic-grid {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+  }
+}
+
 /* Hamburger visible everywhere now */
 .hamburger {
   display: flex;
