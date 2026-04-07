@@ -874,20 +874,33 @@ h5 {
 }
 
 /* ===================== */
-/* SECTION DIVIDER LINES + FOOTER */
+/* SECTION DIVIDER LINES + REDUCED GAPS */
 /* ===================== */
 
-/* Slim divider line between sections */
+/* Reduced section padding for tighter layout */
+.section {
+  padding: 70px 0 !important;   /* was 100px - now much tighter */
+}
+
+/* Slim elegant divider */
 .section-divider {
   width: 100%;
   height: 1px;
   background: linear-gradient(90deg, transparent, #cbd5f5, transparent);
-  margin: 60px auto;
-  opacity: 0.6;
+  margin: 45px auto;           /* reduced gap */
+  opacity: 0.75;
 }
+
+/* Light mode - visible dark line */
 .light-mode .section-divider {
   background: linear-gradient(90deg, transparent, #292929, transparent);
-  opacity: 0.25;
+  opacity: 0.35;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+}
+
+/* Optional: slightly stronger glow on hover if you want */
+.section-divider:hover {
+  opacity: 1;
 }
 
 /* Footer bar */
