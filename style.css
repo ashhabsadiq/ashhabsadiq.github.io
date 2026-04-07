@@ -899,7 +899,9 @@ h5 {
 }
 /* Light mode */
 .light-mode .section-divider {
-  background: transparent !important;
+  height: 1px;
+  margin: 40px auto;
+  position: relative;
 }
 
 .light-mode .section-divider::after {
