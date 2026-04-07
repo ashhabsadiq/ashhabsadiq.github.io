@@ -22,7 +22,7 @@
     </label>
     <span class="hamburger-text">Portfolio Sections</span>
 
-    <!-- Attractive Side Panel -->
+    <!-- Beautiful Side Panel -->
     <nav class="mobile-menu">
       <!-- Close button -->
       <div class="menu-close">
@@ -40,8 +40,6 @@
       <a href="#contact" class="menu-link">CONTACT & PROFILES</a>
     </nav>
   </div>
-
-  <div class="logo">Welcome to My Portfolio</div>
 
   <div class="social-icons">
     <a href="https://github.com/ashhabsadiq" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
@@ -544,22 +542,22 @@ function setTheme(isLight) {
     toggleBtn.innerHTML = '<i class="fas fa-sun"></i>';
   }
 }
-if (localStorage.getItem('theme') === 'light') {
-  setTheme(true);
-}
+if (localStorage.getItem('theme') === 'light') setTheme(true);
 toggleBtn.addEventListener('click', () => {
   const isLight = !body.classList.contains('light-mode');
   setTheme(isLight);
   localStorage.setItem('theme', isLight ? 'light' : 'dark');
 });
 
-// Mobile menu auto-close when link is clicked
+// Menu auto-close + close button
 document.querySelectorAll('.menu-link').forEach(link => {
   link.addEventListener('click', () => {
     document.getElementById('mobile-menu-toggle').checked = false;
   });
 });
+document.querySelector('.menu-close').addEventListener('click', () => {
+  document.getElementById('mobile-menu-toggle').checked = false;
+});
 </script>
-
 </body>
 </html>
