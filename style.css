@@ -13,6 +13,13 @@ body {
 }
 
 /* ===================== */
+/* FIX: HIDE CHECKBOX */
+/* ===================== */
+#mobile-menu-toggle {
+  display: none !important;
+}
+
+/* ===================== */
 /* TOP NAVBAR */
 /* ===================== */
 .navbar {
