@@ -707,7 +707,7 @@ h5 {
     cursor: pointer;
   }
   .logo {
-    display: none;   /* hide text logo on mobile */
+    display: none; /* hide text logo on mobile */
   }
 
   /* Hide checkbox visually */
