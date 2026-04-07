@@ -684,17 +684,16 @@ h5 {
 }
 
 /* ===================== */
-/* RESPONSIVE DESIGN + ATTRACTIVE SLIDE-IN MENU */
+/* RESPONSIVE DESIGN + BEAUTIFUL SIDE PANEL */
 /* ===================== */
 
-/* Hamburger visible on all devices now */
+/* Hamburger visible everywhere now */
 .hamburger {
   display: flex;
   align-items: center;
-  gap: 8px;
+  gap: 10px;
   cursor: pointer;
 }
-
 .hamburger-label {
   display: flex;
   flex-direction: column;
@@ -711,40 +710,41 @@ h5 {
   background: #292929;
 }
 .hamburger-text {
-  font-size: 15px;
-  font-weight: 600;
+  font-family: 'Playfair Display', serif;
+  font-size: 19px;
+  font-weight: 700;
   color: #cbd5f5;
 }
 .light-mode .hamburger-text {
   color: #292929;
 }
 
-/* Attractive Mobile Menu Panel */
+/* Beautiful Side Panel */
 .mobile-menu {
   position: fixed;
   top: 0;
-  left: -300px;
-  width: 300px;
+  left: -320px;
+  width: 320px;
   height: 100vh;
-  background: rgba(2, 6, 23, 0.95);
-  backdrop-filter: blur(12px);
-  box-shadow: 4px 0 20px rgba(0, 0, 0, 0.4);
-  padding: 80px 20px 30px;
+  background: rgba(2, 6, 23, 0.96);
+  backdrop-filter: blur(16px);
+  box-shadow: 8px 0 30px rgba(0, 0, 0, 0.5);
+  padding: 90px 25px 40px;
   display: flex;
   flex-direction: column;
-  gap: 4px;
-  transition: left 0.4s cubic-bezier(0.32, 0.72, 0, 1);
-  z-index: 9999;
+  gap: 6px;
+  transition: left 0.45s cubic-bezier(0.32, 0.72, 0, 1);
+  z-index: 99999;
   overflow-y: auto;
 }
 .light-mode .mobile-menu {
-  background: rgba(248, 246, 242, 0.95);
-  box-shadow: 4px 0 20px rgba(0, 0, 0, 0.15);
+  background: rgba(248, 246, 242, 0.96);
+  box-shadow: 8px 0 30px rgba(0, 0, 0, 0.2);
 }
 .mobile-menu a {
   color: #ffffff;
   font-size: 16.5px;
-  padding: 14px 20px;
+  padding: 14px 22px;
   border-radius: 10px;
   text-decoration: none;
   transition: 0.3s;
@@ -753,7 +753,7 @@ h5 {
   color: #292929;
 }
 .mobile-menu a:hover {
-  background: rgba(255,255,255,0.15);
+  background: rgba(255,255,255,0.12);
   color: #00e5d4;
 }
 .light-mode .mobile-menu a:hover {
@@ -761,15 +761,38 @@ h5 {
   color: #203864;
 }
 
-/* Close button at top of panel */
+/* Glowing top and bottom lines */
+.mobile-menu::before,
+.mobile-menu::after {
+  content: '';
+  position: absolute;
+  left: 25px;
+  right: 25px;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, #00e5d4, transparent);
+  box-shadow: 0 0 12px #00e5d4;
+}
+.mobile-menu::before {
+  top: 75px;
+}
+.mobile-menu::after {
+  bottom: 30px;
+}
+.light-mode .mobile-menu::before,
+.light-mode .mobile-menu::after {
+  background: linear-gradient(90deg, transparent, #203864, transparent);
+  box-shadow: 0 0 12px #203864;
+}
+
+/* Close button */
 .menu-close {
   position: absolute;
-  top: 25px;
-  right: 25px;
-  font-size: 28px;
+  top: 28px;
+  right: 28px;
+  font-size: 32px;
   color: #ffffff;
   cursor: pointer;
-  z-index: 10000;
+  z-index: 100000;
 }
 .light-mode .menu-close {
   color: #292929;
@@ -780,7 +803,7 @@ h5 {
   left: 0;
 }
 
-/* Make top navbar sticky everywhere */
+/* Top navbar sticky */
 .navbar {
   position: sticky;
   top: 0;
