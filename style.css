@@ -182,8 +182,8 @@ h5 {
 /* CONTAINER & CARDS */
 /* ===================== */
 .container {
-  width: 95%;
-  max-width: 1250px;
+  width: 90%;
+  max-width: 1150px;
   margin: 0 auto;
 }
 .section {
@@ -815,10 +815,4 @@ h5 {
   position: sticky;
   top: 0;
   z-index: 1000;
-}
-
-@media (max-width: 768px) {
-  .container {
-    width: 95%;
-  }
 }
