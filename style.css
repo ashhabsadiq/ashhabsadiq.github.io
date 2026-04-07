@@ -963,5 +963,9 @@ h5 {
 }
 
 #about.section {
-  padding-top: 0px !important;
+  padding-top: 0 !important;
+}
+
+#about h2 {
+  margin-top: 0 !important;
 }
