@@ -874,7 +874,7 @@ h5 {
 }
 
 /* ===================== */
-/* SECTION DIVIDER LINES - SLIM & SUBTLE (Joti Shaha style) */
+/* SECTION DIVIDER LINES - SLIM & SUBTLE (FINAL FIX) */
 /* ===================== */
 
 /* Tighter section padding */
@@ -882,24 +882,39 @@ h5 {
   padding: 50px 0 !important;
 }
 
-/* Very slim subtle divider */
+/* Very slim divider - placed between sections */
 .section-divider {
   width: 100%;
   height: 1px;
-  background: #cbd5f5;
   margin: 40px auto;
-  opacity: 0.6;
+  background: #e8e3d8;                    /* default light background */
+  position: relative;
 }
 
-/* Light mode - clean light background + subtle dark line */
+/* The actual slim line */
+.section-divider::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 50%;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, #cbd5f5, transparent);
+  opacity: 0.75;
+}
+
+/* Light mode - force clean light background + subtle dark line */
 .light-mode .section-divider {
-  background: #292929 !important;
-  opacity: 0.25 !important;
+  background: #e8e3d8 !important;
+}
+.light-mode .section-divider::after {
+  background: linear-gradient(90deg, transparent, #292929, transparent) !important;
+  opacity: 0.45 !important;
 }
 
-/* No box, no shadow */
-.section-divider {
-  box-shadow: none !important;
+/* Optional hover for better visibility */
+.section-divider:hover::after {
+  opacity: 0.7;
 }
 
 /* Footer bar */
