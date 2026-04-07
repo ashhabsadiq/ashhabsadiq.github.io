@@ -958,3 +958,6 @@ h5 {
   transform: translateY(-2px);
 }
 
+#contact.section {
+  padding-bottom: 80px !important;
+}
