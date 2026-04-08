@@ -131,13 +131,13 @@ body {
   font-weight: 500;
   margin-top: 8px;
   letter-spacing: 1px;
-  color: #ffffff;                    /* matches subtitle in dark mode */
+  color: #f7fbff;                    /* matches subtitle in dark mode */
   text-shadow: 0 0 18px rgba(0, 255, 255, 0.45);   /* cyan glow (#00ffff) */
 }
 
 /* Light mode - exact subtitle color + #203864 subtle glow */
 .light-mode .hero p:nth-of-type(2) {
-  color: #292929 !important;         /* matches subtitle in light mode */
+  color: #151715 !important;         /* matches subtitle in light mode */
   text-shadow: 0 0 18px rgba(32, 56, 100, 0.28) !important;   /* #203864 subtle glow */
 }
 /* ===================== */
