@@ -85,7 +85,7 @@ body {
 .btn {
   background: #1d4ed8;
   color: white;
-  padding: 12px 24px;
+  padding: 12px 22px;
   border-radius: 30px;
   text-decoration: none;
   margin-right: 10px;
@@ -122,15 +122,23 @@ body {
   transform: translateY(-3px);
   box-shadow: 0 8px 20px rgba(210, 179, 76, 0.5);
 }
-/* Welcome line - distinct from subtitle */
-.hero p:nth-of-type(2) {           /* targets the "Welcome to My Portfolio" line */
+/* ===================== */
+/* WELCOME LINE - Matches subtitle color + very subtle glow */
+/* ===================== */
+.hero p:nth-of-type(2) {
   font-family: 'Playfair Display', serif;
   font-size: 22px;
   font-weight: 500;
-  color: #d2b34c;                  /* golden accent */
   margin-top: 8px;
   letter-spacing: 1px;
-  opacity: 0.95;
+  color: #94a3b8;                    /* exact same as subtitle in dark mode */
+  text-shadow: 0 0 14px rgba(210, 179, 76, 0.35);   /* very subtle golden glow */
+}
+
+/* Light mode - matches subtitle color + soft glow */
+.light-mode .hero p:nth-of-type(2) {
+  color: #292929 !important;         /* exact same as subtitle in light mode */
+  text-shadow: 0 0 14px rgba(32, 56, 100, 0.25);    /* very subtle dark glow */
 }
 /* ===================== */
 /* SECTION HEADINGS (h2) */
