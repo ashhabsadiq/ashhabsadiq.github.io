@@ -982,9 +982,9 @@ h5 {
   /* SIDE MENU PANEL - 50% WIDTH ON MOBILE ONLY */
   /* ===================== */
   .mobile-menu {
-    width: 50vw !important;      /* ← exactly 50% of screen width */
-    left: -50vw !important;      /* slide from left */
-    max-width: 320px;            /* safety limit on big phones */
+    width: 60vw !important;      /* ← exactly 50% of screen width */
+    left: -60vw !important;      /* slide from left */
+    max-width: 360px;            /* safety limit on big phones */
   }
   /* OPEN THE MENU - must be inside media query */
     #mobile-menu-toggle:checked ~ .mobile-menu {
