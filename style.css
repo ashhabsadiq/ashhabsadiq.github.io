@@ -277,16 +277,16 @@ h5 {
   text-align: justify;
 }
 .card ul li, .card ol li {
-  margin-bottom: 10px;
+  margin-bottom: 6px;
   color: #cbd5f5;
 }
 .card ol {
   list-style-type: decimal;
 }
 .footnote {
-  font-size: 13.5px;
+  font-size: 12px;
   color: #94a3b8;
-  margin-top: 12px;
+  margin-top: 8px;
 }
 
 /* ===================== */
