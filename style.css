@@ -750,7 +750,7 @@ h5 {
   .navbar {
     padding: 14px 15px;
     font-size: 12px;
-    background: rgba(2, 6, 23, 0.95);
+    background: rgba(2, 6, 23, 0.88);
     backdrop-filter: blur(20px);
     border-bottom: 1px solid rgba(255,255,255,0.08);
   }
@@ -810,8 +810,8 @@ h5 {
   left: -320px;
   width: 320px;
   height: 100vh;
-  background: rgba(2, 6, 23, 0.96);
-  backdrop-filter: blur(16px);
+  background: rgba(2, 6, 23, 0.92);
+  backdrop-filter: blur(24px);
   box-shadow: 8px 0 30px rgba(0, 0, 0, 0.5);
   padding: 90px 25px 40px;
   display: flex;
@@ -822,7 +822,8 @@ h5 {
   overflow-y: auto;
 }
 .light-mode .mobile-menu {
-  background: rgba(248, 246, 242, 0.96);
+  background: rgba(248, 246, 242, 0.94);
+  backdrop-filter: blur(24px);
   box-shadow: 8px 0 30px rgba(0, 0, 0, 0.2);
 }
 .mobile-menu a {
