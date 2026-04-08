@@ -763,6 +763,16 @@ h5 {
     border-bottom: 1px solid rgba(0,0,0,0.08);
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
   }
+  
+  .footer {
+  padding: 14px 15px;
+  font-size: 10px;
+}
+
+.back-to-top {
+  padding: 14px 15px;
+  font-size: 12px;
+}
 }
   
  /* .navbar {
