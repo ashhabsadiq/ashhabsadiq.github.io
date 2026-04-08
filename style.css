@@ -30,7 +30,7 @@ body {
   background: rgba(2, 6, 23, 0.80);
   backdrop-filter: blur(20px);
   border-bottom: 1px solid rgba(255,255,255,0.08);
-  font-size: 15.5px;
+  font-size: 16.5px;
   position: sticky;
   top: 0;
   z-index: 1000;
@@ -749,16 +749,16 @@ h5 {
   /* ===================== */
   .navbar {
     padding: 14px 15px;
-    font-size: 12px
-    background: rgba(2, 6, 23, 1);
+    font-size: 12px;
+    background: rgba(2, 6, 23, 0.95);
     backdrop-filter: blur(20px);
     border-bottom: 1px solid rgba(255,255,255,0.08);
   }
 
   /* Light mode - solid & clean (no see-through text) */
   .light-mode .navbar {
-    font-size: 12px
-    background: rgba(248, 246, 242, 1) !important;
+    font-size: 12px;
+    background: rgba(248, 246, 242, 0.95) !important;
     backdrop-filter: blur(20px);
     border-bottom: 1px solid rgba(0,0,0,0.08);
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
