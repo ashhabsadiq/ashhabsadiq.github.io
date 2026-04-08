@@ -123,22 +123,22 @@ body {
   box-shadow: 0 8px 20px rgba(210, 179, 76, 0.5);
 }
 /* ===================== */
-/* WELCOME LINE - Matches subtitle color + very subtle glow */
+/* WELCOME LINE - Matches subtitle + custom glow */
 /* ===================== */
 .hero p:nth-of-type(2) {
   font-family: 'Playfair Display', serif;
-  font-size: 22px;
+  font-size: 20px;
   font-weight: 500;
   margin-top: 8px;
   letter-spacing: 1px;
-  color: #94a3b8;                    /* exact same as subtitle in dark mode */
-  text-shadow: 0 0 14px rgba(210, 179, 76, 0.35);   /* very subtle golden glow */
+  color: #94a3b8;                    /* matches subtitle in dark mode */
+  text-shadow: 0 0 18px rgba(0, 255, 255, 0.45);   /* cyan glow (#00ffff) */
 }
 
-/* Light mode - matches subtitle color + soft glow */
+/* Light mode - exact subtitle color + #203864 subtle glow */
 .light-mode .hero p:nth-of-type(2) {
-  color: #292929 !important;         /* exact same as subtitle in light mode */
-  text-shadow: 0 0 14px rgba(32, 56, 100, 0.25);    /* very subtle dark glow */
+  color: #292929 !important;         /* matches subtitle in light mode */
+  text-shadow: 0 0 18px rgba(32, 56, 100, 0.28);   /* #203864 subtle glow */
 }
 /* ===================== */
 /* SECTION HEADINGS (h2) */
