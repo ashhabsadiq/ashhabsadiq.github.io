@@ -277,14 +277,14 @@ h5 {
   text-align: justify;
 }
 .card ul li, .card ol li {
-  margin-bottom: 6px;
+  margin-bottom: 4.5px;
   color: #cbd5f5;
 }
 .card ol {
   list-style-type: decimal;
 }
 .footnote {
-  font-size: 12px;
+  font-size: 10px !important;
   color: #94a3b8;
   margin-top: 8px;
 }
@@ -575,12 +575,6 @@ h5 {
   background: transparent !important;
 }
 
-/* Navbar & Secondary Nav */
-/*.light-mode .navbar,
-.light-mode .secondary-nav {
-  background: #faf8f4;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-}*/
 .light-mode .logo,
 .light-mode .secondary-container a {
   color: #292929;
