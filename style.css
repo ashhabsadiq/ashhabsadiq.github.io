@@ -38,7 +38,7 @@ body {
 
 /* Light mode glass */
 .light-mode .navbar {
-  background: rgba(248, 246, 242, 0.94);
+  background: rgba(248, 246, 242, 0.90);
   backdrop-filter: blur(20px);
   border-bottom: 1px solid rgba(0,0,0,0.08);
 }
@@ -744,12 +744,32 @@ h5 {
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 20px;
   }
-
+/* ===================== */
+  /* MOBILE NAVBAR - GLASS EFFECT (fixed for light theme) */
+  /* ===================== */
   .navbar {
+    padding: 14px 15px;
+    font-size: 12px
+    background: rgba(2, 6, 23, 0.88);
+    backdrop-filter: blur(20px);
+    border-bottom: 1px solid rgba(255,255,255,0.08);
+  }
+
+  /* Light mode - solid & clean (no see-through text) */
+  .light-mode .navbar {
+    font-size: 12px
+    background: rgba(248, 246, 242, 0.98) !important;
+    backdrop-filter: blur(20px);
+    border-bottom: 1px solid rgba(0,0,0,0.08);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  }
+}
+  
+ /* .navbar {
   padding: 14px 15px;
   font-size: 12px;
-}
-}
+} */
+
 
 /* Hamburger visible everywhere now */
 .hamburger {
