@@ -701,7 +701,7 @@ h5 {
 .theme-btn {
   background: none;
   border: none;
-  color: #cbd5f5;
+  color: #f7fbff;
   font-size: 26px;
   cursor: pointer;
   padding: 0;
@@ -742,7 +742,7 @@ h5 {
   font-family: 'Playfair Display', serif;
   font-size: 19px;
   font-weight: 700;
-  color: #cbd5f5;
+  color: #f7fbff;
 }
 .light-mode .hamburger-text {
   color: #292929;
