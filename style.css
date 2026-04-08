@@ -982,8 +982,8 @@ h5 {
   /* SIDE MENU PANEL - 50% WIDTH ON MOBILE ONLY */
   /* ===================== */
   .mobile-menu {
-    width: 55vw !important;      /* ← exactly 50% of screen width */
-    left: -55vw !important;      /* slide from left */
+    width: 58vw !important;      /* ← exactly 50% of screen width */
+    left: -58vw !important;      /* slide from left */
     max-width: 340px;            /* safety limit on big phones */
   }
   /* OPEN THE MENU - must be inside media query */
@@ -1012,4 +1012,21 @@ h5 {
 
 #about h2 {
   margin-top: 0 !important;
+}
+
+/* ===================== */
+/* SMOOTH SCROLL + OFFSET FOR STICKY NAVBAR */
+/* ===================== */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Reserve space for the sticky navbar so section headings are not hidden */
+.section {
+  scroll-margin-top: 90px !important;
+}
+
+/* Extra safety for hero (if needed) */
+.hero {
+  scroll-margin-top: 80px !important;
 }
