@@ -758,7 +758,7 @@ h5 {
   /* Light mode - solid & clean (no see-through text) */
   .light-mode .navbar {
     font-size: 12px;
-    background: rgba(248, 246, 242, 0.95) !important;
+    background: rgba(248, 246, 242, 0.97) !important;
     backdrop-filter: blur(20px);
     border-bottom: 1px solid rgba(0,0,0,0.08);
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
@@ -810,7 +810,7 @@ h5 {
   left: -320px;
   width: 320px;
   height: 100vh;
-  background: rgba(2, 6, 23, 0.92);
+  background: rgba(2, 6, 23, 0.94);
   backdrop-filter: blur(24px);
   box-shadow: 8px 0 30px rgba(0, 0, 0, 0.5);
   padding: 90px 25px 40px;
