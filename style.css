@@ -27,7 +27,7 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 16px 50px;
-  background: rgba(2, 6, 23, 0.90);
+  background: rgba(2, 6, 23, 0.88);
   backdrop-filter: blur(20px);
   border-bottom: 1px solid rgba(255,255,255,0.08);
   font-size: 16.5px;
@@ -38,7 +38,7 @@ body {
 
 /* Light mode glass */
 .light-mode .navbar {
-  background: rgba(248, 246, 242, 0.94);
+  background: rgba(248, 246, 242, 0.90);
   backdrop-filter: blur(20px);
   border-bottom: 1px solid rgba(0,0,0,0.08);
 }
@@ -736,7 +736,7 @@ h5 {
   left: -320px;
   width: 320px;
   height: 100vh;
-  background: rgba(2, 6, 23, 0.96);
+  background: rgba(2, 6, 23, 0.97);
   backdrop-filter: blur(24px);
   box-shadow: 8px 0 30px rgba(0, 0, 0, 0.5);
   padding: 90px 25px 40px;
@@ -965,7 +965,7 @@ h5 {
   .navbar {
     padding: 14px 15px;
     font-size: 12px;
-    background: rgba(2, 6, 23, 0.92);
+    background: rgba(2, 6, 23, 0.94);
     backdrop-filter: blur(20px);
     border-bottom: 1px solid rgba(255,255,255,0.08);
   }
@@ -973,12 +973,19 @@ h5 {
   /* Light mode - solid & clean (no see-through text) */
   .light-mode .navbar {
     font-size: 12px;
-    background: rgba(248, 246, 242, 0.96) !important;
+    background: rgba(248, 246, 242, 0.97) !important;
     backdrop-filter: blur(20px);
     border-bottom: 1px solid rgba(0,0,0,0.08);
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
   }
-  
+  /* ===================== */
+  /* SIDE MENU PANEL - 50% WIDTH ON MOBILE ONLY */
+  /* ===================== */
+  .mobile-menu {
+    width: 50vw !important;      /* ← exactly 50% of screen width */
+    left: -50vw !important;      /* slide from left */
+    max-width: 320px;            /* safety limit on big phones */
+  }
   .footer {
   padding: 14px 15px;
   font-size: 9px;
