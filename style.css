@@ -1020,7 +1020,7 @@ h5 {
 
   /* All sections - 8px side padding */
   .section {
-    padding: 30px 8px !important;
+    padding: 1px 8px !important;
   }
 
   /* Buttons - slightly smaller */
