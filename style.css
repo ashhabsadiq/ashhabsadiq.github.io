@@ -928,11 +928,11 @@ h5 {
   transform: translateY(-2px);
 }
 /* ===================== */
-/* MOBILE RESPONSIVE - Reduced vertical spacing between sections */
+/* MOBILE RESPONSIVE - STRONG REDUCED VERTICAL SPACING */
 /* ===================== */
 @media (max-width: 768px) {
 
-  /* Wider overall content */
+  /* Container */
   .container {
     width: 98% !important;
     max-width: 1250px;
@@ -942,21 +942,32 @@ h5 {
     margin-right: auto;
   }
 
-  /* Hero title */
-  .hero h1 {
-    font-size: 40px;
-    line-height: 1.05;
+  /* Navbar */
+  .navbar {
+    padding: 14px 15px !important;
+    font-size: 12px;
   }
 
-  .buttons { margin-top: 40px; }
+  /* Hero */
+  .hero {
+    padding: 100px 8px 30px !important;
+  }
 
-  .section h2 { font-size: 22px; }
-  h3 { font-size: 16.5px; }
-  h4 { font-size: 15.5px; }
-  h5 { font-size: 15.5px; }
+  /* All sections - FORCE reduced vertical gap */
+  .section,
+  .section.section {
+    padding-top: 35px !important;
+    padding-bottom: 35px !important;
+    padding-left: 8px !important;
+    padding-right: 8px !important;
+  }
 
-  /* Hide photo on mobile */
-  .about-img { display: none; }
+  /* Specific sections that have extra rules */
+  #contact.section,
+  #about.section {
+    padding-top: 35px !important;
+    padding-bottom: 35px !important;
+  }
 
   /* Research & Academic cards */
   .research-grid,
@@ -965,32 +976,10 @@ h5 {
     gap: 20px;
   }
 
-  /* MOBILE NAVBAR */
-  .navbar {
-    padding: 14px 15px;
-    font-size: 12px;
-    background: rgba(2, 6, 23, 0.94);
-    backdrop-filter: blur(20px);
-    border-bottom: 1px solid rgba(255,255,255,0.08);
-  }
-
-  .light-mode .navbar {
-    font-size: 12px;
-    background: rgba(248, 246, 242, 0.97) !important;
-    backdrop-filter: blur(20px);
-    border-bottom: 1px solid rgba(0,0,0,0.08);
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
-  }
-
-  /* SIDE MENU PANEL */
-  .mobile-menu {
-    width: 58vw !important;
-    left: -58vw !important;
-    max-width: 340px;
-  }
-
-  #mobile-menu-toggle:checked ~ .mobile-menu {
-    left: 0 !important;
+  /* Buttons */
+  .btn {
+    padding: 10px 18px !important;
+    font-size: 14px;
   }
 
   /* Footer */
@@ -1003,25 +992,15 @@ h5 {
     font-size: 10px;
   }
 
-  /* ==================== */
-  /* REDUCED VERTICAL SPACING - THIS IS THE IMPORTANT PART */
-  /* ==================== */
-  .section {
-    padding-top: 35px !important;
-    padding-bottom: 35px !important;
-    padding-left: 8px !important;
-    padding-right: 8px !important;
+  /* Side menu */
+  .mobile-menu {
+    width: 58vw !important;
+    left: -58vw !important;
+    max-width: 340px;
   }
 
-  /* Hero on mobile */
-  .hero {
-    padding: 100px 8px 30px !important;
-  }
-
-  /* Buttons */
-  .btn {
-    padding: 10px 18px !important;
-    font-size: 14px;
+  #mobile-menu-toggle:checked ~ .mobile-menu {
+    left: 0 !important;
   }
 }
 
