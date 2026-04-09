@@ -837,7 +837,9 @@ h5 {
 /* ===================== */
 /* SECTION DIVIDER LINES - FIXED & SUBTLE (works with divider INSIDE section) */
 /* ===================== */
-
+.section {
+  padding: 1px 0 !important;
+}
 /* Slim divider - works whether inside or outside section */
 .section-divider {
   width: 100%;
