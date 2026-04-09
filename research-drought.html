@@ -137,21 +137,25 @@
       </div>
     </div>
 
-   <!-- SPI -->
-   <h4 style="margin-top: 40px;"><i class="fas fa-chart-bar"></i> Standardized Precipitation Index (SPI)</h4>
-   <div style="display:flex; gap:50px; flex-wrap:wrap; align-items:start;">
-   <div style="flex:1; min-width:300px;">
-    <ul style="line-height:1.85; font-size:16px; padding-left:22px; text-align:justify; margin-bottom:30px;">
-      <li>SPIs values were calculated from station-based rainfall data (2010–2019) using RStudio (SPEI package).</li>
-      <li>Spatial interpolation of SPI values was performed in ArcMap using the IDW method.</li>
-      <li>SPI maps served as the drought indicator for training and validating the Random Forest model.</li>
-    </ul>
+  <!-- SPI -->
+  <h4 style="margin-top: 40px;"><i class="fas fa-chart-bar"></i> Standardized Precipitation Index (SPI)</h4>
+
+<!-- Full-width bullet points -->
+  <ul style="line-height:1.85; font-size:16px; padding-left:22px; text-align:justify; margin-bottom:35px;">
+  <li>SPIs values were calculated from station-based rainfall data (2010–2019) using RStudio (SPEI package).</li>
+  <li>Spatial interpolation of SPI values was performed in ArcMap using the IDW method.</li>
+  <li>SPI maps served as the drought indicator for training and validating the Random Forest model.</li>
+  </ul>
+
+<!-- Flowchart + Maps side by side -->
+  <div style="display:flex; gap:50px; flex-wrap:wrap; align-items:start;">
+  <div style="flex:1; min-width:300px;">
     <img src="Images/drought_spitype.png" alt="SPI Types" style="width:100%; border-radius:12px; box-shadow:0 8px 25px rgba(0,0,0,0.15);">
   </div>
   <div style="flex:1; min-width:300px;">
     <img src="Images/drought_spi.png" alt="SPI Maps 2010-2019" style="width:100%; border-radius:12px; box-shadow:0 8px 25px rgba(0,0,0,0.15);">
   </div>
-</div>
+  </div>
 
     <!-- Key Findings -->
     <h4 style="margin-top: 40px;"><i class="fas fa-lightbulb"></i> Key Findings</h4>
