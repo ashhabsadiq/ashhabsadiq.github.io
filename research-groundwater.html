@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Md. Ashhab Sadiq | Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="icon" href="Images/Icon.ico" type="image/png">
+</head>
+<body>
+
+<!-- TOP NAVBAR -->
+<header class="navbar">
+  <div class="hamburger">
+    <input type="checkbox" id="mobile-menu-toggle">
+    <label for="mobile-menu-toggle" class="hamburger-label">
+      <span></span><span></span><span></span>
+    </label>
+    <span class="hamburger-text">Portfolio Sections</span>
+    <nav class="mobile-menu">
+      <div class="menu-close"><i class="fas fa-times"></i></div>
+      <a href="index.html#about" class="menu-link">ABOUT ME</a>
+      <a href="index.html#education" class="menu-link">EDUCATION</a>
+      <a href="index.html#research" class="menu-link">RESEARCH & PUBLICATIONS</a>
+      <a href="index.html#projects" class="menu-link">ACADEMIC PROJECTS</a>
+      <a href="index.html#experience" class="menu-link">WORK EXPERIENCES</a>
+      <a href="index.html#skills" class="menu-link">TECHNICAL SKILLS</a>
+      <a href="index.html#certifications" class="menu-link">CERTIFICATIONS</a>
+      <a href="index.html#awards" class="menu-link">AWARDS</a>
+      <a href="index.html#extracurricular" class="menu-link">EXTRACURRICULARS</a>
+      <a href="index.html#contact" class="menu-link">CONTACT & PROFILES</a>
+    </nav>
+  </div>
+
+  <div class="social-icons">
+    <a href="https://github.com/ashhabsadiq" target="_blank"><i class="fab fa-github"></i></a>
+    <a href="mailto:sadiq.kuet.urp@gmail.com"><i class="fas fa-envelope"></i></a>
+    <button id="theme-toggle" class="theme-btn"><i class="fas fa-sun"></i></button>
+  </div>
+</header>
+
+<!-- TITLE SECTION + TOP BACK BUTTON (no bleeding, no extra space) -->
+<section class="hero" style="padding: 100px 20px 30px; text-align: left;">
+  <div class="container">
+    
+    <!-- Top Back button - tight, left aligned, no extra space -->
+    <a href="index.html#research" class="btn" style="font-size:15px; padding:8px 22px; display:inline-block; margin-bottom:30px;">
+      ← Back to Portfolio
+    </a>
+
+    <h2 style="margin-top:0;">Advancing Groundwater Vulnerability Assessment in Bangladesh: A Comprehensive Machine Learning Approach</h2>
+  </div>
+<!--  <div class="section-divider"></div> -->
+</section>
+
+<!-- CONTENT -->
+<section class="section">
+  <div class="container">
+
+    <!-- Authors -->
+    <h4><i class="fas fa-users"></i> Authors</h4>
+    <p style="font-size:17px; margin-bottom:40px; text-align:justify;">
+     Saima Sekander Raisa, Showmitra Kumar Sarkar, <strong>Md. Ashhab Sadiq</strong>
+    </p>
+
+    <!-- Aim -->
+    <h4><i class="fas fa-bullseye"></i> Aim</h4>
+    <p style="font-size:17px; line-height:1.8; margin-bottom:40px; text-align:justify;">
+      To evaluate the spatial variability of groundwater vulnerability in Bangladesh using a multi-criteria, data-driven approach that incorporates environmental and socio-economic factors.
+    </p>
+
+    <!-- Summary -->
+    <h4><i class="fas fa-file-alt"></i> Summary</h4>
+    <p style="font-size:17px; line-height:1.8; margin-bottom:40px; text-align:justify;">
+      This study developed a comprehensive framework to assess groundwater vulnerability (GWV) across Bangladesh by integrating 22 factors into four themes (Topography, Meteorology, Socio-economy, and Land Use–Geology) and learning their contributions with a Random Forest model. Using 200 sample points and standardized rasters, the study produces category-wise and combined national GWV maps, highlighting high-risk zones and the drivers behind them.
+    </p>
+
+    <!-- Study Area - NEW SECTION -->
+    <h4 style="margin-top: 60px;"><i class="fas fa-map-marker-alt"></i> Study Area</h4>
+    <div style="display:flex; gap:50px; flex-wrap:wrap; align-items:start;">
+      <div style="flex:1; min-width:300px;">
+        <p style="font-size:17px; line-height:1.8; text-align:justify;">Bangladesh was selected as the study area due to its complex hydro-environmental conditions and rising groundwater challenges. Located in the Ganges–Brahmaputra–Meghna delta, the country spans about 143,998 km² and supports a population of around 171 million. Despite its riverine nature, increasing reliance on groundwater has created significant stress.
+        </p>
+        <p style="font-size:17px; line-height:1.8; text-align:justify;">Groundwater vulnerability varies across regions, with coastal areas affected by salinity intrusion and northern regions influenced by hydrogeological and climatic factors. In major urban areas like Dhaka, rapid urbanization and population growth further intensify the issue. This study focuses on identifying vulnerable zones and the key drivers behind groundwater vulnerability.
+        </p>
+      </div>
+      <div style="flex:1; min-width:300px;">
+        <div style="border: 1px solid rgba(0,0,0,0.08); border-radius:12px; padding:8px; background:#fff; box-shadow:0 8px 25px rgba(0,0,0,0.1);">
+          <img src="Images/gwv_studyarea.png" alt="Study Area Map" style="width:100%; border-radius:8px;">
+        </div>
+      </div>
+    </div>
+    
+<!-- Methodology (Two-column) -->
+    <h4  style="margin-top: 60px;"><i class="fas fa-cogs"></i> Methodology</h4>
+    <div style="display:flex; gap:50px; flex-wrap:wrap; align-items:start;">
+      <div style="flex:1; min-width:300px;">
+        <ul style="line-height:1.85; font-size:16px; padding-left:22px; text-align:justify;">
+          <li><strong>Data Preparation:</strong> Derived 21 variables and grouped into four categories (Topographic, Meteorological, Socio-economic, and Land Use–Geological).</li>
+          <li><strong>Reference Indicator:</strong> Based on a prior groundwater potential study, 200 locations were selected nationwide and used in binary form (1 = vulnerable, 0 = non-vulnerable) to support index computation and model training.</li>
+          <li><strong>Model Development:</strong> Built a Random Forest model in Python (Spyder IDE) to evaluate variable importance.</li>
+          <li><strong>Spatial Mapping:</strong> Weighted indices were integrated in ArcMap using raster analysis to generate categorical and overall GWV maps of Bangladesh.</li>
+          <li><strong>Validation:</strong>Applied ROC Curve, AUC, and Cross-Validation metrics in Python for model accuracy assessment.</li>
+        </ul>
+      </div>
+      <div style="flex:1; min-width:300px;">
+        <div style="border: 1px solid rgba(0,0,0,0.08); border-radius:12px; padding:8px; background:#fff; box-shadow:0 8px 25px rgba(0,0,0,0.1);">
+          <img src="Images/gwv_methodology.png" alt="Methodological Framework" style="width:100%; border-radius:8px;">
+        </div>
+      </div>
+    </div>
+
+   <!-- Factors -->
+    <h4 style="margin-top: 60px;"><i class="fas fa-satellite"></i>Topographic & Meteorological Factors</h4>
+    <div style="display:flex; gap:50px; flex-wrap:wrap; align-items:start;">
+      <div style="flex:1; min-width:300px;">
+        <p style="font-size:17px; line-height:1.8; text-align:justify;">In <strong>topographic</strong> category, a total of <strong>7</strong> factors have been selected to assess topographic GWV.</p>
+        <ol style="line-height:1.85; font-size:16px; padding-left:22px; text-align:justify;">
+          <li><strong>Slope</strong></li>
+          <li><strong>Roughness</strong></li>
+          <li><strong>Curvature</strong></li>
+          <li><strong>Drainage Density</strong></li>
+          <li><strong>Topographic Wetness Index</strong></li>
+          <li><strong>Topographic Position Index</strong></li>
+          <li><strong>Aspect</strong></li>
+        </ol>
+        <p style="font-size:17px; line-height:1.8; text-align:justify;">In <strong>meteorological</strong> category, <strong>4</strong> factors have been selected to assess meteorological GWV.</p>
+        <ol style="line-height:1.85; font-size:16px; padding-left:22px; text-align:justify;">
+          <li><strong>Rainfall</strong></li>
+          <li><strong>Relative Humidity</strong></li>
+          <li><strong>Drought (SPI)</strong></li>
+          <li><strong>Land Surface Temperature</strong></li>
+        </ol>
+      </div>
+      <div style="flex:1; min-width:300px;">
+        <div style="border: 1px solid rgba(0,0,0,0.08); border-radius:12px; padding:8px; background:#fff; box-shadow:0 8px 25px rgba(0,0,0,0.1);">
+          <img src="Images/gwv_factors1.png" alt="Topographic & Meteorological Factors" style="width:100%; border-radius:8px;">
+        </div>
+      </div>
+    </div>
+    
+   <!-- Factors 2-->
+    <h4 style="margin-top: 60px;"><i class="fas fa-satellite"></i>Landuse-Geological & Socioeconomic Factors</h4>
+    <div style="display:flex; gap:50px; flex-wrap:wrap; align-items:start;">
+      <div style="flex:1; min-width:300px;">
+        <p style="font-size:17px; line-height:1.8; text-align:justify;">In <strong>landuse-geological</strong> category, a total of <strong>6</strong> factors have been selected to assess landuse-geological GWV.</p>
+        <ol style="line-height:1.85; font-size:16px; padding-left:22px; text-align:justify;">
+          <li><strong>Geology</strong></li>
+          <li><strong>Morphology</strong></li>
+          <li><strong>Soil Type</strong></li>
+          <li><strong>Depth of Groundwater Level</strong></li>
+          <li><strong>Landuse/Land cover (LULC)</strong></li>
+        </ol>
+        <p style="font-size:17px; line-height:1.8; text-align:justify;">In <strong>socioeconomic</strong> category, <strong>4</strong> factors have been selected to assess meteorological GWV.</p>
+        <ol style="line-height:1.85; font-size:16px; padding-left:22px; text-align:justify;">
+          <li><strong>Population Density</strong></li>
+          <li><strong>Access to Tap Water</strong></li>
+          <li><strong>Access to Tubewell</strong></li>
+          <li><strong>Number of Industries</strong></li>
+        </ol>
+      </div>
+      <div style="flex:1; min-width:300px;">
+        <div style="border: 1px solid rgba(0,0,0,0.08); border-radius:12px; padding:8px; background:#fff; box-shadow:0 8px 25px rgba(0,0,0,0.1);">
+          <img src="Images/gwv_factors2.png" alt="Topographic & Meteorological Factors" style="width:100%; border-radius:8px;">
+        </div>
+      </div>
+    </div>
+
+
+    <!-- Key Findings -->
+    <h4 style="margin-top: 60px;"><i class="fas fa-lightbulb"></i> Key Findings</h4>
+    <ul style="line-height:1.85; font-size:16px; margin-bottom:40px; padding-left:22px; text-align:justify;">
+      <li>The Random Forest model achieved 81–95% accuracy.</li>
+      <li>Precipitation was the dominant drought driver, contributing 28.32% to short-term and 26.78% to long-term drought variations.</li>
+      <li>Apart from Precipitation, short-term droughts were influenced mainly by ET (13.57%) and NDWI (12.13%), while long-term droughts were governed by NMDI (14.27%) and NDVI (12.87%).</li>
+      <li>The Rajshahi Division, especially the Barind Tract, faced the most frequent severe to extreme droughts during 2010–2019.</li>
+      <li>On average, 5% of the area experienced extreme droughts and over 12% endured severe droughts.</li>
+      <li>Long-term SPI indices (SPI-6, SPI-9) captured a higher frequency of extreme events than short-term SPIs, revealing the cumulative effect of rainfall deficits.</li>
+    </ul>
+
+    <div style="border: 1px solid rgba(0,0,0,0.08); border-radius:12px; padding:8px; background:#fff; box-shadow:0 8px 25px rgba(0,0,0,0.1);">
+      <img src="Images/gwv_finalmap.jpg" alt="Drought Distribution Map" style="width:100%; border-radius:8px;">
+    </div>
+    
+    <!-- Bottom Back button -->
+    <div style="text-align:left; margin:80px 0 60px;">
+      <a href="index.html#research" class="btn" style="font-size:15px; padding:10px 20px;">
+        ← Back to Portfolio
+      </a>
+    </div>
+
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="footer-left">© 2026 Md. Ashhab Sadiq. All rights reserved.</div>
+  <a href="#" onclick="window.scrollTo({top:0, behavior:'smooth'}); return false;" class="back-to-top">↑ Back to Top</a>
+</footer>
+
+<script>
+// Theme toggle + menu script (same as main portfolio)
+const toggleBtn = document.getElementById('theme-toggle');
+const body = document.body;
+function setTheme(isLight) {
+  if (isLight) {
+    body.classList.add('light-mode');
+    toggleBtn.innerHTML = '<i class="fas fa-moon"></i>';
+  } else {
+    body.classList.remove('light-mode');
+    toggleBtn.innerHTML = '<i class="fas fa-sun"></i>';
+  }
+}
+if (localStorage.getItem('theme') === 'light') setTheme(true);
+toggleBtn.addEventListener('click', () => {
+  const isLight = !body.classList.contains('light-mode');
+  setTheme(isLight);
+  localStorage.setItem('theme', isLight ? 'light' : 'dark');
+});
+
+document.querySelectorAll('.menu-link').forEach(link => {
+  link.addEventListener('click', () => {
+    document.getElementById('mobile-menu-toggle').checked = false;
+  });
+});
+document.querySelector('.menu-close').addEventListener('click', () => {
+  document.getElementById('mobile-menu-toggle').checked = false;
+});
+</script>
+<!-- MOBILE RESPONSIVE - Same as main portfolio -->
+<style>
+@media (max-width: 768px) {
+  .navbar { padding: 14px 8px !important; }
+  .container { width: 98% !important; padding-left: 8px !important; padding-right: 8px !important; }
+  .hero { padding: 80px 8px 30px !important; }
+  .section { padding: 50px 8px !important; }
+  .btn { padding: 10px 8px !important; font-size: 14px; }
+}
+</style>
+</body>
+</html>
