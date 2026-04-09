@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Meteorological Drought Assessment | Md. Ashhab Sadiq</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="icon" href="Initial logo.png" type="image/png">
+</head>
+<body>
+
+<!-- TOP NAVBAR (same as main portfolio) -->
+<header class="navbar">
+  <div class="hamburger">
+    <input type="checkbox" id="mobile-menu-toggle">
+    <label for="mobile-menu-toggle" class="hamburger-label">
+      <span></span><span></span><span></span>
+    </label>
+    <span class="hamburger-text">Portfolio Sections</span>
+    <nav class="mobile-menu">
+      <div class="menu-close"><i class="fas fa-times"></i></div>
+      <a href="index.html#about" class="menu-link">ABOUT ME</a>
+      <a href="index.html#education" class="menu-link">EDUCATION</a>
+      <a href="index.html#research" class="menu-link">RESEARCH & PUBLICATIONS</a>
+      <a href="index.html#projects" class="menu-link">ACADEMIC PROJECTS</a>
+      <a href="index.html#experience" class="menu-link">WORK EXPERIENCES</a>
+      <a href="index.html#skills" class="menu-link">TECHNICAL SKILLS</a>
+      <a href="index.html#certifications" class="menu-link">CERTIFICATIONS</a>
+      <a href="index.html#awards" class="menu-link">AWARDS</a>
+      <a href="index.html#extracurricular" class="menu-link">EXTRACURRICULARS</a>
+      <a href="index.html#contact" class="menu-link">CONTACT & PROFILES</a>
+    </nav>
+  </div>
+
+  <div class="social-icons">
+    <a href="https://github.com/ashhabsadiq" target="_blank"><i class="fab fa-github"></i></a>
+    <a href="mailto:sadiq.kuet.urp@gmail.com"><i class="fas fa-envelope"></i></a>
+    <button id="theme-toggle" class="theme-btn"><i class="fas fa-sun"></i></button>
+  </div>
+</header>
+
+<!-- TITLE SECTION -->
+<section class="hero" style="padding: 140px 20px 60px; text-align: center;">
+  <div class="container">
+    <h1 style="font-size: 42px; margin-bottom: 12px;">Meteorological Drought Assessment in Northern Bangladesh</h1>
+    <p style="font-size: 20px; color: #94a3b8; margin-bottom: 8px;">
+      A machine learning-based approach considering remote sensing indices
+    </p>
+    <a href="index.html#research" class="btn" style="margin-top: 30px; display: inline-block;">
+      ← Back to Portfolio
+    </a>
+  </div>
+</section>
+
+<!-- CONTENT -->
+<section class="section">
+  <div class="container">
+
+    <!-- Authors -->
+    <h2><i class="fas fa-users"></i> Authors</h2>
+    <p style="font-size: 17px; margin-bottom: 40px;">
+      <strong>Md. Ashhab Sadiq</strong>, Showmitra Kumar Sarkar, Saima Sekander Raisa
+    </p>
+
+    <!-- Aim -->
+    <h2><i class="fas fa-bullseye"></i> Aim</h2>
+    <p style="font-size: 17px; line-height: 1.8; margin-bottom: 50px;">
+      To evaluate the spatiotemporal characteristics of meteorological drought in northern Bangladesh using multi-source remote sensing data and machine learning methods.
+    </p>
+
+    <!-- Summary -->
+    <h2><i class="fas fa-file-alt"></i> Summary</h2>
+    <p style="font-size: 17px; line-height: 1.8; margin-bottom: 50px;">
+      This study investigates meteorological drought in northern Bangladesh (2010–2019) through the integration of remote sensing indices and machine learning. Using 4 types of Standardized Precipitation Index (SPI) as the primary drought indicator, 7 satellite-derived variables were analyzed with a Random Forest model to capture spatial and temporal drought patterns. The approach provides a comprehensive framework for understanding regional drought dynamics.
+    </p>
+
+    <!-- Methodology (Two-column) -->
+    <h2><i class="fas fa-cogs"></i> Methodology</h2>
+    <div style="display:flex; gap:50px; flex-wrap:wrap; align-items:start;">
+      <div style="flex:1; min-width:300px;">
+        <ul style="line-height:1.85; font-size:16px;">
+          <li><strong>Data Preparation:</strong> Derived seven drought-related indices (NDVI, NDWI, NDMI, NDDI, NMDI, ET, and Precipitation) from MODIS and IMERG imagery using Google Earth Engine (GEE).</li>
+          <li><strong>Reference Indicator:</strong> Computed the Standardized Precipitation Index (SPI) from station-based rainfall data for 1-, 3-, 6-, and 9-month timescales using R programming in RStudio.</li>
+          <li><strong>Model Development:</strong> Built a Random Forest model in Python (Spyder IDE) to evaluate variable importance and predict drought intensity at different time scales (1-, 3-, 6-, and 9-month SPIs).</li>
+          <li><strong>Spatial Mapping:</strong> Weighted indices were integrated in ArcMap using raster analysis to generate annual drought distribution maps (2010–2019).</li>
+          <li><strong>Validation:</strong> Assessed model performance in Python, using metrics such as accuracy, RMSE, F1-score, and cross-validation.</li>
+        </ul>
+      </div>
+      <div style="flex:1; min-width:300px;">
+        <img src="Images/drought_methodology.png" alt="Methodological Flowchart" style="width:100%; border-radius:12px; box-shadow:0 8px 25px rgba(0,0,0,0.15);">
+      </div>
+    </div>
+
+    <!-- Remote Sensing Indices (Two-column) -->
+    <h2><i class="fas fa-satellite"></i> Remote Sensing Indices</h2>
+    <div style="display:flex; gap:50px; flex-wrap:wrap; align-items:start;">
+      <div style="flex:1; min-width:300px;">
+        <p style="font-size:17px; line-height:1.8;">Seven remote sensing indices were derived from MODIS and IMERG imagery to represent vegetation, moisture, and climatic conditions.</p>
+        <ol style="line-height:1.85; font-size:16px;">
+          <li><strong>NDVI</strong> – Indicates vegetation greenness and photosynthetic activity.</li>
+          <li><strong>NDWI</strong> – Measures surface water and soil moisture conditions.</li>
+          <li><strong>NDMI</strong> – Reflects vegetation and canopy moisture content.</li>
+          <li><strong>NDDI</strong> – Combines NDVI and NDWI to assess drought severity.</li>
+          <li><strong>NMDI</strong> – Detects vegetation and soil dryness using multiple spectral bands.</li>
+          <li><strong>ET</strong> – Represents surface heat flux and water loss.</li>
+          <li><strong>Precipitation</strong> – Shows rainfall distribution across time and space.</li>
+        </ol>
+      </div>
+      <div style="flex:1; min-width:300px;">
+        <img src="Images/drought_factors.jpg" alt="Remote Sensing Indices" style="width:100%; border-radius:12px; box-shadow:0 8px 25px rgba(0,0,0,0.15);">
+      </div>
+    </div>
+
+    <!-- SPI (Two-column + extra image below) -->
+    <h2><i class="fas fa-chart-bar"></i> Standardized Precipitation Index (SPI)</h2>
+    <div style="display:flex; gap:50px; flex-wrap:wrap; align-items:start;">
+      <div style="flex:1; min-width:300px;">
+        <ul style="line-height:1.85; font-size:16px;">
+          <li>SPIs values were calculated from station-based rainfall data (2010–2019) using RStudio (SPEI package).</li>
+          <li>Spatial interpolation of SPI values was performed in ArcMap using the IDW method.</li>
+          <li>SPI maps served as the drought indicator for training and validating the Random Forest model.</li>
+        </ul>
+      </div>
+      <div style="flex:1; min-width:300px;">
+        <img src="Images/drought_spitype.png" alt="SPI Types" style="width:100%; border-radius:12px; box-shadow:0 8px 25px rgba(0,0,0,0.15); margin-bottom:20px;">
+        <img src="Images/drought_spi.png" alt="Additional SPI Chart" style="width:100%; border-radius:12px; box-shadow:0 8px 25px rgba(0,0,0,0.15);">
+      </div>
+    </div>
+
+    <!-- Key Findings -->
+    <h2><i class="fas fa-lightbulb"></i> Key Findings</h2>
+    <ul style="line-height:1.85; font-size:16px; margin-bottom:40px;">
+      <li>The Random Forest model achieved 81–95% accuracy.</li>
+      <li>Precipitation was the dominant drought driver, contributing 28.32% to short-term and 26.78% to long-term drought variations.</li>
+      <li>Apart from Precipitation, short-term droughts were influenced mainly by ET (13.57%) and NDWI (12.13%), while long-term droughts were governed by NMDI (14.27%) and NDVI (12.87%).</li>
+      <li>The Rajshahi Division, especially the Barind Tract, faced the most frequent severe to extreme droughts during 2010–2019.</li>
+      <li>On average, 5% of the area experienced extreme droughts and over 12% endured severe droughts.</li>
+      <li>Long-term SPI indices (SPI-6, SPI-9) captured a higher frequency of extreme events than short-term SPIs, revealing the cumulative effect of rainfall deficits.</li>
+    </ul>
+
+    <img src="Images/drought_finalmap.jpg" alt="Drought Distribution Map" style="width:100%; border-radius:12px; box-shadow:0 8px 25px rgba(0,0,0,0.15); margin-bottom:60px;">
+
+    <!-- Back button -->
+    <div style="text-align:center; margin:80px 0 60px;">
+      <a href="index.html#research" class="btn">← Back to All Research</a>
+    </div>
+
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="footer-left">© 2026 Md. Ashhab Sadiq. All rights reserved.</div>
+  <a href="index.html" class="back-to-top">↑ Back to Top</a>
+</footer>
+
+<script>
+// Same theme toggle and menu script as main portfolio
+const toggleBtn = document.getElementById('theme-toggle');
+const body = document.body;
+function setTheme(isLight) {
+  if (isLight) {
+    body.classList.add('light-mode');
+    toggleBtn.innerHTML = '<i class="fas fa-moon"></i>';
+  } else {
+    body.classList.remove('light-mode');
+    toggleBtn.innerHTML = '<i class="fas fa-sun"></i>';
+  }
+}
+if (localStorage.getItem('theme') === 'light') setTheme(true);
+toggleBtn.addEventListener('click', () => {
+  const isLight = !body.classList.contains('light-mode');
+  setTheme(isLight);
+  localStorage.setItem('theme', isLight ? 'light' : 'dark');
+});
+
+document.querySelectorAll('.menu-link').forEach(link => {
+  link.addEventListener('click', () => {
+    document.getElementById('mobile-menu-toggle').checked = false;
+  });
+});
+document.querySelector('.menu-close').addEventListener('click', () => {
+  document.getElementById('mobile-menu-toggle').checked = false;
+});
+</script>
+
+</body>
+</html>
