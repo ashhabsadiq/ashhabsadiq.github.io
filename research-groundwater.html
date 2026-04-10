@@ -141,19 +141,19 @@
           <tbody>
             <tr>
               <td style="padding: 12px 18px; vertical-align: top; border: 1px solid rgba(148,163,184,0.25); background: transparent;">
-                1. Slope<br>
-                2. Roughness<br>
-                3. Curvature<br>
-                4. Drainage Density<br>
-                5. Topographic Wetness Index<br>
-                6. Topographic Position Index<br>
-                7. Aspect
+                1.  Slope<br>
+                2.  Roughness<br>
+                3.  Curvature<br>
+                4.  Drainage Density<br>
+                5.  Topographic Wetness Index<br>
+                6.  Topographic Position Index<br>
+                7.  Aspect
               </td>
               <td style="padding: 12px 18px; vertical-align: top; border: 1px solid rgba(148,163,184,0.25); background: transparent;">
-                1. Rainfall<br>
-                2. Relative Humidity<br>
-                3. Drought (SPI)<br>
-                4. Land Surface Temperature
+                1.  Rainfall<br>
+                2.  Relative Humidity<br>
+                3.  Drought (SPI)<br>
+                4.  Land Surface Temperature
               </td>
             </tr>
           </tbody>
@@ -169,33 +169,55 @@
 
     </div>
     
-   <!-- Factors 2-->
+      <!-- Factors 2-->
     <h4 style="margin-top: 60px;"><i class="fas fa-globe-americas"></i> Landuse-Geological & Socioeconomic Factors</h4>
-    <div style="display:flex; gap:50px; flex-wrap:wrap; align-items:start;">
-      <div style="flex:1; min-width:300px;">
-        <p style="font-size:17px; line-height:1.8; text-align:justify;">In <strong>landuse-geological</strong> category, a total of <strong>6</strong> factors have been selected to assess landuse-geological GWV.</p>
-        <ol style="line-height:1.85; font-size:16px; padding-left:22px; text-align:justify;">
-          <li><strong>Geology</strong></li>
-          <li><strong>Morphology</strong></li>
-          <li><strong>Soil Type</strong></li>
-          <li><strong>Depth of Groundwater Level</strong></li>
-          <li><strong>Landuse/Land cover (LULC)</strong></li>
-        </ol>
-        <p style="font-size:17px; line-height:1.8; text-align:justify;">In <strong>socioeconomic</strong> category, <strong>4</strong> factors have been selected to assess meteorological GWV.</p>
-        <ol style="line-height:1.85; font-size:16px; padding-left:22px; text-align:justify;">
-          <li><strong>Population Density</strong></li>
-          <li><strong>Access to Tap Water</strong></li>
-          <li><strong>Access to Tubewell</strong></li>
-          <li><strong>Number of Industries</strong></li>
-        </ol>
+
+    <!-- Short intro paragraph -->
+    <p style="margin-bottom: 25px; text-align: justify; font-size:17px; line-height:1.8;">
+      A total of <strong>6 landuse-geological factors</strong> and <strong>4 socioeconomic factors</strong> were selected to assess landuse-geological GWV and socioeconomic GWV.
+    </p>
+
+    <!-- Two-column flex container -->
+    <div style="display: flex; gap: 50px; flex-wrap: wrap; align-items: start;">
+
+      <!-- LEFT: Table -->
+      <div style="flex: 1; min-width: 300px;">
+        <table style="width: 100%; border-collapse: collapse; font-size: 15.5px; line-height: 1.75;">
+          <thead>
+            <tr>
+              <th style="padding: 14px 18px; text-align: left; font-weight: 700; border: 1px solid rgba(148,163,184,0.4); background: transparent;">Landuse-Geological Factors</th>
+              <th style="padding: 14px 18px; text-align: left; font-weight: 700; border: 1px solid rgba(148,163,184,0.4); background: transparent;">Socioeconomic Factors</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td style="padding: 12px 18px; vertical-align: top; border: 1px solid rgba(148,163,184,0.25); background: transparent;">
+                1.  Geology<br>
+                2.  Morphology<br>
+                3.  Soil Type<br>
+                4.  Lineament Density<br>
+                5.  Depth of Groundwater Level<br>
+                6.  Landuse/Land Cover (LULC)
+              </td>
+              <td style="padding: 12px 18px; vertical-align: top; border: 1px solid rgba(148,163,184,0.25); background: transparent;">
+                1.  Population Density<br>
+                2.  Access to Tap Water<br>
+                3.  Access to Tubewell<br>
+                4.  Number of Industries
+              </td>
+            </tr>
+          </tbody>
+        </table>
       </div>
-      <div style="flex:1; min-width:300px;">
+
+      <!-- RIGHT: Image -->
+      <div style="flex: 1; min-width: 300px;">
         <div style="border: 1px solid rgba(0,0,0,0.08); border-radius:12px; padding:8px; background:#fff; box-shadow:0 8px 25px rgba(0,0,0,0.1);">
-          <img src="Images/gwv_factors2.png" alt="Topographic & Meteorological Factors" style="width:100%; border-radius:8px;">
+          <img src="Images/gwv_factors2.png" alt="Topographic and Meteorological Factors Maps" style="width:100%; border-radius:8px;">
         </div>
       </div>
-    </div>
 
+    </div>
 
     <!-- Key Findings -->
     <h4 style="margin-top: 60px;"><i class="fas fa-lightbulb"></i> Key Findings</h4>
