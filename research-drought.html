@@ -41,14 +41,21 @@
   </div>
 </header>
 
-<!-- TITLE SECTION + TOP BACK BUTTON (no bleeding, no extra space) -->
+<!-- TITLE SECTION + TWO BUTTONS (perfectly aligned on same line) -->
 <section class="hero" style="padding: 100px 20px 30px; text-align: left;">
   <div class="container">
     
-    <!-- Top Back button - tight, left aligned, no extra space -->
-    <a href="index.html#research" class="btn" style="font-size:15px; padding:8px 22px; display:inline-block; margin-bottom:30px;">
-      ← Back to Portfolio
-    </a>
+<!-- Buttons row: Back on left + Publication perfectly at far right -->
+    <div style="display: flex; align-items: center; margin-bottom: 35px;">
+      <a href="index.html#research-drought" class="btn" style="font-size:14px; padding:10px 24px; white-space:nowrap;">
+        ← Back to Portfolio
+      </a>
+      
+      <!-- This pushes the button to the absolute far right -->
+      <a href="https://doi.org/10.1016/j.ecolind.2023.111233" target="_blank" class="btn" style="font-size:14px; padding:10px 28px; white-space:nowrap; margin-left:auto;">
+        View the Publication
+      </a>
+    </div>
 
     <h2 style="margin-top:0; text-align:justify;">Meteorological Drought Assessment in Northern Bangladesh: A Machine Learning-based Approach Considering Remote Sensing Indices</h2>
   </div>
@@ -167,7 +174,7 @@
     
     <!-- Bottom Back button -->
     <div style="text-align:left; margin:80px 0 60px;">
-      <a href="index.html#research" class="btn" style="font-size:15px; padding:10px 20px;">
+      <a href="index.html#research-drought" class="btn" style="font-size:15px; padding:10px 20px;">
         ← Back to Portfolio
       </a>
     </div>
@@ -213,7 +220,7 @@ document.querySelector('.menu-close').addEventListener('click', () => {
 <!-- MOBILE RESPONSIVE - Same as main portfolio -->
 <style>
 @media (max-width: 768px) {
-  .navbar { padding: 14px 8px !important; }
+  .navbar { padding: 14px 16px !important; }
   .container { width: 98% !important; padding-left: 8px !important; padding-right: 8px !important; }
   .hero { padding: 80px 8px 30px !important; }
   .section { padding: 50px 8px !important; }
