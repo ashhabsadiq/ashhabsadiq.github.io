@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Md. Ashhab Sadiq | Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="icon" href="Images/Icon.ico" type="image/png">
+</head>
+<body>
+
+<!-- TOP NAVBAR -->
+<header class="navbar">
+  <div class="hamburger">
+    <input type="checkbox" id="mobile-menu-toggle">
+    <label for="mobile-menu-toggle" class="hamburger-label">
+      <span></span><span></span><span></span>
+    </label>
+    <span class="hamburger-text">Portfolio Sections</span>
+    <nav class="mobile-menu">
+      <div class="menu-close"><i class="fas fa-times"></i></div>
+      <a href="index.html#about" class="menu-link">ABOUT ME</a>
+      <a href="index.html#education" class="menu-link">EDUCATION</a>
+      <a href="index.html#research" class="menu-link">RESEARCH & PUBLICATIONS</a>
+      <a href="index.html#projects" class="menu-link">ACADEMIC PROJECTS</a>
+      <a href="index.html#experience" class="menu-link">WORK EXPERIENCES</a>
+      <a href="index.html#skills" class="menu-link">TECHNICAL SKILLS</a>
+      <a href="index.html#certifications" class="menu-link">CERTIFICATIONS</a>
+      <a href="index.html#awards" class="menu-link">AWARDS</a>
+      <a href="index.html#extracurricular" class="menu-link">EXTRACURRICULARS</a>
+      <a href="index.html#contact" class="menu-link">CONTACT & PROFILES</a>
+    </nav>
+  </div>
+
+  <div class="social-icons">
+    <a href="https://github.com/ashhabsadiq" target="_blank"><i class="fab fa-github"></i></a>
+    <a href="mailto:sadiq.kuet.urp@gmail.com"><i class="fas fa-envelope"></i></a>
+    <button id="theme-toggle" class="theme-btn"><i class="fas fa-sun"></i></button>
+  </div>
+</header>
+
+<!-- TITLE SECTION + TWO BUTTONS (perfectly aligned on same line) -->
+<section class="hero" style="padding: 100px 20px 30px; text-align: left;">
+  <div class="container">
+    
+<!-- Buttons row: Back on left -->
+    <div style="display: flex; align-items: center; margin-bottom: 35px;">
+      <a href="index.html#academic-rural" class="btn" style="font-size:14px; padding:10px 24px; white-space:nowrap;">
+        ← Back to Portfolio
+      </a>
+    </div>
+
+    <h2 style="margin-top:0; text-align:justify;">A SMART Village Proposal for Sadakpur Village, Cumilla, Bangladesh</h2>
+  </div>
+</section>
+
+<!-- CONTENT -->
+<section class="section">
+  <div class="container">
+
+    <!-- Aim -->
+    <h4><i class="fas fa-bullseye"></i> Objective</h4>
+    <p style="font-size:17px; line-height:1.8; margin-bottom:40px; text-align:justify;">
+      The objective of this study is to assess existing conditions and develop smart interventions for sustainable rural development in Sadakpur Village, Cumilla.</p>
+
+    <!-- Study Area -->
+    <h4><i class="fas fa-bullseye"></i> Study Area</h4>
+    <p style="font-size:17px; line-height:1.8; margin-bottom:40px; text-align:justify;">
+      Sadakpur village is located in Pirjatrapur Union under Burichang Upazila of Cumilla district. It is a small rural settlement where most residents depend on agriculture and dairy farming for their livelihood, with some involvement in poultry-based micro-enterprises. Despite its economic potential, the village faces limited infrastructure and service access, which affects overall living conditions. Its location and existing livelihood structure make it a suitable case for exploring smart, integrated rural development approaches.</p>
+
+    <!-- Key Findings (Final Output)-->
+    <h4 style="margin-top: 60px;"><i class="fas fa-lightbulb"></i> Key Findings (Influential Factors for Mode Choice)</h4>
+    <p style="font-size:17px; line-height:1.8; margin-bottom:40px; text-align:justify;">
+      This project proposes a Smart Village Plan for Sadakpur to enhance rural productivity, accessibility, and livelihood opportunities through technology-driven interventions. The plan focuses on smart agriculture, hybrid solar irrigation, rural transport improvement, and micro-enterprise development (poultry sector).</p>
+
+    <div style="border: 1px solid rgba(0,0,0,0.08); border-radius:12px; padding:8px; background:#fff; box-shadow:0 8px 25px rgba(0,0,0,0.1);">
+      <img src="Images/rural_poster" alt="Poster of the Project" style="width:100%; border-radius:8px;">
+    </div>
+    
+    <!-- Bottom Back button -->
+    <div style="text-align:left; margin:80px 0 60px;">
+      <a href="index.html#academic-rural" class="btn" style="font-size:15px; padding:10px 20px;">
+        ← Back to Portfolio
+      </a>
+    </div>
+
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="footer-left">© 2026 Md. Ashhab Sadiq, Bangladesh</div>
+  <a href="#" onclick="window.scrollTo({top:0, behavior:'smooth'}); return false;" class="back-to-top">↑ Back to Top</a>
+</footer>
+
+<script>
+// Theme toggle + menu script (same as main portfolio)
+const toggleBtn = document.getElementById('theme-toggle');
+const body = document.body;
+function setTheme(isLight) {
+  if (isLight) {
+    body.classList.add('light-mode');
+    toggleBtn.innerHTML = '<i class="fas fa-moon"></i>';
+  } else {
+    body.classList.remove('light-mode');
+    toggleBtn.innerHTML = '<i class="fas fa-sun"></i>';
+  }
+}
+if (localStorage.getItem('theme') === 'light') setTheme(true);
+toggleBtn.addEventListener('click', () => {
+  const isLight = !body.classList.contains('light-mode');
+  setTheme(isLight);
+  localStorage.setItem('theme', isLight ? 'light' : 'dark');
+});
+
+document.querySelectorAll('.menu-link').forEach(link => {
+  link.addEventListener('click', () => {
+    document.getElementById('mobile-menu-toggle').checked = false;
+  });
+});
+document.querySelector('.menu-close').addEventListener('click', () => {
+  document.getElementById('mobile-menu-toggle').checked = false;
+});
+</script>
+<!-- MOBILE RESPONSIVE - Same as main portfolio -->
+<style>
+@media (max-width: 768px) {
+  .navbar { padding: 14px 16px !important; }
+  .container { width: 98% !important; padding-left: 8px !important; padding-right: 8px !important; }
+  .hero { padding: 80px 8px 18px !important; font-size: 12px !important }
+  .section { padding: 50px 8px !important; }
+  .btn { padding: 10px 8px !important; font-size: 14px; }
+}
+</style>
+</body>
+</html>
