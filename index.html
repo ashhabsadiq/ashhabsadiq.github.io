@@ -573,5 +573,31 @@ document.querySelector('.menu-close').addEventListener('click', () => {
   </a>
 </footer>  
 
+<style>
+.research-card {
+  position: relative;
+}
+.card-arrow {
+  position: absolute;
+  top: 22px;
+  right: 22px;
+  font-size: 19px;
+  color: #94a3b8;
+  opacity: 0.75;
+  transition: all 0.3s ease;
+}
+.research-card:hover .card-arrow {
+  color: #00e5d4;
+  opacity: 1;
+  transform: translate(3px, -3px);
+}
+/* Light mode */
+.light-mode .card-arrow {
+  color: #64748b;
+}
+.light-mode .research-card:hover .card-arrow {
+  color: #1e40af;
+}
+</style>
 </body>
 </html>
