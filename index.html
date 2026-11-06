@@ -2,624 +2,573 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Md. Ashhab Sadiq | Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Md. Ashhab Sadiq · Geospatial Analyst &amp; Urban Planner</title>
+  <meta name="description" content="Portfolio of Md. Ashhab Sadiq, an urban and regional planner and GIS &amp; remote sensing researcher from Bangladesh: publications, studio projects and professional work.">
+  <meta name="author" content="Md. Ashhab Sadiq">
+  <meta name="theme-color" content="#f4f1ea">
+  <link rel="canonical" href="https://ashhabsadiq.github.io/">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Md. Ashhab Sadiq · Geospatial Analyst &amp; Urban Planner">
+  <meta property="og:description" content="GIS, remote sensing and machine learning for land use, climate and environmental planning in Bangladesh.">
+  <meta property="og:url" content="https://ashhabsadiq.github.io/">
+  <meta property="og:image" content="https://ashhabsadiq.github.io/Images/web/photo.webp">
+  <link rel="icon" href="Images/Icon.ico">
+  <script>(function(){var d=document.documentElement;d.classList.add('js');try{var t=localStorage.getItem('theme');if(t==='light'||t==='dark')d.setAttribute('data-theme',t);}catch(e){}})();</script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400..600;1,9..144,400..500&amp;family=IBM+Plex+Mono:wght@400;500&amp;family=IBM+Plex+Sans:wght@400;500;600&amp;display=swap">
   <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
-  <link rel="icon" href="Images/Icon.ico" type="image/png">
+  <script src="script.js" defer></script>
 </head>
-<body> 
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
 
-<!-- TOP NAVBAR -->
-<header class="navbar">
-  <!-- Hamburger + "Portfolio Sections" -->
-  <div class="hamburger">
-    <input type="checkbox" id="mobile-menu-toggle">
-    <label for="mobile-menu-toggle" class="hamburger-label">
-      <span></span>
-      <span></span>
-      <span></span>
-    </label>
-    <span class="hamburger-text">Portfolio Sections</span>
-
-    <!-- Beautiful Side Panel -->
-    <nav class="mobile-menu">
-      <!-- Close button -->
-      <div class="menu-close">
-        <i class="fas fa-times"></i>
-      </div>
-      <a href="#about" class="menu-link">ABOUT ME</a>
-      <a href="#education" class="menu-link">EDUCATION</a>
-      <a href="#research" class="menu-link">RESEARCH & PUBLICATIONS</a>
-      <a href="#projects" class="menu-link">ACADEMIC PROJECTS</a>
-      <a href="#experience" class="menu-link">WORK EXPERIENCES</a>
-      <a href="#skills" class="menu-link">TECHNICAL SKILLS</a>
-      <a href="#certifications" class="menu-link">CERTIFICATIONS</a>
-      <a href="#awards" class="menu-link">AWARDS</a>
-      <a href="#extracurricular" class="menu-link">EXTRACURRICULARS</a>
-      <a href="#contact" class="menu-link">CONTACT & PROFILES</a>
+<!-- ============ HEADER ============ -->
+<header class="site-header">
+  <div class="container header-inner">
+    <a class="brand" href="#top" aria-label="Md. Ashhab Sadiq, back to top">
+      <span class="brand-mark" aria-hidden="true">AS</span>
+      <span class="brand-name">Ashhab Sadiq</span>
+    </a>
+    <nav class="nav-desktop" aria-label="Primary">
+      <a href="#about">About</a>
+      <a href="#research">Research</a>
+      <a href="#experience">Experience</a>
+      <a href="#projects">Projects</a>
+      <a href="#skills">Skills</a>
+      <a href="#contact">Contact</a>
     </nav>
-  </div>
-
-  <div class="social-icons">
-    <a href="https://github.com/ashhabsadiq" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
-    <a href="mailto:sadiq.kuet.urp@gmail.com" title="Email"><i class="fas fa-envelope"></i></a>
-    <button id="theme-toggle" class="theme-btn" title="Toggle Light/Dark Mode">
-      <i class="fas fa-sun"></i>
-    </button>
+    <div class="header-actions">
+      <a class="icon-btn hide-xs" href="https://github.com/ashhabsadiq" target="_blank" rel="noopener" aria-label="GitHub" title="GitHub"><svg class="icon" aria-hidden="true"><use href="icons.svg#github"/></svg></a>
+      <a class="icon-btn hide-xs" href="mailto:sadiq.kuet.urp@gmail.com" aria-label="Email" title="Email"><svg class="icon" aria-hidden="true"><use href="icons.svg#mail"/></svg></a>
+      <button class="icon-btn theme-toggle" type="button" aria-label="Toggle colour theme" title="Light / dark">
+        <svg class="icon icon-moon" aria-hidden="true"><use href="icons.svg#moon"/></svg>
+        <svg class="icon icon-sun" aria-hidden="true"><use href="icons.svg#sun"/></svg>
+      </button>
+      <button class="icon-btn menu-btn" type="button" data-drawer-open aria-controls="drawer" aria-expanded="false">
+        <svg class="icon" aria-hidden="true"><use href="icons.svg#menu"/></svg><span>Sections</span>
+      </button>
+    </div>
   </div>
 </header>
 
-<!-- HERO -->
-<section class="hero">
-  <div class="container">
-    <h1>Md. Ashhab Sadiq</h1>
-    <p>Geospatial Analyst | GIS & Remote Sensing Researcher</p>
-    <p>WELCOME TO MY PORTFOLIO</p>
-    <div class="buttons">
-      <a href="#contact" class="btn">Get in Touch</a>
-      <a href="#research" class="btn-outline">View Research</a>
-    </div>
-   <!-- <div class="cv-button-wrapper">
-      <a href="CV_Md. Ashhab Sadiq.pdf" class="btn-cv" target="_blank">View / Download CV</a>
-    </div> -->
+<aside id="drawer" class="drawer" aria-label="All sections" aria-hidden="true">
+  <div class="drawer-head">
+    <span class="mono">Sections</span>
+    <button class="icon-btn" type="button" data-drawer-close aria-label="Close menu"><svg class="icon" aria-hidden="true"><use href="icons.svg#close"/></svg></button>
   </div>
-  <div class="section-divider"></div>
+  <nav class="drawer-nav" aria-label="Sections">
+    <ol>
+      <li><a href="#about">About me</a></li>
+      <li><a href="#research">Research &amp; publications</a></li>
+      <li><a href="#experience">Work experience</a></li>
+      <li><a href="#projects">Academic projects</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#skills">Technical skills</a></li>
+      <li><a href="#certifications">Certifications</a></li>
+      <li><a href="#awards">Awards</a></li>
+      <li><a href="#extracurricular">Extracurricular</a></li>
+      <li><a href="#contact">Contact &amp; profiles</a></li>
+    </ol>
+  </nav>
+  <div class="drawer-foot">
+    <a class="icon-btn" href="https://github.com/ashhabsadiq" target="_blank" rel="noopener" aria-label="GitHub"><svg class="icon" aria-hidden="true"><use href="icons.svg#github"/></svg></a>
+    <a class="icon-btn" href="https://www.linkedin.com/in/sadiqurp" target="_blank" rel="noopener" aria-label="LinkedIn"><svg class="icon" aria-hidden="true"><use href="icons.svg#linkedin"/></svg></a>
+    <a class="icon-btn" href="https://scholar.google.com/citations?user=yBWItBoAAAAJ&amp;hl=en" target="_blank" rel="noopener" aria-label="Google Scholar"><svg class="icon" aria-hidden="true"><use href="icons.svg#scholar"/></svg></a>
+    <a class="icon-btn" href="https://www.researchgate.net/profile/Md-Ashhab-Sadiq" target="_blank" rel="noopener" aria-label="ResearchGate"><svg class="icon" aria-hidden="true"><use href="icons.svg#researchgate"/></svg></a>
+    <a class="icon-btn" href="https://orcid.org/0009-0001-2103-9612" target="_blank" rel="noopener" aria-label="ORCID"><svg class="icon" aria-hidden="true"><use href="icons.svg#orcid"/></svg></a>
+    <a class="icon-btn" href="mailto:sadiq.kuet.urp@gmail.com" aria-label="Email"><svg class="icon" aria-hidden="true"><use href="icons.svg#mail"/></svg></a>
+  </div>
+</aside>
+<div class="drawer-backdrop" aria-hidden="true"></div>
+
+<main id="main">
+
+<!-- ============ HERO ============ -->
+<section class="hero" id="top">
+  <div class="hero-bg" aria-hidden="true"></div>
+  <div class="container">
+    <div class="hero-grid">
+      <div class="hero-copy">
+        <p class="eyebrow mono">Geospatial Analyst · GIS &amp; Remote Sensing Researcher</p>
+        <h1>Md. Ashhab <em>Sadiq</em></h1>
+        <p class="lede">An urban and regional planner who uses GIS, remote sensing and machine learning to study land use, climate and environmental change in Bangladesh, and turns that analysis into evidence for planning decisions.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#research">View research <svg class="icon icon-right" aria-hidden="true"><use href="icons.svg#arrow-right"/></svg></a>
+          <a class="btn btn-ghost" href="#contact">Get in touch</a>
+          <!-- <a class="btn btn-ghost" href="CV_Md. Ashhab Sadiq.pdf" target="_blank" rel="noopener">Download CV</a> -->
+        </div>
+        <div class="hero-status">
+          <span><i class="dot" aria-hidden="true"></i>Research Consultant at CEGIS</span>
+          <span><svg class="icon" aria-hidden="true"><use href="icons.svg#pin"/></svg>Bangladesh</span>
+        </div>
+      </div>
+      <div class="hero-photo-wrap">
+        <figure class="map-frame">
+          <span class="tick tick-t" aria-hidden="true"></span><span class="tick tick-b" aria-hidden="true"></span>
+          <span class="tick tick-l" aria-hidden="true"></span><span class="tick tick-r" aria-hidden="true"></span>
+          <img width="742" height="927" src="Images/web/photo.webp" alt="Portrait of Md. Ashhab Sadiq" fetchpriority="high">
+          <figcaption class="mono"><span>FIG. 01</span><span>SCALE 1 : 1</span></figcaption>
+        </figure>
+      </div>
+    </div>
+
+    <dl class="stats">
+      <div class="stat"><dt class="sr-only">Publications</dt><dd class="stat-value">4</dd><dd class="stat-label">Peer-reviewed publications</dd></div>
+      <div class="stat"><dt class="sr-only">Q1 journals</dt><dd class="stat-value">2</dd><dd class="stat-label">Q1 journal articles</dd></div>
+      <div class="stat"><dt class="sr-only">Experience</dt><dd class="stat-value">2.5<small>+ yrs</small></dd><dd class="stat-label">Planning &amp; GIS consultancy</dd></div>
+      <div class="stat"><dt class="sr-only">CGPA</dt><dd class="stat-value">3.59</dd><dd class="stat-label">CGPA, Dean’s Award twice</dd></div>
+    </dl>
+  </div>
 </section>
 
-<!-- ABOUT ME -->
+<!-- ============ ABOUT ============ -->
 <section id="about" class="section">
   <div class="container">
-    <div class="about-wrapper">
-      <div class="about-text">
-        <h2><i class="fas fa-user-circle"></i> ABOUT ME</h2>
-        <p>I am an Urban and Regional Planning graduate with expertise in GIS, Remote Sensing, spatial analysis, and planning.
-          I am experienced in master planning projects, geospatial data processing, environmental analysis, and research-driven problem solving.
-          I have over two and a half years of experience in project coordination and supervision, field survey implementation, GIS based data management and  quantitative analysis.</p>
-        <p>My work largely focuses on land-use analysis, climate and environmental monitoring, and developing spatial insights for planning
-          and decision-making. My research experience includes applying remote sensing, GIS-based analysis, and machine learning
-          approaches to examine climatic and environmental processes across different spatial scales.</p>
+    <header class="section-head reveal">
+      <p class="mono">01 · About me</p>
+      <h2>Planning, read from the map</h2>
+    </header>
+    <div class="about-grid">
+      <div class="about-text reveal">
+        <p>I am an Urban and Regional Planning graduate with expertise in GIS, Remote Sensing, spatial analysis, and planning. I am experienced in master planning projects, geospatial data processing, environmental analysis, and research-driven problem solving. I have over two and a half years of experience in project coordination and supervision, field survey implementation, GIS based data management and quantitative analysis.</p>
+        <p>My work largely focuses on land-use analysis, climate and environmental monitoring, and developing spatial insights for planning and decision-making. My research experience includes applying remote sensing, GIS-based analysis, and machine learning approaches to examine climatic and environmental processes across different spatial scales.</p>
       </div>
-      <div class="about-img">
-        <img src="Images/Photo.JPG" alt="Md. Ashhab Sadiq">
-      </div>
+      <dl class="fact-sheet reveal">
+        <div><dt class="mono">Focus</dt><dd>Land use, climate &amp; environmental monitoring</dd></div>
+        <div><dt class="mono">Methods</dt><dd>GIS, remote sensing, machine learning, survey analysis</dd></div>
+        <div><dt class="mono">Main tools</dt><dd>ArcGIS Pro, Google Earth Engine, Python, R</dd></div>
+        <div><dt class="mono">Degree</dt><dd>BURP, Khulna University of Engineering &amp; Technology</dd></div>
+      </dl>
     </div>
   </div>
-  <div class="section-divider"></div>
 </section>
-  
-<!-- EDUCATION -->
-<section id="education" class="section">
+
+<!-- ============ RESEARCH ============ -->
+<section id="research" class="section section-alt">
   <div class="container">
-    <h2><i class="fas fa-graduation-cap"></i> EDUCATION</h2>
-    <div class="card">
-      <h3><a href="https://www.kuet.ac.bd/urp" target="_blank">Bachelor of Urban and Regional Planning (BURP)</a></h3>
-      <h4><a href="https://kuet.ac.bd/" target="_blank">Khulna University of Engineering & Technology (KUET), Khulna, Bangladesh</a></h4>
-      <p><strong>Total Credit:</strong> 162, <strong>Duration:</strong> 4 Years</p>
-      <p><strong>CGPA:</strong> 3.59 out of 4.00, <strong>Graduation:</strong> April 2023</p>
-      <p><strong>Thesis:</strong> Machine Learning based Meteorological Drought Assessment through Remote Sensing Indices in Northern Bangladesh</p>
-      <p><strong>Achievements:</strong> Dean's Award in 3rd and 4th years, University Merit Scholarship in all the years</p>
-    </div>
-    <div class="card">
-      <h3>Higher Secondary Certificate (HSC)</h3>
-      <h4><a href="https://rc.gov.bd/" target="_blank">Rajshahi Government City College, Rajshahi, Bangladesh</a></h4>
-      <p><strong>Subject:</strong> Science, <strong>Duration:</strong> 2 Years</p>
-      <p><strong>GPA:</strong> 5.00 out of 5.00, <strong>Passed:</strong> 2017</p>
-    </div>
-  </div>
-  <div class="section-divider"></div>
-</section>
-  
-<!-- RESEARCH & PUBLICATIONS -->
-<section id="research" class="section">
-  <div class="container">
-    <h2><i class="fas fa-flask"></i> RESEARCH & PUBLICATIONS</h2>
-    
-    <div class="research-grid">
+    <header class="section-head split-head reveal">
+      <p class="mono">02 · Research &amp; publications</p>
+      <h2>Published research</h2>
+      <p>Machine learning and remote sensing applied to drought, groundwater and sustainability questions. Each study opens into a full case page with the maps and methods.</p>
+    </header>
 
-      <!-- Block 1 -->
-      <a id="research-drought" href="research-drought.html" class="card-link">
-        <div class="research-card">
-          <h3>Meteorological Drought Assessment in Northern Bangladesh</h3>
-          <span class="card-arrow">↗</span>
-          <div class="research-meta">
-          Journal: Ecological Indicators (Q1)  |  2023
-          </div>
-          <p>This study applied a Random Forest (RF) model, integrating the Standardized Precipitation Index (SPI) with seven remote sensing indices to 
-            evaluate drought intensity from 2010 to 2019. The analysis produced a set of drought distribution map, demonstrating the 
-            effectiveness of combining geospatial data and machine learning-based modeling for environmental monitoring.</p>
-          <div class="keyword-tags">
-            <span class="tag">GIS</span>
-            <span class="tag">Remote Sensing</span>
-            <span class="tag">Machine Learning</span>
-            <span class="tag">GEE</span>
-            <span class="tag">Random Forest</span>
-            <span class="tag">Drought Mapping</span>
-            <span class="tag">SPI</span>
-            <span class="tag">Python</span>
-            <span class="tag">R</span>
-          </div>
+    <div class="pub-list">
+      <article id="research-drought" class="pub reveal">
+        <div class="pub-body">
+          <div class="pub-meta mono"><span class="badge">Q1</span><span>Journal article</span><span>2023</span></div>
+          <h3><a href="research-drought.html">Meteorological Drought Assessment in Northern Bangladesh</a></h3>
+          <p class="pub-venue">Ecological Indicators</p>
+          <p>This study applied a Random Forest (RF) model, integrating the Standardized Precipitation Index (SPI) with seven remote sensing indices to evaluate drought intensity from 2010 to 2019. The analysis produced a set of drought distribution map, demonstrating the effectiveness of combining geospatial data and machine learning-based modeling for environmental monitoring.</p>
+          <ul class="tags" aria-label="Keywords">
+            <li>GIS</li><li>Remote Sensing</li><li>Machine Learning</li><li>GEE</li><li>Random Forest</li><li>Drought Mapping</li><li>SPI</li><li>Python</li><li>R</li>
+          </ul>
+          <span class="read-more" aria-hidden="true">Read case study <svg class="icon"><use href="icons.svg#arrow-right"/></svg></span>
         </div>
-      </a>
+        <div class="pub-thumb"><img width="720" height="216" src="Images/thumb/drought-finalmap.webp" alt="" loading="lazy" decoding="async"></div>
+      </article>
 
-      <!-- Block 2 -->
-      <a id="research-groundwater" href="research-groundwater.html" class="card-link">
-        <div class="research-card">
-          <h3>Advancing Groundwater Vulnerability Assessment in Bangladesh</h3>
-          <span class="card-arrow">↗</span>
-          <div class="research-meta">
-          Journal: Groundwater for Sustainable Development (Q1)  |  2024
-          </div>
-          <p>This research delved into the complex dynamics of groundwater vulnerability. By investigating topographical, meteorological, socioeconomic, and land use & geological factors through a machine learning model, this research provided a comprehensive analysis, shedding light on the various aspects contributing to groundwater vulnerability of Bangladesh.</p>
-          <div class="keyword-tags">
-            <span class="tag">Groundwater</span>
-            <span class="tag">GIS</span>
-            <span class="tag">Machine Learning</span>
-            <span class="tag">Remote Sensing</span>
-            <span class="tag">Python</span>
-            <span class="tag">GEE</span>
-            <span class="tag">Categorical Analysis</span>
-          </div>
+      <article id="research-groundwater" class="pub reveal">
+        <div class="pub-body">
+          <div class="pub-meta mono"><span class="badge">Q1</span><span>Journal article</span><span>2024</span></div>
+          <h3><a href="research-groundwater.html">Advancing Groundwater Vulnerability Assessment in Bangladesh</a></h3>
+          <p class="pub-venue">Groundwater for Sustainable Development</p>
+          <p>This research delved into the complex dynamics of groundwater vulnerability. By investigating topographical, meteorological, socioeconomic, and land use &amp; geological factors through a machine learning model, this research provided a comprehensive analysis, shedding light on the various aspects contributing to groundwater vulnerability of Bangladesh.</p>
+          <ul class="tags" aria-label="Keywords">
+            <li>Groundwater</li><li>GIS</li><li>Machine Learning</li><li>Remote Sensing</li><li>Python</li><li>GEE</li><li>Categorical Analysis</li>
+          </ul>
+          <span class="read-more" aria-hidden="true">Read case study <svg class="icon"><use href="icons.svg#arrow-right"/></svg></span>
         </div>
-      </a>
+        <div class="pub-thumb"><img width="720" height="467" src="Images/thumb/gwv-finalmap.webp" alt="" loading="lazy" decoding="async"></div>
+      </article>
 
-      <!-- Block 3 -->
-      <a id="research-environment" href="research-environment.html" class="card-link">
-        <div class="research-card">
-          <h3>Students' Perception on Environmental Sustainability in Higher Education Institutions</h3>
-          <span class="card-arrow">↗</span>
-          <div class="research-meta">
-          Journal: Frontiers in Engineering and Built Environment (Q2)  |  2023
-          </div>
+      <article id="research-environment" class="pub reveal">
+        <div class="pub-body">
+          <div class="pub-meta mono"><span class="badge">Q2</span><span>Journal article</span><span>2023</span></div>
+          <h3><a href="research-environment.html">Students’ Perception on Environmental Sustainability in Higher Education Institutions</a></h3>
+          <p class="pub-venue">Frontiers in Engineering and Built Environment</p>
           <p>This investigation assessed students’ perceptions of campus environmental sustainability (ES) across three universities in Khulna, Bangladesh. Using survey-based analysis, it evaluated awareness, attitudes, and willingness to participate, providing insights to support sustainability-focused policymaking and campus planning.</p>
-          <div class="keyword-tags">
-            <span class="tag">Environmental Sustainability</span>
-            <span class="tag">Universities</span>
-            <span class="tag">GIS</span>
-            <span class="tag">Questionnaire Survey</span>
-            <span class="tag">SPSS</span>
-            <span class="tag">Statistical Analysis</span>
-          </div>
+          <ul class="tags" aria-label="Keywords">
+            <li>Environmental Sustainability</li><li>Universities</li><li>GIS</li><li>Questionnaire Survey</li><li>SPSS</li><li>Statistical Analysis</li>
+          </ul>
+          <span class="read-more" aria-hidden="true">Read case study <svg class="icon"><use href="icons.svg#arrow-right"/></svg></span>
         </div>
-      </a>
+        <div class="pub-thumb"><img width="720" height="553" src="Images/thumb/env-studyarea.webp" alt="" loading="lazy" decoding="async"></div>
+      </article>
 
-      <!-- Block 4 -->
-      <a id="research-community" href="research-community.html" class="card-link">
-        <div class="research-card">
-          <h3>Community-Based Approach for Sustainable Outcomes: A Case Study</h3>
-          <span class="card-arrow">↗</span>
-          <div class="research-meta">
-            Conference: International Conference on Advances in Civil Engineering (ICACE-2024)
-          </div>
+      <article id="research-community" class="pub reveal">
+        <div class="pub-body">
+          <div class="pub-meta mono"><span class="badge">Conference</span><span>ICACE-2024</span></div>
+          <h3><a href="research-community.html">Community-Based Approach for Sustainable Outcomes: A Case Study</a></h3>
+          <p class="pub-venue">International Conference on Advances in Civil Engineering (ICACE-2024)</p>
           <p>This study examined the application of participatory rural appraisal (PRA) methods in a rural community, focusing on community engagement, local knowledge, and decision-making processes. The findings highlight how participatory approaches can support environmentally informed planning and community-level sustainability initiatives.</p>
-          <div class="keyword-tags">
-            <span class="tag">PRA</span>
-            <span class="tag">GIS</span>
-            <span class="tag">Sustainable Planning</span>
-            <span class="tag">Survey</span>
-            <span class="tag">Community Engagement</span>
-            <span class="tag">Focused Group Discussions</span>
-          </div>
+          <ul class="tags" aria-label="Keywords">
+            <li>PRA</li><li>GIS</li><li>Sustainable Planning</li><li>Survey</li><li>Community Engagement</li><li>Focused Group Discussions</li>
+          </ul>
+          <span class="read-more" aria-hidden="true">Read case study <svg class="icon"><use href="icons.svg#arrow-right"/></svg></span>
         </div>
-      </a>
-
+        <div class="pub-thumb"><img width="720" height="331" src="Images/thumb/pra-studyarea.webp" alt="" loading="lazy" decoding="async"></div>
+      </article>
     </div>
   </div>
-  <div class="section-divider"></div>
 </section>
-  
-<!-- ACADEMIC PROJECTS -->
-<section id="projects" class="section">
-  <div class="container">
-    <h2><i class="fas fa-project-diagram"></i> ACADEMIC PROJECTS</h2>
-    
-    <div class="research-grid">
 
-      <!-- 1 -->
-      <a id="academic-regional" href="academic-regional.html" class="card-link">
-        <div class="research-card">
-          <h3>Assessment of Regional Diversity: A Study on Bangladesh</h3>
-          <span class="card-arrow">↗</span>
-          <div class="research-meta">
-           Course: Regional Planning Studio | Year: 4th, Semester: 1st
-          </div>
-          <p>This project assessed the regional diversity of Bangladesh through a multi-criteria spatial analysis combining socio-economic, structural, and ecological indicators.</p>
-          <div class="keyword-tags">
-            <span class="tag">GIS</span>
-            <span class="tag">Remote Sensing</span>
-            <span class="tag">LULC</span>
-            <span class="tag">LST</span>
-            <span class="tag">Flood</span>
-            <span class="tag">Drought</span>
-            <span class="tag">Spatial Diversity</span>
-            <span class="tag">Overlay Analysis</span>
-          </div>
-        </div>
-      </a>
-
-      <!-- 2 -->
-      <a id="academic-ems" href="academic-ems.html" class="card-link">
-        <div class="research-card">
-          <h3>Assessment of Environmental Management System in Universities of Khulna</h3>
-          <span class="card-arrow">↗</span>
-          <div class="research-meta">
-           Course: Environmental Planning Studio | Year: 4th, Semester: 1st
-          </div>
-          <p>This study evaluated and compared the Environmental Management System (EMS) practices of KUET, BL College and Khulna University using spatial, environmental and survey data.</p>
-          <div class="keyword-tags">
-            <span class="tag">Environmental Management</span>
-            <span class="tag">University Campus</span>
-            <span class="tag">Survey Analysis</span>
-            <span class="tag">Sustainability</span>
-            <span class="tag">GIS</span>
-            <span class="tag">LST</span>
-            <span class="tag">NDVI</span>
-          </div>
-        </div>
-      </a>
-
-      <!-- 3 -->
-      <a id="academic-transport" href="academic-transport.html" class="card-link">
-        <div class="research-card">
-          <h3>Assessment of Changing Travel Pattern Dynamics during COVID-19 Outbreak</h3>
-          <span class="card-arrow">↗</span>
-          <div class="research-meta">
-           Course: Transportation Planning Studio | Year: 3rd, Semester: 2nd
-          </div>
-          <p>This project examined how passenger travel behavior changed before and during COVID-19 through a comparative analysis of questionnaire data and statistical tests.</p>
-          <div class="keyword-tags">
-            <span class="tag">Travel Behavior</span>
-            <span class="tag">COVID-19</span>
-            <span class="tag">Survey</span>
-            <span class="tag">SPSS</span>
-            <span class="tag">Logistic Regression</span>
-            <span class="tag">Mann-Whitney U</span>
-            <span class="tag">McNemar-Bowkar</span>
-          </div>
-        </div>
-      </a>
-
-      <!-- 4 -->
-      <a id="academic-rural" href="academic-rural.html" class="card-link">
-        <div class="research-card">
-          <h3>A SMART Village Proposal for Sadakpur Village, Cumilla, Bangladesh</h3>
-          <span class="card-arrow">↗</span>
-          <div class="research-meta">
-            Course: Rural Planning Studio | Year: 3rd, Semester: 2nd
-          </div>
-          <p>This study proposed a Smart Village Plan for Sadakpur to enhance local productivity, accessibility and livelihood opportunities through digital interventions.</p>
-          <div class="keyword-tags">
-            <span class="tag">Smart Village</span>
-            <span class="tag">Rural Development</span>
-            <span class="tag">Digital Intervention</span>
-            <span class="tag">Livelihood Planning</span>
-            <span class="tag">Smart Agriculture</span>
-          </div>
-        </div>
-      </a>
-
-      <!-- 5 -->
-      <a id="academic-urban" href="academic-urban.html" class="card-link">
-        <div class="research-card">
-          <h3>Assessment of Temporal Changes of Zone Level Facilities of Khulna City, Bangladesh</h3>
-          <span class="card-arrow">↗</span>
-          <div class="research-meta">
-            Course: Urban Planning Studio | Year: 3rd, Semester: 1st
-          </div>
-          <p>This project measured the temporal changes in urban service facilities of a zone of Khulna City (2011 to 2021) and evaluated urban problems and land use transformation.</p>
-          <div class="keyword-tags">
-            <span class="tag">Urban Service Facilities</span>
-            <span class="tag">Temporal Analysis</span>
-            <span class="tag">Land Use Change</span>
-            <span class="tag">Khulna City</span>
-            <span class="tag">GIS</span>
-          </div>
-        </div>
-      </a>
-
-      <!-- 6 -->
-      <a id="academic-planning" href="academic-planning.html" class="card-link">
-        <div class="research-card">
-          <h3>Conceptual Neighborhood Plan of A Site in Khulna, Bangladesh</h3>
-          <span class="card-arrow">↗</span>
-          <div class="research-meta">
-           Course: Site Area Planning Studio | Year: 2nd, Semester: 2nd
-          </div>
-          <p>This study proposed a planned residential neighborhood to ensure efficient land use, accessibility, and community facilities, 
-            in accordance with the Private Residential Land Development Rules.</p>
-          <div class="keyword-tags">
-            <span class="tag">Neighborhood Planning</span>
-            <span class="tag">Residential Development</span>
-            <span class="tag">Land Use Planning</span>
-            <span class="tag">Site Planning</span>
-            <span class="tag">AutoCAD Civil3D</span>
-          </div>
-        </div>
-      </a>
-
-    </div>
-  </div>
-  <div class="section-divider"></div>
-</section>
-  
-<!-- WORK EXPERIENCES -->
+<!-- ============ EXPERIENCE ============ -->
 <section id="experience" class="section">
   <div class="container">
-    <h2><i class="fas fa-briefcase"></i> WORK EXPERIENCES</h2>
-    <div class="card">
-      <div class="job-header">
-        <h3>Research Consultant</h3>
-        <span class="tenure">June 2026 – Present</span>
-      </div>
-      <h4 class="company"><a href="https://www.cegisbd.com/" target="_blank">Center for Environmental and Geographic Information Services (CEGIS)</a></h4>
-      <p><strong>Division:</strong> Ecology, Forestry and Biodiversity; <strong>Official Email:</strong> masadiq@cegisbd.com</p>
-      <h5>Major Responsibilities:</h5>
-      <ul>
-        <li>Review and quality-check GIS databases and spatial datasets to ensure accuracy for planning and consulting projects.</li>
-        <li>Conduct terrain and topographic analyses using DEM and 3D spatial data for spatial assessment and planning outputs.</li>
-        <li>Prepare and revise technical reports by integrating GIS analyses, expert inputs, and client feedback into final project deliverables.</li>
-        <li>Contribute to technical proposals for environment and development projects by coordinating inputs from professionals across multiple sectors.</li>
-      </ul>
-    </div>
+    <header class="section-head reveal">
+      <p class="mono">03 · Work experience</p>
+      <h2>Where I’ve worked</h2>
+    </header>
 
-    <div class="card">
-      <div class="job-header">
-        <h3>Junior GIS Analyst</h3>
-        <span class="tenure">August 2024 – December 2025</span>
-      </div>
-      <h4 class="company"><a href="https://www.acebd.com/" target="_blank">ACE Consultants Ltd. (A Subsidiary of SMEC International Pty. Ltd., Australia)</a></h4>
-      <h5>Key Projects:</h5>
-      <ol>
-        <li>Feasibility Study on Improvement of 22 Road Sections (1,480 km), connecting roads to logistics facilities and road safety at level crossings</li>
-        <li>Feasibility Study, Detailed Design, and preparatory study of Dhaka–Chattogram National Highway (N1)</li>
-      </ol>
-      <h5>Major Responsibilities:</h5>
-      <ul>
-        <li>Maintained project geodatabases integrating spatial, socio-economic, and engineering datasets.</li>
-        <li>Performed spatial and statistical analyses for road alignment, pavement condition, and safety assessments.</li>
-        <li>Conducted mouza georeferencing, digitization, and compilation for Land Acquisition Plans (LAP).</li>
-        <li>Conducted terrain, land-use, and spatial analyses to identify slope conditions and design constraints.</li>
-        <li>Prepared Land Acquisition Plans (LAP) aligned with cadastral boundaries and field survey data.</li>
-        <li>Produced affected-structure maps and spatial overlays for land acquisition and design evaluation.</li>
-        <li>Contributed to quality control and verification of topographic and GIS datasets.</li>
-      </ul>
-    </div>
+    <ol class="timeline">
+      <li class="role is-current reveal">
+        <p class="role-when mono">June 2026 – Present</p>
+        <div class="role-body">
+          <h3>Research Consultant</h3>
+          <span class="role-org"><a href="https://www.cegisbd.com/" target="_blank" rel="noopener">Center for Environmental and Geographic Information Services (CEGIS)</a></span>
+          <span class="role-sub">Division: Ecology, Forestry and Biodiversity · Official email: <a href="mailto:masadiq@cegisbd.com">masadiq@cegisbd.com</a></span>
+          <h4>Major responsibilities</h4>
+          <ul>
+            <li>Review and quality-check GIS databases and spatial datasets to ensure accuracy for planning and consulting projects.</li>
+            <li>Conduct terrain and topographic analyses using DEM and 3D spatial data for spatial assessment and planning outputs.</li>
+            <li>Prepare and revise technical reports by integrating GIS analyses, expert inputs, and client feedback into final project deliverables.</li>
+            <li>Contribute to technical proposals for environment and development projects by coordinating inputs from professionals across multiple sectors.</li>
+          </ul>
+        </div>
+      </li>
 
-    <div class="card">
-      <div class="job-header">
-        <h3>Assistant Urban Planner</h3>
-        <span class="tenure">July 2023 – August 2024</span>
-      </div>
-      <h4 class="company"><a href="https://www.scplbd.com/" target="_blank">Sheltech Consultants (Pvt.) Ltd.</a></h4>
-      <h5>Key Projects:</h5>
-      <ol>
-        <li>Master Plan Preparation of 3 Upazila* (Kaliganj, Fakirhat and Dumki) under UTMIDP*, LGED*</li>
-        <li>Review and Update of Nawabganj Upazila Development Plan under UTMIDP, LGED</li>
-      </ol>
-      <h5>Major Responsibilities:</h5>
-      <ul>
-        <li>Served as the Project Coordinator for Upazila* master plan projects under the UTMIDP program of LGED.</li>
-        <li>Led and supervised survey and GIS teams to ensure effective project implementation and timely deliverables.</li>
-        <li>Prepared inception and survey reports and coordinated field and spatial data collection activities.</li>
-        <li>Conducted drone and satellite image digitization, geo-referencing, and preparation of base and thematic maps.</li>
-        <li>Developed and updated geodatabases, performing spatial analyses of land-use change.</li>
-        <li>Analyzed socio-economic and environmental data for planning recommendations and report preparation.</li>
-        <li>Organized PRA sessions, workshops, and meetings in collaboration with LGED and local administrations.</li>
-      </ul>
-      <p class="footnote"><strong>*</strong> Upazila: Sub-district | UTMIDP: Upazila Town Master Plan Preparation and Basic Infrastructure Development Project | LGED: Local Government Engineering Department</p>
-    </div>
+      <li class="role reveal">
+        <p class="role-when mono">Aug 2024 – Dec 2025</p>
+        <div class="role-body">
+          <h3>Junior GIS Analyst</h3>
+          <span class="role-org"><a href="https://www.acebd.com/" target="_blank" rel="noopener">ACE Consultants Ltd.</a> (A Subsidiary of SMEC International Pty. Ltd., Australia)</span>
+          <h4>Key projects</h4>
+          <ol class="projects-box">
+            <li>Feasibility Study on Improvement of 22 Road Sections (1,480 km), connecting roads to logistics facilities and road safety at level crossings</li>
+            <li>Feasibility Study, Detailed Design, and preparatory study of Dhaka–Chattogram National Highway (N1)</li>
+          </ol>
+          <h4>Major responsibilities</h4>
+          <ul>
+            <li>Maintained project geodatabases integrating spatial, socio-economic, and engineering datasets.</li>
+            <li>Performed spatial and statistical analyses for road alignment, pavement condition, and safety assessments.</li>
+            <li>Conducted mouza georeferencing, digitization, and compilation for Land Acquisition Plans (LAP).</li>
+            <li>Conducted terrain, land-use, and spatial analyses to identify slope conditions and design constraints.</li>
+            <li>Prepared Land Acquisition Plans (LAP) aligned with cadastral boundaries and field survey data.</li>
+            <li>Produced affected-structure maps and spatial overlays for land acquisition and design evaluation.</li>
+            <li>Contributed to quality control and verification of topographic and GIS datasets.</li>
+          </ul>
+        </div>
+      </li>
+
+      <li class="role reveal">
+        <p class="role-when mono">Jul 2023 – Aug 2024</p>
+        <div class="role-body">
+          <h3>Assistant Urban Planner</h3>
+          <span class="role-org"><a href="https://www.scplbd.com/" target="_blank" rel="noopener">Sheltech Consultants (Pvt.) Ltd.</a></span>
+          <h4>Key projects</h4>
+          <ol class="projects-box">
+            <li>Master Plan Preparation of 3 Upazila* (Kaliganj, Fakirhat and Dumki) under UTMIDP*, LGED*</li>
+            <li>Review and Update of Nawabganj Upazila Development Plan under UTMIDP, LGED</li>
+          </ol>
+          <h4>Major responsibilities</h4>
+          <ul>
+            <li>Served as the Project Coordinator for Upazila* master plan projects under the UTMIDP program of LGED.</li>
+            <li>Led and supervised survey and GIS teams to ensure effective project implementation and timely deliverables.</li>
+            <li>Prepared inception and survey reports and coordinated field and spatial data collection activities.</li>
+            <li>Conducted drone and satellite image digitization, geo-referencing, and preparation of base and thematic maps.</li>
+            <li>Developed and updated geodatabases, performing spatial analyses of land-use change.</li>
+            <li>Analyzed socio-economic and environmental data for planning recommendations and report preparation.</li>
+            <li>Organized PRA sessions, workshops, and meetings in collaboration with LGED and local administrations.</li>
+          </ul>
+          <p class="footnote">* Upazila: Sub-district · UTMIDP: Upazila Town Master Plan Preparation and Basic Infrastructure Development Project · LGED: Local Government Engineering Department</p>
+        </div>
+      </li>
+    </ol>
   </div>
-  <div class="section-divider"></div>
 </section>
 
-<!-- TECHNICAL SKILLS -->
-<section id="skills" class="section">
+<!-- ============ PROJECTS ============ -->
+<section id="projects" class="section section-alt">
   <div class="container">
-    <h2><i class="fas fa-laptop-code"></i> TECHNICAL SKILLS</h2>
-    <div class="skills-grid">
-      <div class="skill-item">ArcGIS Pro</div>
-      <div class="skill-item">ArcMap</div>
-      <div class="skill-item">ArcGIS Online</div>
-      <div class="skill-item">QGIS</div>
-      <div class="skill-item">Global Mapper</div>
-      <div class="skill-item">Google Earth Engine (GEE)</div>
-      <div class="skill-item">Google Earth Pro</div>
-      <div class="skill-item">Python</div>
-      <div class="skill-item">R (RStudio)</div>
-      <div class="skill-item">HTML</div>
-      <div class="skill-item">Machine Learning</div>
-      <div class="skill-item">KoBoToolbox</div>
-      <div class="skill-item">SPSS</div>
-      <div class="skill-item">Microsoft 365</div>
-      <div class="skill-item">Canva</div>
+    <header class="section-head split-head reveal">
+      <p class="mono">04 · Academic projects</p>
+      <h2>Planning studio work</h2>
+      <p>Six studio projects from the BURP programme at KUET, from site planning in second year to regional analysis in final year.</p>
+    </header>
+
+    <div class="project-grid">
+      <article id="academic-regional" class="project reveal">
+        <div class="pub-thumb"><img width="720" height="230" src="Images/thumb/rps-finalmaps.webp" alt="" loading="lazy" decoding="async"></div>
+        <span class="project-year mono">Y4 · S1</span>
+        <div class="project-body">
+          <p class="project-course mono">Regional Planning Studio</p>
+          <h3><a href="academic-regional.html">Assessment of Regional Diversity: A Study on Bangladesh</a></h3>
+          <p>This project assessed the regional diversity of Bangladesh through a multi-criteria spatial analysis combining socio-economic, structural, and ecological indicators.</p>
+          <ul class="tags" aria-label="Keywords"><li>GIS</li><li>Remote Sensing</li><li>LULC</li><li>LST</li><li>Flood</li><li>Drought</li><li>Spatial Diversity</li><li>Overlay Analysis</li></ul>
+        </div>
+      </article>
+
+      <article id="academic-ems" class="project reveal">
+        <div class="pub-thumb"><img width="720" height="390" src="Images/thumb/eps-ndvi.webp" alt="" loading="lazy" decoding="async"></div>
+        <span class="project-year mono">Y4 · S1</span>
+        <div class="project-body">
+          <p class="project-course mono">Environmental Planning Studio</p>
+          <h3><a href="academic-ems.html">Assessment of Environmental Management System in Universities of Khulna</a></h3>
+          <p>This study evaluated and compared the Environmental Management System (EMS) practices of KUET, BL College and Khulna University using spatial, environmental and survey data.</p>
+          <ul class="tags" aria-label="Keywords"><li>Environmental Management</li><li>University Campus</li><li>Survey Analysis</li><li>Sustainability</li><li>GIS</li><li>LST</li><li>NDVI</li></ul>
+        </div>
+      </article>
+
+      <article id="academic-transport" class="project reveal">
+        <div class="pub-thumb"><img width="720" height="441" src="Images/thumb/tps-studyarea.webp" alt="" loading="lazy" decoding="async"></div>
+        <span class="project-year mono">Y3 · S2</span>
+        <div class="project-body">
+          <p class="project-course mono">Transportation Planning Studio</p>
+          <h3><a href="academic-transport.html">Assessment of Changing Travel Pattern Dynamics during COVID-19 Outbreak</a></h3>
+          <p>This project examined how passenger travel behavior changed before and during COVID-19 through a comparative analysis of questionnaire data and statistical tests.</p>
+          <ul class="tags" aria-label="Keywords"><li>Travel Behavior</li><li>COVID-19</li><li>Survey</li><li>SPSS</li><li>Logistic Regression</li><li>Mann-Whitney U</li><li>McNemar-Bowkar</li></ul>
+        </div>
+      </article>
+
+      <article id="academic-rural" class="project reveal">
+        <div class="pub-thumb"><img width="720" height="480" src="Images/thumb/rural-poster.webp" alt="" loading="lazy" decoding="async"></div>
+        <span class="project-year mono">Y3 · S2</span>
+        <div class="project-body">
+          <p class="project-course mono">Rural Planning Studio</p>
+          <h3><a href="academic-rural.html">A SMART Village Proposal for Sadakpur Village, Cumilla, Bangladesh</a></h3>
+          <p>This study proposed a Smart Village Plan for Sadakpur to enhance local productivity, accessibility and livelihood opportunities through digital interventions.</p>
+          <ul class="tags" aria-label="Keywords"><li>Smart Village</li><li>Rural Development</li><li>Digital Intervention</li><li>Livelihood Planning</li><li>Smart Agriculture</li></ul>
+        </div>
+      </article>
+
+      <article id="academic-urban" class="project reveal">
+        <div class="pub-thumb"><img width="720" height="482" src="Images/thumb/ups-lulc.webp" alt="" loading="lazy" decoding="async"></div>
+        <span class="project-year mono">Y3 · S1</span>
+        <div class="project-body">
+          <p class="project-course mono">Urban Planning Studio</p>
+          <h3><a href="academic-urban.html">Assessment of Temporal Changes of Zone Level Facilities of Khulna City, Bangladesh</a></h3>
+          <p>This project measured the temporal changes in urban service facilities of a zone of Khulna City (2011 to 2021) and evaluated urban problems and land use transformation.</p>
+          <ul class="tags" aria-label="Keywords"><li>Urban Service Facilities</li><li>Temporal Analysis</li><li>Land Use Change</li><li>Khulna City</li><li>GIS</li></ul>
+        </div>
+      </article>
+
+      <article id="academic-planning" class="project reveal">
+        <div class="pub-thumb"><img width="720" height="540" src="Images/thumb/planning-poster.webp" alt="" loading="lazy" decoding="async"></div>
+        <span class="project-year mono">Y2 · S2</span>
+        <div class="project-body">
+          <p class="project-course mono">Site Area Planning Studio</p>
+          <h3><a href="academic-planning.html">Conceptual Neighborhood Plan of A Site in Khulna, Bangladesh</a></h3>
+          <p>This study proposed a planned residential neighborhood to ensure efficient land use, accessibility, and community facilities, in accordance with the Private Residential Land Development Rules.</p>
+          <ul class="tags" aria-label="Keywords"><li>Neighborhood Planning</li><li>Residential Development</li><li>Land Use Planning</li><li>Site Planning</li><li>AutoCAD Civil3D</li></ul>
+        </div>
+      </article>
     </div>
   </div>
-  <div class="section-divider"></div>
 </section>
-  
-<!-- CERTIFICATIONS -->
+
+<!-- ============ EDUCATION ============ -->
+<section id="education" class="section">
+  <div class="container">
+    <header class="section-head reveal">
+      <p class="mono">05 · Education</p>
+      <h2>Education</h2>
+    </header>
+    <div class="edu-grid">
+      <article class="edu reveal">
+        <div class="edu-top mono"><span>Undergraduate · 4 years · 162 credits</span><span>Graduated April 2023</span></div>
+        <h3><a href="https://www.kuet.ac.bd/urp" target="_blank" rel="noopener">Bachelor of Urban and Regional Planning (BURP)</a></h3>
+        <p class="edu-school"><a href="https://kuet.ac.bd/" target="_blank" rel="noopener">Khulna University of Engineering &amp; Technology (KUET), Khulna, Bangladesh</a></p>
+        <dl>
+          <div><dt>CGPA</dt><dd>3.59 / 4.00</dd></div>
+          <div><dt>Total credit</dt><dd>162</dd></div>
+          <div><dt>Duration</dt><dd>4 years</dd></div>
+        </dl>
+        <p><strong>Thesis:</strong> Machine Learning based Meteorological Drought Assessment through Remote Sensing Indices in Northern Bangladesh</p>
+        <p><strong>Achievements:</strong> Dean's Award in 3rd and 4th years, University Merit Scholarship in all the years</p>
+      </article>
+      <article class="edu reveal">
+        <div class="edu-top mono"><span>Science · 2 years</span><span>Passed 2017</span></div>
+        <h3>Higher Secondary Certificate (HSC)</h3>
+        <p class="edu-school"><a href="https://rc.gov.bd/" target="_blank" rel="noopener">Rajshahi Government City College, Rajshahi, Bangladesh</a></p>
+        <dl>
+          <div><dt>GPA</dt><dd>5.00 / 5.00</dd></div>
+          <div><dt>Subject</dt><dd>Science</dd></div>
+        </dl>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SKILLS ============ -->
+<section id="skills" class="section section-alt">
+  <div class="container">
+    <header class="section-head reveal">
+      <p class="mono">06 · Technical skills</p>
+      <h2>Tools I work with</h2>
+    </header>
+    <div class="skill-groups">
+      <div class="skill-group reveal">
+        <h3>GIS &amp; remote sensing <span class="mono">07</span></h3>
+        <ul>
+          <li>ArcGIS Pro</li><li>ArcMap</li><li>ArcGIS Online</li><li>QGIS</li><li>Global Mapper</li><li>Google Earth Engine (GEE)</li><li>Google Earth Pro</li>
+        </ul>
+      </div>
+      <div class="skill-group reveal">
+        <h3>Programming &amp; analysis <span class="mono">05</span></h3>
+        <ul>
+          <li>Python</li><li>R (RStudio)</li><li>Machine Learning</li><li>SPSS</li><li>HTML</li>
+        </ul>
+      </div>
+      <div class="skill-group reveal">
+        <h3>Field data &amp; office <span class="mono">03</span></h3>
+        <ul>
+          <li>KoBoToolbox</li><li>Microsoft 365</li><li>Canva</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CERTIFICATIONS ============ -->
 <section id="certifications" class="section">
   <div class="container">
-    <h2><i class="fas fa-certificate"></i> CERTIFICATIONS</h2>
+    <header class="section-head reveal">
+      <p class="mono">07 · Certifications</p>
+      <h2>Certifications</h2>
+    </header>
     <div class="cert-grid">
-      <div class="cert-card">
-        <img src="Images/R.png" alt="Data Analysis with R">
-        <div class="cert-info"><h4>Data Analysis with R Programming</h4><p><strong>Google</strong> • Coursera</p></div>
-      </div>
-      <div class="cert-card">
-        <img src="Images/Geospatial.png" alt="Geospatial and Environmental Analysis">
-        <div class="cert-info"><h4>Geospatial and Environmental Analysis</h4><p><strong>University of California, Davis</strong> • Coursera</p></div>
-      </div>
-      <div class="cert-card">
-        <img src="Images/GIS Data Formats.png" alt="GIS Data Formats">
-        <div class="cert-info"><h4>GIS Data Formats, Design and Quality</h4><p><strong>University of California, Davis</strong> • Coursera</p></div>
-      </div>
-      <div class="cert-card">
-        <img src="Images/Fundamentals of GIS.png" alt="Fundamentals of GIS">
-        <div class="cert-info"><h4>Fundamentals of GIS</h4><p><strong>University of California, Davis</strong> • Coursera</p></div>
-      </div>
-      <div class="cert-card">
-        <img src="Images/Python Data.png" alt="Python Data Structures">
-        <div class="cert-info"><h4>Python Data Structures</h4><p><strong>University of Michigan</strong> • Coursera</p></div>
-      </div>
-      <div class="cert-card">
-        <img src="Images/Programming.png" alt="Programming for Everybody">
-        <div class="cert-info"><h4>Programming for Everybody</h4><p><strong>University of Michigan</strong> • Coursera</p></div>
-      </div>
-      <div class="cert-card">
-        <img src="Images/Remote Sensing.png" alt="Introduction to Remote Sensing">
-        <div class="cert-info"><h4>Introduction to Remote Sensing</h4><p><strong>Geo University</strong></p></div>
-      </div>
-      <div class="cert-card">
-        <img src="Images/Cartography.png" alt="Cartography">
-        <div class="cert-info"><h4>Cartography</h4><p><strong>ESRI</strong></p></div>
-      </div>
-      <div class="cert-card">
-        <img src="Images/Location.png" alt="The Location Advantage">
-        <div class="cert-info"><h4>The Location Advantage</h4><p><strong>ESRI</strong></p></div>
-      </div>
+      <article class="cert reveal">
+        <button class="zoom" type="button" data-zoom="Images/R.png" aria-label="Enlarge certificate: Data Analysis with R Programming"><img width="720" height="556" src="Images/thumb/r.webp" alt="Data Analysis with R Programming certificate" loading="lazy" decoding="async"></button>
+        <div class="cert-info"><h3>Data Analysis with R Programming</h3><p>Google · Coursera</p></div>
+      </article>
+      <article class="cert reveal">
+        <button class="zoom" type="button" data-zoom="Images/Geospatial.png" aria-label="Enlarge certificate: Geospatial and Environmental Analysis"><img width="720" height="557" src="Images/thumb/geospatial.webp" alt="Geospatial and Environmental Analysis certificate" loading="lazy" decoding="async"></button>
+        <div class="cert-info"><h3>Geospatial and Environmental Analysis</h3><p>University of California, Davis · Coursera</p></div>
+      </article>
+      <article class="cert reveal">
+        <button class="zoom" type="button" data-zoom="Images/GIS Data Formats.png" aria-label="Enlarge certificate: GIS Data Formats, Design and Quality"><img width="720" height="557" src="Images/thumb/gis-data-formats.webp" alt="GIS Data Formats, Design and Quality certificate" loading="lazy" decoding="async"></button>
+        <div class="cert-info"><h3>GIS Data Formats, Design and Quality</h3><p>University of California, Davis · Coursera</p></div>
+      </article>
+      <article class="cert reveal">
+        <button class="zoom" type="button" data-zoom="Images/Fundamentals of GIS.png" aria-label="Enlarge certificate: Fundamentals of GIS"><img width="720" height="557" src="Images/thumb/fundamentals-of-gis.webp" alt="Fundamentals of GIS certificate" loading="lazy" decoding="async"></button>
+        <div class="cert-info"><h3>Fundamentals of GIS</h3><p>University of California, Davis · Coursera</p></div>
+      </article>
+      <article class="cert reveal">
+        <button class="zoom" type="button" data-zoom="Images/Python Data.png" aria-label="Enlarge certificate: Python Data Structures"><img width="720" height="557" src="Images/thumb/python-data.webp" alt="Python Data Structures certificate" loading="lazy" decoding="async"></button>
+        <div class="cert-info"><h3>Python Data Structures</h3><p>University of Michigan · Coursera</p></div>
+      </article>
+      <article class="cert reveal">
+        <button class="zoom" type="button" data-zoom="Images/Programming.png" aria-label="Enlarge certificate: Programming for Everybody"><img width="720" height="557" src="Images/thumb/programming.webp" alt="Programming for Everybody certificate" loading="lazy" decoding="async"></button>
+        <div class="cert-info"><h3>Programming for Everybody</h3><p>University of Michigan · Coursera</p></div>
+      </article>
+      <article class="cert reveal">
+        <button class="zoom" type="button" data-zoom="Images/Remote Sensing.png" aria-label="Enlarge certificate: Introduction to Remote Sensing"><img width="720" height="509" src="Images/thumb/remote-sensing.webp" alt="Introduction to Remote Sensing certificate" loading="lazy" decoding="async"></button>
+        <div class="cert-info"><h3>Introduction to Remote Sensing</h3><p>Geo University</p></div>
+      </article>
+      <article class="cert reveal">
+        <button class="zoom" type="button" data-zoom="Images/Cartography.png" aria-label="Enlarge certificate: Cartography"><img width="720" height="528" src="Images/thumb/cartography.webp" alt="Cartography certificate" loading="lazy" decoding="async"></button>
+        <div class="cert-info"><h3>Cartography</h3><p>ESRI</p></div>
+      </article>
+      <article class="cert reveal">
+        <button class="zoom" type="button" data-zoom="Images/Location.png" aria-label="Enlarge certificate: The Location Advantage"><img width="720" height="528" src="Images/thumb/location.webp" alt="The Location Advantage certificate" loading="lazy" decoding="async"></button>
+        <div class="cert-info"><h3>The Location Advantage</h3><p>ESRI</p></div>
+      </article>
     </div>
   </div>
-  <div class="section-divider"></div>
 </section>
-  
-<!-- AWARDS -->
-<section id="awards" class="section">
+
+<!-- ============ AWARDS ============ -->
+<section id="awards" class="section section-alt">
   <div class="container">
-    <h2><i class="fas fa-trophy"></i> AWARDS</h2>
-    <div class="award-text">
-      <p>Received the <strong>Dean’s Award</strong> for outstanding academic performance in the third and final years of the Bachelor of Urban and Regional Planning program at KUET.</p>
-    </div>
-    <div class="award-grid">
-      <div class="award-item"><img src="Images/Dean 1.png" alt="Dean's Award Certificate 1"></div>
-      <div class="award-item"><img src="Images/Award.jpg" alt="Dean's Award Ceremony"></div>
-      <div class="award-item"><img src="Images/Dean 2.png" alt="Dean's Award Certificate 2"></div>
+    <header class="section-head reveal">
+      <p class="mono">08 · Awards</p>
+      <h2>Dean’s Award, twice</h2>
+    </header>
+    <p class="award-intro reveal">Received the Dean’s Award for outstanding academic performance in the third and final years of the Bachelor of Urban and Regional Planning program at KUET.</p>
+    <div class="gallery">
+      <button class="zoom reveal" type="button" data-zoom="Images/Dean 1.png" aria-label="Enlarge: Dean's Award certificate 1"><img width="720" height="509" src="Images/thumb/dean-1.webp" alt="Dean's Award certificate 1" loading="lazy" decoding="async"></button>
+      <button class="zoom reveal" type="button" data-zoom="Images/Award.jpg" aria-label="Enlarge: Dean's Award ceremony"><img width="720" height="516" src="Images/thumb/award.webp" alt="Dean's Award ceremony" loading="lazy" decoding="async"></button>
+      <button class="zoom reveal" type="button" data-zoom="Images/Dean 2.png" aria-label="Enlarge: Dean's Award certificate 2"><img width="720" height="509" src="Images/thumb/dean-2.webp" alt="Dean's Award certificate 2" loading="lazy" decoding="async"></button>
     </div>
   </div>
-  <div class="section-divider"></div>
 </section>
-  
-<!-- EXTRACURRICULAR ACTIVITIES -->
+
+<!-- ============ EXTRACURRICULAR ============ -->
 <section id="extracurricular" class="section">
   <div class="container">
-    <h2><i class="fas fa-users"></i> EXTRACURRICULAR ACTIVITIES</h2>
+    <header class="section-head reveal">
+      <p class="mono">09 · Extracurricular activities</p>
+      <h2>Beyond the classroom</h2>
+    </header>
+    <div class="extra-list">
+      <article class="extra reveal">
+        <div>
+          <p class="mono when">2020 – 2021</p>
+          <h3>Assistant Secretary, Research and Publication</h3>
+          <span class="role-org"><a href="https://www.facebook.com/urpassociationofkuet" target="_blank" rel="noopener">URP Association, KUET</a></span>
+          <ul>
+            <li>It is a departmental association of KUET involving students' participation for the betterment and welfare of the department.</li>
+            <li>Coordinated departmental research and publication initiatives under the URP Association.</li>
+            <li>Organized events for the students of the URP department, such as a workshop on ‘Scientific Research Article’.</li>
+          </ul>
+        </div>
+        <button class="zoom" type="button" data-zoom="Images/Assistant Secratary Certificate.jpg" aria-label="Enlarge: Assistant Secretary certificate"><img width="1280" height="933" src="Images/web/assistant-secratary-certificate.webp" alt="Assistant Secretary certificate" loading="lazy" decoding="async"></button>
+      </article>
 
-    <div class="extra-item">
-      <div class="extra-text">
-        <h3>Assistant Secretary - Research and Publication</h3>
-        <h4 class="company"><a href="https://www.facebook.com/urpassociationofkuet" target="_blank">URP Association, KUET</a> | 2020 – 2021</h4>
-        <ul>
-          <li>It is a departmental association of KUET involving students' participation for the betterment and welfare of the department.</li>
-          <li>Coordinated departmental research and publication initiatives under the URP Association.</li>
-          <li>Organized events for the students of the URP department, such as a workshop on ‘Scientific Research Article’.</li>
-        </ul>
-      </div>
-      <div class="extra-images">
-        <img src="Images/Assistant Secratary Certificate.jpg" alt="Certificate">
-      </div>
-    </div>
-
-    <div class="extra-item">
-      <div class="extra-text">
-        <h3>Head of Event Management</h3>
-        <h4 class="company"><a href="https://www.facebook.com/disk.urp9203/" target="_blank">Design Integrated Society of KUET</a> | 2019 – 2020</h4>
-        <ul>
-          <li>Began as a Volunteer for Plannation (2018), the first-ever national event on Urban and Regional Planning in Bangladesh.</li>
-          <li>Promoted to Junior Executive (2018–2019) for continued contribution to departmental event coordination.</li>
-          <li>Served as Head of Event Management, leading the successful organization of Plannation 2.0.</li>
-          <li>Supervised event logistics, volunteer teams, and inter-departmental coordination.</li>
-        </ul>
-      </div>
-      <div class="extra-images">
-        <img src="Images/Second Extra.png" alt="Glimpse of Plannation and Plannation 2">
-      </div>
+      <article class="extra reveal">
+        <div>
+          <p class="mono when">2019 – 2020</p>
+          <h3>Head of Event Management</h3>
+          <span class="role-org"><a href="https://www.facebook.com/disk.urp9203/" target="_blank" rel="noopener">Design Integrated Society of KUET</a></span>
+          <ul>
+            <li>Began as a Volunteer for Plannation (2018), the first-ever national event on Urban and Regional Planning in Bangladesh.</li>
+            <li>Promoted to Junior Executive (2018–2019) for continued contribution to departmental event coordination.</li>
+            <li>Served as Head of Event Management, leading the successful organization of Plannation 2.0.</li>
+            <li>Supervised event logistics, volunteer teams, and inter-departmental coordination.</li>
+          </ul>
+        </div>
+        <button class="zoom" type="button" data-zoom="Images/Second Extra.png" aria-label="Enlarge: Glimpse of Plannation and Plannation 2.0"><img width="1794" height="1277" src="Images/web/second-extra.webp" alt="Glimpse of Plannation and Plannation 2.0" loading="lazy" decoding="async"></button>
+      </article>
     </div>
   </div>
-  <div class="section-divider"></div>
 </section>
-  
-<!-- CONTACT -->
-<section id="contact" class="section">
+
+<!-- ============ CONTACT ============ -->
+<section id="contact" class="section section-alt">
   <div class="container">
-    <h2><i class="fas fa-id-card"></i> CONTACTS & PROFILES</h2>
-    <div class="contact-buttons">
-      <a href="mailto:sadiq.kuet.urp@gmail.com" target="_blank" class="contact-btn"><i class="fas fa-envelope"></i><span>Email</span></a>
-      <a href="https://www.linkedin.com/in/sadiqurp" target="_blank" class="contact-btn"><i class="fab fa-linkedin"></i><span>LinkedIn</span></a>
-      <a href="https://scholar.google.com/citations?user=yBWItBoAAAAJ&hl=en" target="_blank" class="contact-btn"><i class="fas fa-book-open"></i><span>Google Scholar</span></a>
-      <a href="https://www.researchgate.net/profile/Md-Ashhab-Sadiq" target="_blank" class="contact-btn"><i class="fab fa-researchgate"></i><span>ResearchGate</span></a>
-      <a href="https://orcid.org/0009-0001-2103-9612" target="_blank" class="contact-btn"><i class="fab fa-orcid"></i><span>ORCID</span></a>
+    <div class="contact">
+      <div class="reveal">
+        <p class="mono kicker">10 · Contact &amp; profiles</p>
+        <h2>Let’s talk <em>maps</em>, data or planning.</h2>
+        <p class="contact-lede">Email is the quickest way to reach me. My publications and research profiles are linked here too.</p>
+        <div class="email-row">
+          <a class="email-link" href="mailto:sadiq.kuet.urp@gmail.com">sadiq.kuet.urp@gmail.com</a>
+          <button class="icon-btn copy-btn" type="button" data-copy="sadiq.kuet.urp@gmail.com" aria-label="Copy email address" title="Copy">
+            <svg class="icon icon-copy" aria-hidden="true"><use href="icons.svg#copy"/></svg>
+            <svg class="icon icon-check" aria-hidden="true"><use href="icons.svg#check"/></svg>
+          </button>
+        </div>
+      </div>
+      <ul class="profile-list reveal">
+        <li><a href="https://www.linkedin.com/in/sadiqurp" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="icons.svg#linkedin"/></svg><span class="label">LinkedIn</span><span class="handle mono">in/sadiqurp</span><svg class="icon icon-arrow" aria-hidden="true"><use href="icons.svg#arrow-up-right"/></svg></a></li>
+        <li><a href="https://scholar.google.com/citations?user=yBWItBoAAAAJ&amp;hl=en" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="icons.svg#scholar"/></svg><span class="label">Google Scholar</span><span class="handle mono">Publications &amp; citations</span><svg class="icon icon-arrow" aria-hidden="true"><use href="icons.svg#arrow-up-right"/></svg></a></li>
+        <li><a href="https://www.researchgate.net/profile/Md-Ashhab-Sadiq" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="icons.svg#researchgate"/></svg><span class="label">ResearchGate</span><span class="handle mono">Md-Ashhab-Sadiq</span><svg class="icon icon-arrow" aria-hidden="true"><use href="icons.svg#arrow-up-right"/></svg></a></li>
+        <li><a href="https://orcid.org/0009-0001-2103-9612" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="icons.svg#orcid"/></svg><span class="label">ORCID</span><span class="handle mono">0009-0001-2103-9612</span><svg class="icon icon-arrow" aria-hidden="true"><use href="icons.svg#arrow-up-right"/></svg></a></li>
+        <li><a href="https://github.com/ashhabsadiq" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="icons.svg#github"/></svg><span class="label">GitHub</span><span class="handle mono">ashhabsadiq</span><svg class="icon icon-arrow" aria-hidden="true"><use href="icons.svg#arrow-up-right"/></svg></a></li>
+      </ul>
     </div>
   </div>
 </section>
 
-<script>
-// Theme toggle
-const toggleBtn = document.getElementById('theme-toggle');
-const body = document.body;
-function setTheme(isLight) {
-  if (isLight) {
-    body.classList.add('light-mode');
-    toggleBtn.innerHTML = '<i class="fas fa-moon"></i>';
-  } else {
-    body.classList.remove('light-mode');
-    toggleBtn.innerHTML = '<i class="fas fa-sun"></i>';
-  }
-}
-if (localStorage.getItem('theme') === 'light') setTheme(true);
-toggleBtn.addEventListener('click', () => {
-  const isLight = !body.classList.contains('light-mode');
-  setTheme(isLight);
-  localStorage.setItem('theme', isLight ? 'light' : 'dark');
-});
+</main>
 
-// Menu auto-close + close button
-document.querySelectorAll('.menu-link').forEach(link => {
-  link.addEventListener('click', () => {
-    document.getElementById('mobile-menu-toggle').checked = false;
-  });
-});
-document.querySelector('.menu-close').addEventListener('click', () => {
-  document.getElementById('mobile-menu-toggle').checked = false;
-});
-</script>
-
-<!-- FOOTER -->
-<footer class="footer">
-  <div class="footer-left">
-    © 2026 Md. Ashhab Sadiq, Bangladesh
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <span>© <span data-year>2026</span> Md. Ashhab Sadiq, Bangladesh</span>
+    <a class="to-top" href="#top"><svg class="icon" aria-hidden="true"><use href="icons.svg#arrow-up"/></svg>Back to top</a>
   </div>
-  <a href="#" class="back-to-top" onclick="window.scrollTo({top: 0, behavior: 'smooth'}); return false;">
-    ↑ Back to Top
-  </a>
-</footer>  
-
-<style>
-.research-card {
-  position: relative;
-}
-.card-arrow {
-  position: absolute;
-  top: 22px;
-  right: 22px;
-  font-size: 22px;
-  color: #94a3b8;
-  opacity: 0.85;
-  transition: all 0.3s ease;
-  line-height: 1;
-}
-.research-card:hover .card-arrow {
-  color: #00ffff;
-  opacity: 1;
-  transform: translate(3px, -3px);
-}
-/* Light mode */
-.light-mode .card-arrow {
-  color: #64748b;
-}
-.light-mode .research-card:hover .card-arrow {
-  color: #203864;
-}
-</style>
+</footer>
 </body>
 </html>
