@@ -2,111 +2,141 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Md. Ashhab Sadiq | Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Meteorological Drought Assessment in Northern Bangladesh: A Machine Learning-based Approach Considering Remote Sensing Indices · Md. Ashhab Sadiq</title>
+  <meta name="description" content="Md. Ashhab Sadiq, Showmitra Kumar Sarkar, Saima Sekander Raisa">
+  <meta name="author" content="Md. Ashhab Sadiq">
+  <meta name="theme-color" content="#f4f1ea">
+  <link rel="canonical" href="https://ashhabsadiq.github.io/research-drought.html">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="Meteorological Drought Assessment in Northern Bangladesh: A Machine Learning-based Approach Considering Remote Sensing Indices">
+  <meta property="og:description" content="Md. Ashhab Sadiq, Showmitra Kumar Sarkar, Saima Sekander Raisa">
+  <link rel="icon" href="Images/Icon.ico">
+  <script>(function(){var d=document.documentElement;d.classList.add('js');try{var t=localStorage.getItem('theme');if(t==='light'||t==='dark')d.setAttribute('data-theme',t);}catch(e){}})();</script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400..600;1,9..144,400..500&amp;family=IBM+Plex+Mono:wght@400;500&amp;family=IBM+Plex+Sans:wght@400;500;600&amp;display=swap">
   <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
-  <link rel="icon" href="Images/Icon.ico" type="image/png">
+  <script src="script.js" defer></script>
 </head>
 <body>
+<a class="skip-link" href="#main">Skip to content</a>
 
-<!-- TOP NAVBAR -->
-<header class="navbar">
-  <div class="hamburger">
-    <input type="checkbox" id="mobile-menu-toggle">
-    <label for="mobile-menu-toggle" class="hamburger-label">
-      <span></span><span></span><span></span>
-    </label>
-    <span class="hamburger-text">Portfolio Sections</span>
-    <nav class="mobile-menu">
-      <div class="menu-close"><i class="fas fa-times"></i></div>
-      <a href="index.html#about" class="menu-link">ABOUT ME</a>
-      <a href="index.html#education" class="menu-link">EDUCATION</a>
-      <a href="index.html#research" class="menu-link">RESEARCH & PUBLICATIONS</a>
-      <a href="index.html#projects" class="menu-link">ACADEMIC PROJECTS</a>
-      <a href="index.html#experience" class="menu-link">WORK EXPERIENCES</a>
-      <a href="index.html#skills" class="menu-link">TECHNICAL SKILLS</a>
-      <a href="index.html#certifications" class="menu-link">CERTIFICATIONS</a>
-      <a href="index.html#awards" class="menu-link">AWARDS</a>
-      <a href="index.html#extracurricular" class="menu-link">EXTRACURRICULARS</a>
-      <a href="index.html#contact" class="menu-link">CONTACT & PROFILES</a>
-    </nav>
-  </div>
-
-  <div class="social-icons">
-    <a href="https://github.com/ashhabsadiq" target="_blank"><i class="fab fa-github"></i></a>
-    <a href="mailto:sadiq.kuet.urp@gmail.com"><i class="fas fa-envelope"></i></a>
-    <button id="theme-toggle" class="theme-btn"><i class="fas fa-sun"></i></button>
+<header class="site-header">
+  <div class="container header-inner">
+    <a class="brand" href="index.html" aria-label="Md. Ashhab Sadiq, home">
+      <span class="brand-mark" aria-hidden="true">AS</span>
+      <span class="brand-name">Ashhab Sadiq</span>
+    </a>
+    <nav class="nav-desktop" aria-label="Primary"><a href="index.html#about">About</a><a href="index.html#research">Research</a><a href="index.html#experience">Experience</a><a href="index.html#projects">Projects</a><a href="index.html#skills">Skills</a><a href="index.html#contact">Contact</a></nav>
+    <div class="header-actions">
+      <a class="icon-btn hide-xs" href="https://github.com/ashhabsadiq" target="_blank" rel="noopener" aria-label="GitHub" title="GitHub"><svg class="icon" aria-hidden="true"><use href="icons.svg#github"/></svg></a>
+      <a class="icon-btn hide-xs" href="mailto:sadiq.kuet.urp@gmail.com" aria-label="Email" title="Email"><svg class="icon" aria-hidden="true"><use href="icons.svg#mail"/></svg></a>
+      <button class="icon-btn theme-toggle" type="button" aria-label="Toggle colour theme" title="Light / dark">
+        <svg class="icon icon-moon" aria-hidden="true"><use href="icons.svg#moon"/></svg>
+        <svg class="icon icon-sun" aria-hidden="true"><use href="icons.svg#sun"/></svg>
+      </button>
+      <button class="icon-btn menu-btn" type="button" data-drawer-open aria-controls="drawer" aria-expanded="false">
+        <svg class="icon" aria-hidden="true"><use href="icons.svg#menu"/></svg><span>Sections</span>
+      </button>
+    </div>
   </div>
 </header>
 
-<!-- TITLE SECTION + TWO BUTTONS (perfectly aligned on same line) -->
-<section class="hero" style="padding: 100px 20px 30px; text-align: left;">
-  <div class="container">
-    
-<!-- Buttons row: Back on left + Publication perfectly at far right -->
-    <div style="display: flex; align-items: center; margin-bottom: 35px;">
-      <a href="index.html#research-drought" class="btn" style="font-size:14px; padding:10px 24px; white-space:nowrap;">
-        ← Back to Portfolio
-      </a>
-      
-      <!-- This pushes the button to the absolute far right -->
-      <a href="https://doi.org/10.1016/j.ecolind.2023.111233" target="_blank" class="btn" style="font-size:14px; padding:10px 28px; white-space:nowrap; margin-left:auto;">
-        View the Publication
-      </a>
-    </div>
+<aside id="drawer" class="drawer" aria-label="Menu" aria-hidden="true">
+  <div class="drawer-head">
+    <span class="mono">Menu</span>
+    <button class="icon-btn" type="button" data-drawer-close aria-label="Close menu"><svg class="icon" aria-hidden="true"><use href="icons.svg#close"/></svg></button>
+  </div>
+  <nav class="drawer-nav" aria-label="Menu">
+    <p class="drawer-group mono">On this page</p>
+    <ol>
+      <li><a href="#aim">Aim</a></li>
+      <li><a href="#summary">Summary</a></li>
+      <li><a href="#study-area">Study Area</a></li>
+      <li><a href="#methodology">Methodology</a></li>
+      <li><a href="#remote-sensing-indices">Remote Sensing Indices</a></li>
+      <li><a href="#standardized-precipitation-index-spi">Standardized Precipitation Index (SPI)</a></li>
+      <li><a href="#key-findings">Key Findings</a></li>
+    </ol>
+    <p class="drawer-group mono">Portfolio</p>
+    <ol>
+      <li><a href="index.html#about">About me</a></li>
+      <li><a href="index.html#research">Research &amp; publications</a></li>
+      <li><a href="index.html#experience">Work experience</a></li>
+      <li><a href="index.html#projects">Academic projects</a></li>
+      <li><a href="index.html#education">Education</a></li>
+      <li><a href="index.html#skills">Technical skills</a></li>
+      <li><a href="index.html#certifications">Certifications</a></li>
+      <li><a href="index.html#awards">Awards</a></li>
+      <li><a href="index.html#extracurricular">Extracurricular</a></li>
+      <li><a href="index.html#contact">Contact &amp; profiles</a></li>
+    </ol>
+  </nav>
+</aside>
+<div class="drawer-backdrop" aria-hidden="true"></div>
 
-    <h2 style="margin-top:0; text-align:justify;">Meteorological Drought Assessment in Northern Bangladesh: A Machine Learning-based Approach Considering Remote Sensing Indices</h2>
+<main id="main">
+
+<section class="case-hero" id="top">
+  <div class="hero-bg" aria-hidden="true"></div>
+  <div class="container">
+    <a class="back-link" href="index.html#research-drought"><svg class="icon" aria-hidden="true"><use href="icons.svg#arrow-left"/></svg>Back to research</a>
+    <p class="eyebrow mono">Journal article · Q1</p>
+    <h1>Meteorological Drought Assessment in Northern Bangladesh: A Machine Learning-based Approach Considering Remote Sensing Indices</h1>
+    <dl class="case-meta">
+      <div><dt class="mono">Published in</dt><dd>Ecological Indicators</dd></div>
+      <div><dt class="mono">Year</dt><dd>2023</dd></div>
+      <div class="authors"><dt class="mono">Authors</dt><dd><strong>Md. Ashhab Sadiq</strong>, Showmitra Kumar Sarkar, Saima Sekander Raisa</dd></div>
+    </dl>
+    <div class="case-actions">
+      <a class="btn btn-primary" href="https://doi.org/10.1016/j.ecolind.2023.111233" target="_blank" rel="noopener">View the publication <svg class="icon icon-arrow" aria-hidden="true"><use href="icons.svg#arrow-up-right"/></svg></a>
+    </div>
   </div>
 </section>
 
-<!-- CONTENT -->
-<section class="section">
-  <div class="container">
-
-    <!-- Authors -->
-    <h4><i class="fas fa-users"></i> Authors</h4>
-    <p style="font-size:17px; margin-bottom:40px; text-align:justify;">
-      <strong>Md. Ashhab Sadiq</strong>, Showmitra Kumar Sarkar, Saima Sekander Raisa
-    </p>
-
-    <!-- Aim -->
-    <h4><i class="fas fa-bullseye"></i> Aim</h4>
-    <p style="font-size:17px; line-height:1.8; margin-bottom:40px; text-align:justify;">
-      To evaluate the spatiotemporal characteristics of meteorological drought in northern Bangladesh using multi-source remote sensing data and machine learning methods.
-    </p>
-
-    <!-- Summary -->
-    <h4><i class="fas fa-file-alt"></i> Summary</h4>
-    <p style="font-size:17px; line-height:1.8; margin-bottom:40px; text-align:justify;">
-      This study investigates meteorological drought in northern Bangladesh (2010–2019) through the integration of remote sensing indices and machine learning. Using 4 types of Standardized Precipitation Index (SPI) as the primary drought indicator, 7 satellite-derived variables were analyzed with a Random Forest model to capture spatial and temporal drought patterns. The approach provides a comprehensive framework for understanding regional drought dynamics.
-    </p>
-
-    <!-- Study Area - NEW SECTION -->
-    <h4 style="margin-top: 60px;"><i class="fas fa-map-marker-alt"></i> Study Area</h4>
-    <div style="display:flex; gap:50px; flex-wrap:wrap; align-items:start;">
-      <div style="flex:1; min-width:300px;">
-        <p style="font-size:17px; line-height:1.8; text-align:justify;">
-          The northern region of Bangladesh, covering Rajshahi and Rangpur divisions (16 districts, total area 34,359 sq. km), was selected as the study area. 
+<div class="container case-layout">
+  <nav class="toc" aria-label="On this page">
+    <span class="mono">On this page</span>
+    <ol>
+      <li><a href="#aim">Aim</a></li>
+      <li><a href="#summary">Summary</a></li>
+      <li><a href="#study-area">Study Area</a></li>
+      <li><a href="#methodology">Methodology</a></li>
+      <li><a href="#remote-sensing-indices">Remote Sensing Indices</a></li>
+      <li><a href="#standardized-precipitation-index-spi">Standardized Precipitation Index (SPI)</a></li>
+      <li><a href="#key-findings">Key Findings</a></li>
+    </ol>
+  </nav>
+  <article class="prose">
+<section class="block reveal" id="aim" aria-labelledby="aim-h">
+  <h2 id="aim-h"><span class="num">01</span><span>Aim</span></h2>
+  <p>To evaluate the spatiotemporal characteristics of meteorological drought in northern Bangladesh using multi-source remote sensing data and machine learning methods.</p>
+</section>
+<section class="block reveal" id="summary" aria-labelledby="summary-h">
+  <h2 id="summary-h"><span class="num">02</span><span>Summary</span></h2>
+  <p>This study investigates meteorological drought in northern Bangladesh (2010–2019) through the integration of remote sensing indices and machine learning. Using 4 types of Standardized Precipitation Index (SPI) as the primary drought indicator, 7 satellite-derived variables were analyzed with a Random Forest model to capture spatial and temporal drought patterns. The approach provides a comprehensive framework for understanding regional drought dynamics.</p>
+</section>
+<section class="block reveal" id="study-area" aria-labelledby="study-area-h">
+  <h2 id="study-area-h"><span class="num">03</span><span>Study Area</span></h2>
+  <div class="split">
+      <div>
+        <p>The northern region of Bangladesh, covering Rajshahi and Rangpur divisions (16 districts, total area 34,359 sq. km), was selected as the study area. 
           Bounded by the Padma River to the south, Jamuna River to the east, and the Indian border to the west, it has a mean elevation of approximately 30 m. 
           The region has a monsoon climate with annual rainfall of 1400–1550 mm and is predominantly agricultural (nearly 80% of land). 
           Groundwater is the primary source of irrigation during the dry season. Geographically, it includes the Barind Tract, Himalayan piedmont plains, and 
-          alluvial lowlands.
-        </p>
+          alluvial lowlands.</p>
       </div>
-      <div style="flex:1; min-width:300px;">
-        <div style="border: 1px solid rgba(0,0,0,0.08); border-radius:12px; padding:8px; background:#fff; box-shadow:0 8px 25px rgba(0,0,0,0.1);">
-          <img src="Images/drought_studyarea.png" alt="Study Area Map" style="width:100%; border-radius:8px;">
-        </div>
+      <div>
+        <figure class="figure"><button class="zoom" type="button" data-zoom="Images/drought_studyarea.png" aria-label="Enlarge: Study Area Map"><img width="1396" height="1080" src="Images/web/drought-studyarea.webp" alt="Study Area Map" loading="lazy" decoding="async"></button><figcaption><span class="mono">Fig. 01</span><span>Study Area Map</span></figcaption></figure>
       </div>
     </div>
-    
-<!-- Methodology (Two-column) -->
-    <h4  style="margin-top: 60px;"><i class="fas fa-cogs"></i> Methodology</h4>
-    <div style="display:flex; gap:50px; flex-wrap:wrap; align-items:start;">
-      <div style="flex:1; min-width:300px;">
-        <ul style="line-height:1.85; font-size:16px; padding-left:22px; text-align:justify;">
+</section>
+<section class="block reveal" id="methodology" aria-labelledby="methodology-h">
+  <h2 id="methodology-h"><span class="num">04</span><span>Methodology</span></h2>
+  <div class="split">
+      <div>
+        <ul>
           <li><strong>Data Preparation:</strong> Derived seven drought-related indices (NDVI, NDWI, NDMI, NDDI, NMDI, ET, and Precipitation) from MODIS and IMERG imagery using Google Earth Engine (GEE).</li>
           <li><strong>Reference Indicator:</strong> Computed the Standardized Precipitation Index (SPI) from station-based rainfall data for 1-, 3-, 6-, and 9-month timescales using R programming in RStudio.</li>
           <li><strong>Model Development:</strong> Built a Random Forest model in Python (Spyder IDE) to evaluate variable importance and predict drought intensity at different time scales (1-, 3-, 6-, and 9-month SPIs).</li>
@@ -114,19 +144,17 @@
           <li><strong>Validation:</strong> Assessed model performance in Python, using metrics such as accuracy, RMSE, F1-score, and cross-validation.</li>
         </ul>
       </div>
-      <div style="flex:1; min-width:300px;">
-        <div style="border: 1px solid rgba(0,0,0,0.08); border-radius:12px; padding:8px; background:#fff; box-shadow:0 8px 25px rgba(0,0,0,0.1);">
-          <img src="Images/drought_methodology.png" alt="Methodology Flowchart" style="width:100%; border-radius:8px;">
-        </div>
+      <div>
+        <figure class="figure"><button class="zoom" type="button" data-zoom="Images/drought_methodology.png" aria-label="Enlarge: Methodology Flowchart"><img width="1076" height="917" src="Images/web/drought-methodology.webp" alt="Methodology Flowchart" loading="lazy" decoding="async"></button><figcaption><span class="mono">Fig. 02</span><span>Methodology Flowchart</span></figcaption></figure>
       </div>
     </div>
-
-   <!-- Remote Sensing Indices -->
-    <h4 style="margin-top: 60px;"><i class="fas fa-satellite"></i> Remote Sensing Indices</h4>
-    <div style="display:flex; gap:50px; flex-wrap:wrap; align-items:start;">
-      <div style="flex:1; min-width:300px;">
-        <p style="font-size:17px; line-height:1.8; text-align:justify;">Seven remote sensing indices were derived from MODIS and IMERG imagery to represent vegetation, moisture, and climatic conditions.</p>
-        <ol style="line-height:1.85; font-size:16px; padding-left:22px; text-align:justify;">
+</section>
+<section class="block reveal" id="remote-sensing-indices" aria-labelledby="remote-sensing-indices-h">
+  <h2 id="remote-sensing-indices-h"><span class="num">05</span><span>Remote Sensing Indices</span></h2>
+  <div class="split">
+      <div>
+        <p>Seven remote sensing indices were derived from MODIS and IMERG imagery to represent vegetation, moisture, and climatic conditions.</p>
+        <ol>
           <li><strong>NDVI</strong> – Indicates vegetation greenness and photosynthetic activity.</li>
           <li><strong>NDWI</strong> – Measures surface water and soil moisture conditions.</li>
           <li><strong>NDMI</strong> – Reflects vegetation and canopy moisture content.</li>
@@ -136,30 +164,24 @@
           <li><strong>Precipitation</strong> – Shows rainfall distribution across time and space.</li>
         </ol>
       </div>
-      <div style="flex:1; min-width:300px;">
-        <div style="border: 1px solid rgba(0,0,0,0.08); border-radius:12px; padding:8px; background:#fff; box-shadow:0 8px 25px rgba(0,0,0,0.1);">
-          <img src="Images/drought_factors.png" alt="Remote Sensing Indices" style="width:100%; border-radius:8px;">
-        </div>
+      <div>
+        <figure class="figure"><button class="zoom" type="button" data-zoom="Images/drought_factors.png" aria-label="Enlarge: Remote Sensing Indices"><img width="1747" height="1029" src="Images/web/drought-factors.webp" alt="Remote Sensing Indices" loading="lazy" decoding="async"></button><figcaption><span class="mono">Fig. 03</span><span>Remote Sensing Indices</span></figcaption></figure>
       </div>
     </div>
-
-  <!-- SPI -->
-  <h4 style="margin-top: 60px;"><i class="fas fa-chart-bar"></i> Standardized Precipitation Index (SPI)</h4>
-  <ul style="line-height:1.85; font-size:16px; padding-left:22px; text-align:justify; margin-bottom:35px;">
+</section>
+<section class="block reveal" id="standardized-precipitation-index-spi" aria-labelledby="standardized-precipitation-index-spi-h">
+  <h2 id="standardized-precipitation-index-spi-h"><span class="num">06</span><span>Standardized Precipitation Index <span class="sub">SPI</span></span></h2>
+  <ul>
   <li>SPIs values were calculated from station-based rainfall data (2010–2019) using RStudio (SPEI package).</li>
   <li>Spatial interpolation of SPI values was performed in ArcMap using the IDW method.</li>
   <li>SPI maps served as the drought indicator for training and validating the Random Forest model.</li>
   </ul>
     
-   <div style="border: 1px solid rgba(0,0,0,0.08); border-radius:12px; padding:8px; background:#fff; box-shadow:0 8px 25px rgba(0,0,0,0.1);">
-      <img src="Images/drought_spi.png" alt="SPI Types and Maps 2010-2019" style="width:100%; border-radius:8px;">
-   </div>
-
-
-
-    <!-- Key Findings -->
-    <h4 style="margin-top: 60px;"><i class="fas fa-lightbulb"></i> Key Findings</h4>
-    <ul style="line-height:1.85; font-size:16px; margin-bottom:40px; padding-left:22px; text-align:justify;">
+   <figure class="figure"><button class="zoom" type="button" data-zoom="Images/drought_spi.png" aria-label="Enlarge: SPI Types and Maps 2010-2019"><img width="1800" height="545" src="Images/web/drought-spi.webp" alt="SPI Types and Maps 2010-2019" loading="lazy" decoding="async"></button><figcaption><span class="mono">Fig. 04</span><span>SPI Types and Maps 2010-2019</span></figcaption></figure>
+</section>
+<section class="block reveal" id="key-findings" aria-labelledby="key-findings-h">
+  <h2 id="key-findings-h"><span class="num">07</span><span>Key Findings</span></h2>
+  <ul>
       <li>The Random Forest model achieved 81–95% accuracy.</li>
       <li>Precipitation was the dominant drought driver, contributing 28.32% to short-term and 26.78% to long-term drought variations.</li>
       <li>Apart from Precipitation, short-term droughts were influenced mainly by ET (13.57%) and NDWI (12.13%), while long-term droughts were governed by NMDI (14.27%) and NDVI (12.87%).</li>
@@ -168,64 +190,25 @@
       <li>Long-term SPI indices (SPI-6, SPI-9) captured a higher frequency of extreme events than short-term SPIs, revealing the cumulative effect of rainfall deficits.</li>
     </ul>
 
-    <div style="border: 1px solid rgba(0,0,0,0.08); border-radius:12px; padding:8px; background:#fff; box-shadow:0 8px 25px rgba(0,0,0,0.1);">
-      <img src="Images/drought_finalmap.jpg" alt="Drought Distribution Map" style="width:100%; border-radius:8px;">
-    </div>
-    
-    <!-- Bottom Back button -->
-    <div style="text-align:left; margin:80px 0 60px;">
-      <a href="index.html#research-drought" class="btn" style="font-size:15px; padding:10px 20px;">
-        ← Back to Portfolio
-      </a>
-    </div>
-
-  </div>
+    <figure class="figure"><button class="zoom" type="button" data-zoom="Images/drought_finalmap.jpg" aria-label="Enlarge: Drought Distribution Map"><img width="1800" height="540" src="Images/web/drought-finalmap.webp" alt="Drought Distribution Map" loading="lazy" decoding="async"></button><figcaption><span class="mono">Fig. 05</span><span>Drought Distribution Map</span></figcaption></figure>
 </section>
+  </article>
+</div>
 
-<!-- FOOTER -->
-<footer class="footer">
-  <div class="footer-left">© 2026 Md. Ashhab Sadiq, Bangladesh</div>
-  <a href="#" onclick="window.scrollTo({top:0, behavior:'smooth'}); return false;" class="back-to-top">↑ Back to Top</a>
+<nav class="case-pager" aria-label="More work">
+  <div class="pager-grid">
+    <a class="prev" href="academic-planning.html"><span class="mono"><svg class="icon" aria-hidden="true"><use href="icons.svg#arrow-left"/></svg>Previous</span><span class="title">Conceptual Neighborhood Plan of A Site in Khulna, Bangladesh</span></a>
+    <a class="next" href="research-groundwater.html"><span class="mono">Next<svg class="icon" aria-hidden="true"><use href="icons.svg#arrow-right"/></svg></span><span class="title">Advancing Groundwater Vulnerability Assessment in Bangladesh: A Comprehensive Machine Learning Approach</span></a>
+  </div>
+</nav>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <span>© <span data-year>2026</span> Md. Ashhab Sadiq, Bangladesh</span>
+    <a class="to-top" href="#top"><svg class="icon" aria-hidden="true"><use href="icons.svg#arrow-up"/></svg>Back to top</a>
+  </div>
 </footer>
-
-<script>
-// Theme toggle + menu script (same as main portfolio)
-const toggleBtn = document.getElementById('theme-toggle');
-const body = document.body;
-function setTheme(isLight) {
-  if (isLight) {
-    body.classList.add('light-mode');
-    toggleBtn.innerHTML = '<i class="fas fa-moon"></i>';
-  } else {
-    body.classList.remove('light-mode');
-    toggleBtn.innerHTML = '<i class="fas fa-sun"></i>';
-  }
-}
-if (localStorage.getItem('theme') === 'light') setTheme(true);
-toggleBtn.addEventListener('click', () => {
-  const isLight = !body.classList.contains('light-mode');
-  setTheme(isLight);
-  localStorage.setItem('theme', isLight ? 'light' : 'dark');
-});
-
-document.querySelectorAll('.menu-link').forEach(link => {
-  link.addEventListener('click', () => {
-    document.getElementById('mobile-menu-toggle').checked = false;
-  });
-});
-document.querySelector('.menu-close').addEventListener('click', () => {
-  document.getElementById('mobile-menu-toggle').checked = false;
-});
-</script>
-<!-- MOBILE RESPONSIVE - Same as main portfolio -->
-<style>
-@media (max-width: 768px) {
-  .navbar { padding: 14px 16px !important; }
-  .container { width: 98% !important; padding-left: 8px !important; padding-right: 8px !important; }
-  .hero { padding: 80px 8px 18px !important; font-size: 12px !important }
-  .section { padding: 50px 8px !important; }
-  .btn { padding: 10px 8px !important; font-size: 14px; }
-}
-</style>
 </body>
 </html>
