@@ -17,7 +17,7 @@
   <script>(function(){var d=document.documentElement;d.classList.add('js');try{var t=localStorage.getItem('theme');if(t==='light'||t==='dark')d.setAttribute('data-theme',t);}catch(e){}})();</script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400..600;1,9..144,400..500&amp;family=IBM+Plex+Mono:wght@400;500&amp;family=IBM+Plex+Sans:wght@400;500;600&amp;display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400..600;1,9..144,400..500&amp;family=IBM+Plex+Mono:wght@400;500&amp;family=IBM+Plex+Sans:wght@400;500;600&amp;family=Newsreader:ital,opsz,wght@0,6..72,400..600;1,6..72,400..500&amp;family=Schibsted+Grotesk:wght@400;500;600&amp;family=Spline+Sans+Mono:wght@400;500&amp;display=swap">
   <link rel="stylesheet" href="style.css">
   <script src="script.js" defer></script>
 </head>
@@ -33,6 +33,7 @@
     </a>
     <nav class="nav-desktop" aria-label="Primary">
       <a href="#about">About</a>
+      <a href="#education">Education</a>
       <a href="#research">Research</a>
       <a href="#experience">Experience</a>
       <a href="#projects">Projects</a>
@@ -61,13 +62,13 @@
   <nav class="drawer-nav" aria-label="Sections">
     <ol>
       <li><a href="#about">About me</a></li>
+      <li><a href="#education">Education</a></li>
       <li><a href="#research">Research &amp; publications</a></li>
       <li><a href="#experience">Work experience</a></li>
       <li><a href="#projects">Academic projects</a></li>
-      <li><a href="#education">Education</a></li>
-      <li><a href="#skills">Technical skills</a></li>
-      <li><a href="#certifications">Certifications</a></li>
+      <li><a href="#skills">Technical &amp; research skills</a></li>
       <li><a href="#awards">Awards</a></li>
+      <li><a href="#certifications">Certifications</a></li>
       <li><a href="#extracurricular">Extracurricular</a></li>
       <li><a href="#contact">Contact &amp; profiles</a></li>
     </ol>
@@ -104,14 +105,20 @@
           <span><svg class="icon" aria-hidden="true"><use href="icons.svg#pin"/></svg>Bangladesh</span>
         </div>
       </div>
-      <div class="hero-photo-wrap">
-        <figure class="map-frame">
-          <span class="tick tick-t" aria-hidden="true"></span><span class="tick tick-b" aria-hidden="true"></span>
-          <span class="tick tick-l" aria-hidden="true"></span><span class="tick tick-r" aria-hidden="true"></span>
-          <img width="742" height="927" src="Images/web/photo.webp" alt="Portrait of Md. Ashhab Sadiq" fetchpriority="high">
-          <figcaption class="mono"><span>FIG. 01</span><span>SCALE 1 : 1</span></figcaption>
+      <figure class="hero-map" aria-label="Study areas">
+          <svg class="sheet" viewBox="0 0 612 794" role="img" aria-labelledby="sheet-title">
+            <title id="sheet-title">Map of Bangladesh marking the study areas: Rangpur, Rajshahi, Cumilla and Khulna</title>
+            <rect class="neat-outer" x="38" y="38" width="536" height="718"/>
+            <rect class="neat" x="46" y="46" width="520" height="702"/>
+            <g class="grat"><line x1="66" y1="46" x2="66" y2="748"/><line x1="168" y1="46" x2="168" y2="748"/><line x1="270" y1="46" x2="270" y2="748"/><line x1="372" y1="46" x2="372" y2="748"/><line x1="474" y1="46" x2="474" y2="748"/><line x1="46" y1="692" x2="566" y2="692"/><line x1="46" y1="581" x2="566" y2="581"/><line x1="46" y1="469" x2="566" y2="469"/><line x1="46" y1="358" x2="566" y2="358"/><line x1="46" y1="247" x2="566" y2="247"/><line x1="46" y1="135" x2="566" y2="135"/></g>
+            <path class="land" d="M487 537L488 544L489 548L487 564L488 591L488 594L490 600L493 611L494 612L494 613L493 615L491 617L488 618L486 619L485 617L484 615L484 611L482 606L479 606L476 606L471 606L469 605L468 604L467 603L466 602L466 600L466 598L464 596L461 595L457 600L454 600L452 600L451 602L450 607L447 611L446 613L446 615L447 619L447 622L446 625L446 627L447 629L447 630L450 633L450 634L451 636L455 640L455 644L454 648L455 653L456 657L459 662L460 663L460 665L461 671L462 672L462 673L462 674L461 676L461 675L460 674L459 673L457 667L450 654L448 647L447 646L442 641L441 640L439 636L438 634L433 629L433 627L433 625L433 618L433 615L433 613L427 602L426 601L425 601L424 599L424 597L423 595L424 595L424 596L425 596L425 594L426 592L428 591L430 591L429 590L428 588L427 586L427 584L428 582L429 581L430 580L430 578L432 576L432 575L432 574L432 573L432 572L431 571L430 571L431 570L431 569L431 568L431 567L430 568L431 568L429 572L428 574L426 574L426 573L426 571L426 569L426 568L425 570L424 569L424 568L423 566L424 564L424 563L426 563L427 562L426 561L425 562L424 561L425 560L427 558L422 558L421 559L419 559L418 558L418 556L419 553L421 552L420 551L421 550L422 549L423 549L423 548L422 548L421 548L420 549L420 550L419 549L419 546L418 542L418 541L417 539L416 538L416 534L414 523L413 519L414 519L415 520L414 518L413 518L412 520L412 522L411 520L410 517L409 515L409 512L410 510L410 509L411 508L412 508L412 506L411 505L410 504L409 504L409 501L411 499L413 499L416 498L417 495L419 488L418 488L417 488L417 489L416 494L415 495L414 496L412 498L411 498L410 499L408 500L407 501L407 503L408 504L410 504L411 505L410 507L409 509L407 508L405 506L403 493L402 489L395 475L382 457L379 456L377 454L376 452L375 450L374 450L373 450L373 449L373 447L373 446L374 445L375 441L376 437L376 434L375 436L373 442L372 443L370 444L369 446L368 448L368 451L367 450L366 449L364 449L362 449L364 450L364 451L363 452L361 452L356 452L358 453L359 454L360 455L360 456L359 457L357 458L355 458L352 457L351 457L351 455L350 454L348 454L345 454L345 455L346 456L346 457L346 458L344 458L349 460L352 461L353 463L353 465L352 466L351 471L349 473L347 474L344 475L339 476L335 474L333 471L332 466L331 465L330 463L329 460L328 459L327 459L328 461L330 464L330 467L330 469L328 470L325 471L322 471L320 470L320 468L317 466L316 465L316 464L314 462L314 459L313 458L309 458L308 454L307 453L306 453L305 452L305 450L303 448L303 447L303 446L302 443L301 439L300 438L299 436L298 434L298 431L298 430L290 419L288 416L288 415L288 414L290 407L290 402L290 400L291 398L292 396L292 394L291 390L291 388L292 388L291 387L288 388L287 385L286 382L286 380L286 373L286 371L289 369L295 369L297 368L297 364L297 362L296 362L295 362L294 362L293 362L294 363L296 364L295 367L294 366L292 366L290 367L288 368L286 369L286 368L284 364L285 361L286 358L289 357L288 356L288 357L287 357L287 356L285 356L281 358L282 359L282 360L280 361L278 361L277 361L276 360L273 358L274 360L275 361L277 362L278 362L282 362L283 363L283 373L283 374L282 375L282 377L281 379L281 380L277 379L257 375L253 374L250 371L250 373L251 374L264 382L266 383L266 385L267 386L268 387L271 388L274 389L276 390L282 391L283 391L286 396L287 398L287 402L287 401L286 400L285 399L285 401L286 408L286 410L283 414L282 415L281 415L280 414L281 413L282 412L282 411L281 411L280 413L279 414L277 414L276 415L272 415L270 416L270 417L270 418L270 420L272 424L274 427L276 430L276 432L276 433L277 433L278 433L279 434L279 435L279 436L277 437L276 436L274 436L273 436L271 439L270 442L269 446L266 446L268 448L267 449L266 450L265 449L262 450L264 451L267 452L269 453L270 451L271 451L273 453L274 455L274 456L275 459L276 463L277 467L276 468L275 469L274 469L272 470L271 470L270 472L269 478L269 480L270 479L270 478L271 478L272 477L272 476L271 473L272 472L272 471L274 470L276 470L278 470L282 472L283 476L284 479L286 483L285 482L284 482L284 485L285 487L287 491L287 493L287 495L287 500L284 508L281 512L279 513L276 514L275 515L275 516L275 518L274 520L271 525L270 526L269 526L268 526L266 525L265 524L264 524L264 521L267 515L267 513L266 510L266 508L266 505L266 503L265 503L265 505L264 510L264 512L265 512L266 512L266 513L266 514L266 515L266 516L265 516L265 517L264 519L263 519L263 520L262 524L262 525L262 526L260 529L258 530L258 531L258 532L256 537L255 539L255 543L254 547L253 549L252 551L247 556L245 557L243 557L241 557L237 555L236 555L234 554L233 552L234 550L236 551L235 549L236 548L237 547L237 546L237 545L237 544L237 542L236 544L234 548L233 549L232 550L231 551L230 552L229 552L228 550L227 550L228 547L228 541L229 539L230 538L231 537L232 536L233 535L233 533L234 532L234 530L235 529L239 525L240 524L240 523L241 522L242 522L243 522L244 522L244 523L246 521L248 519L249 516L248 513L247 517L245 520L244 521L241 522L239 522L233 529L233 530L232 533L230 535L230 536L228 536L227 536L224 535L225 533L225 532L225 530L226 530L227 529L228 528L228 526L228 523L228 522L229 520L230 519L231 519L232 518L232 516L230 518L228 520L227 525L226 526L223 529L222 530L223 535L222 536L221 538L219 537L218 535L217 533L217 532L216 529L216 528L215 520L214 515L214 512L214 511L212 509L212 508L212 506L212 505L212 504L212 503L214 498L222 485L223 484L224 482L224 481L225 480L222 482L219 486L218 488L217 489L216 491L214 491L211 488L211 490L212 492L212 494L212 497L208 505L209 508L210 511L211 519L211 523L211 525L210 526L209 527L207 527L206 526L204 526L204 527L206 528L208 529L209 531L209 534L209 535L208 537L209 538L209 539L210 541L211 543L212 544L213 546L212 548L211 548L209 548L207 551L206 552L206 553L204 553L203 554L202 554L201 554L200 552L199 552L198 553L196 554L194 554L193 553L191 553L190 552L189 551L189 550L189 548L190 546L190 545L188 543L185 549L187 552L189 554L191 557L193 558L194 559L193 561L190 563L188 562L187 561L186 561L183 562L184 565L184 566L182 568L180 567L177 562L177 560L176 556L176 553L177 552L179 549L180 548L180 546L180 538L180 531L181 529L184 525L184 522L184 520L183 518L182 516L180 514L180 512L184 508L184 506L184 504L185 502L185 499L186 498L185 498L184 500L183 503L182 504L181 505L182 508L179 510L178 512L178 514L180 517L181 519L181 520L181 522L181 524L180 526L180 527L179 534L179 536L176 537L176 535L176 530L176 529L177 526L177 525L172 514L172 512L173 506L172 504L172 502L171 502L170 509L171 524L172 524L172 522L172 520L173 520L173 521L174 522L174 524L175 525L175 526L175 527L174 530L174 531L172 531L172 532L172 533L173 533L174 535L175 537L175 538L175 539L175 545L174 546L172 547L171 549L170 550L170 552L170 554L170 557L170 559L169 561L167 563L164 566L163 566L160 564L160 562L159 559L160 554L160 552L162 548L162 546L162 544L160 540L159 538L158 538L158 540L158 541L158 542L159 544L159 546L158 547L157 549L156 550L155 551L154 555L153 556L152 555L151 555L151 558L152 562L152 565L150 568L150 570L153 571L152 572L150 574L148 574L146 574L144 573L143 571L144 569L145 568L145 567L142 558L142 557L142 556L141 555L140 556L139 557L139 558L138 559L137 558L135 557L134 556L133 555L131 546L130 544L131 542L132 537L132 535L131 532L129 529L128 528L129 522L128 520L130 518L130 515L130 513L129 511L124 505L123 503L125 502L123 499L122 498L121 492L121 491L121 490L122 488L122 487L122 484L120 480L119 476L118 475L115 474L117 472L118 470L117 467L116 464L115 462L115 459L114 458L113 454L113 452L114 451L115 449L116 448L116 446L117 444L117 442L117 440L116 439L113 438L112 437L109 432L108 430L106 427L106 426L106 424L107 421L107 415L109 412L114 406L117 404L118 403L118 402L118 401L118 400L115 400L114 400L113 400L106 397L104 397L103 397L102 398L101 398L100 399L99 399L93 397L91 395L90 393L90 391L91 388L94 385L99 371L99 369L98 368L96 369L95 371L94 371L92 368L91 368L88 366L87 364L84 360L82 358L80 358L78 358L78 356L78 355L78 353L77 353L76 352L76 351L78 341L77 340L77 338L77 337L77 336L79 334L79 332L79 331L79 330L79 329L79 328L81 327L83 327L85 327L87 326L88 326L92 322L93 320L94 318L93 316L92 314L92 312L93 310L94 309L94 308L92 307L92 306L90 304L89 303L89 302L90 299L90 298L90 296L90 295L90 294L91 292L94 292L95 291L95 290L96 288L97 287L96 287L96 285L96 284L96 280L93 277L90 275L88 274L87 277L85 279L83 279L78 278L71 277L69 277L61 271L34 257L32 256L32 255L30 254L30 253L29 252L29 246L29 245L27 244L26 241L24 241L23 240L23 237L24 235L25 233L26 228L27 228L28 227L29 226L29 225L29 223L30 223L32 223L32 221L34 219L35 218L34 216L33 212L33 211L32 210L37 207L39 206L41 207L42 208L44 210L45 212L45 214L46 214L51 215L52 215L53 214L55 211L59 207L60 204L60 201L63 198L64 195L64 188L64 181L65 180L69 179L70 179L74 180L76 181L77 182L78 181L79 181L81 179L85 179L88 180L94 182L100 183L101 182L102 180L103 179L104 179L105 179L112 182L114 182L113 180L115 179L115 178L115 176L115 175L116 174L120 171L121 170L121 169L121 168L120 167L115 167L112 167L111 165L110 164L108 164L107 164L106 164L104 160L104 159L104 158L103 157L102 156L104 152L104 149L103 148L101 147L100 145L99 145L96 143L96 145L95 146L94 146L93 146L92 146L91 147L91 148L90 149L88 149L86 148L83 146L81 145L77 145L74 145L73 144L73 142L70 140L69 138L65 136L63 134L63 128L60 125L53 120L47 113L44 111L39 112L37 113L35 114L33 114L32 113L32 111L31 110L29 108L29 107L29 106L29 104L28 99L29 99L29 98L31 91L33 88L36 86L37 84L36 82L35 81L35 80L35 79L35 78L36 75L37 74L40 71L41 71L42 70L43 69L44 69L46 68L52 66L54 65L55 63L54 59L55 58L56 56L58 54L63 51L63 50L64 49L65 50L66 50L67 50L68 50L69 50L71 50L71 47L69 41L68 39L64 37L59 36L56 35L55 36L55 39L53 39L52 37L52 36L53 34L54 32L56 25L57 23L58 21L60 20L61 22L60 25L61 27L62 28L66 30L68 30L69 32L70 33L71 34L72 35L74 36L76 37L77 37L80 37L81 38L81 39L82 40L83 41L84 42L85 42L87 43L87 44L87 45L87 46L88 46L88 48L89 49L91 50L93 51L93 52L92 55L91 56L87 58L86 58L88 60L96 57L100 58L101 60L102 62L103 63L105 64L106 63L108 60L110 58L112 59L117 63L120 64L124 63L127 62L126 60L125 59L124 59L123 58L123 56L122 57L121 57L120 57L120 56L119 52L116 51L113 50L111 48L111 46L112 44L113 42L115 41L116 40L117 40L118 41L120 42L121 43L122 45L123 46L125 46L127 47L128 47L128 49L128 50L130 51L132 52L133 53L133 54L132 55L131 54L130 54L130 57L130 59L132 62L133 64L134 71L135 73L136 74L142 77L144 78L145 79L146 82L146 83L150 84L153 87L154 88L157 89L158 90L160 89L161 88L162 88L164 90L165 90L166 90L171 89L172 89L173 90L174 92L175 93L176 94L178 94L178 93L179 91L178 90L179 87L184 83L185 81L184 80L183 80L181 80L180 79L180 78L181 77L183 76L184 76L182 76L180 75L180 73L181 71L182 71L182 70L183 70L185 71L185 70L184 69L184 66L185 65L187 64L189 64L189 66L189 68L189 71L191 72L192 72L193 72L194 72L196 73L196 74L197 76L197 78L199 80L199 81L198 83L199 84L199 86L202 88L202 90L203 90L203 91L204 90L205 90L206 90L207 91L207 93L205 94L203 95L205 96L207 96L207 97L207 99L203 107L202 110L204 120L206 126L207 130L207 138L206 146L205 152L204 154L204 156L203 159L204 163L205 167L206 169L207 169L211 168L215 168L237 177L254 180L262 184L265 184L276 182L284 182L288 181L289 182L291 182L293 183L296 184L297 184L298 183L299 182L300 182L301 182L302 183L304 184L305 184L308 185L320 183L324 182L340 179L346 180L347 179L349 178L350 178L355 181L370 185L374 186L376 186L377 185L378 185L380 184L381 183L382 183L384 183L385 184L385 185L387 186L389 187L391 187L394 186L395 185L395 184L396 184L398 184L399 184L400 182L401 182L402 182L407 182L418 181L424 182L426 181L428 180L432 180L435 181L438 182L439 183L439 184L440 185L441 185L442 185L443 186L444 186L445 186L446 186L447 186L448 188L450 190L451 190L452 191L454 192L459 192L460 193L462 195L465 196L467 198L468 200L468 201L470 202L474 205L475 205L475 206L474 207L477 208L478 208L478 210L479 212L478 214L477 216L474 217L467 219L466 219L465 218L465 217L458 213L454 211L451 213L450 214L451 217L452 220L452 222L452 224L452 225L447 240L446 244L446 248L445 250L444 251L443 252L442 252L441 253L440 255L439 257L440 264L439 267L437 269L434 271L432 271L423 270L423 272L425 275L425 277L424 276L421 274L420 274L418 274L418 276L419 281L419 283L417 292L416 294L414 295L412 295L409 292L409 290L409 288L408 287L407 287L401 286L400 287L400 290L401 292L401 294L400 295L398 296L396 296L394 295L393 293L392 288L390 288L390 289L389 296L388 299L387 300L386 301L383 302L379 303L375 302L367 300L363 301L362 304L362 308L361 312L360 313L359 313L358 313L356 312L354 313L353 315L352 316L348 322L348 324L348 325L349 328L349 329L349 331L347 337L346 339L344 340L342 340L341 341L340 343L340 346L342 346L344 347L344 349L343 350L342 350L341 350L340 353L341 355L344 361L344 363L345 366L346 368L347 369L349 370L349 371L350 372L350 375L352 380L353 382L354 383L355 383L356 384L355 385L354 386L353 387L353 388L354 388L354 390L357 408L358 412L361 416L364 416L364 413L363 403L363 398L363 396L364 394L367 394L368 396L370 398L371 400L371 399L371 398L372 400L372 401L373 403L374 403L374 406L375 408L377 416L378 418L378 419L379 419L379 420L379 423L380 424L381 425L382 426L384 426L385 427L386 428L386 429L386 430L388 429L388 428L389 427L389 426L390 425L391 426L392 426L393 426L394 425L397 425L398 424L399 423L401 422L402 421L403 418L403 417L404 416L405 416L406 416L407 414L407 413L407 412L406 409L404 401L403 398L402 393L404 388L407 382L410 379L411 377L417 375L418 374L420 372L422 368L422 364L420 351L420 347L420 344L420 343L422 343L423 344L424 346L429 351L430 352L433 352L434 350L438 345L439 343L444 342L446 345L447 349L448 351L450 350L451 344L452 344L455 345L455 347L454 352L454 356L458 368L458 374L459 375L460 376L461 377L461 378L462 379L461 381L462 382L464 384L464 385L464 387L464 388L464 390L465 391L465 392L464 394L462 398L462 400L462 404L464 420L464 428L465 432L467 434L470 436L472 438L473 446L474 450L475 452L477 454L478 456L479 457L479 466L479 472L480 474L481 478L481 480L487 516L487 519L486 520L484 520L483 520L485 528L487 535L487 536L487 537ZM422 562L422 566L426 574L426 578L426 581L425 585L425 588L424 590L422 590L420 590L418 590L418 591L418 592L417 593L416 593L415 592L414 591L414 589L414 588L415 585L416 584L416 581L415 577L413 570L413 565L414 563L415 562L416 562L418 564L418 565L418 566L417 568L417 570L418 568L419 565L419 562L418 560L420 560L422 559L422 561L422 562ZM134 559L136 561L137 564L136 566L133 564L128 558L128 557L129 555L129 553L128 549L128 547L127 545L127 544L128 544L129 544L129 545L129 546L130 547L131 554L132 558L134 559ZM417 550L417 552L415 554L414 558L412 564L411 565L410 564L412 554L411 549L411 547L412 545L415 542L415 543L416 544L417 548L417 550ZM285 536L285 539L286 540L286 542L284 542L284 544L283 544L282 544L281 546L279 549L277 550L276 550L276 549L278 549L278 547L277 547L276 546L277 546L277 545L277 544L277 542L278 541L285 536ZM258 542L261 537L262 536L265 535L264 537L262 542L259 550L258 552L257 552L257 547L257 544L258 542ZM264 530L263 532L260 536L260 538L259 538L260 536L261 532L262 530L264 530ZM269 530L273 534L274 537L273 541L271 542L268 545L267 546L265 545L265 544L265 542L265 540L266 539L266 538L266 535L266 532L267 531L268 530L269 530ZM280 528L279 527L275 530L274 531L274 528L274 526L276 524L277 524L278 522L282 520L283 520L284 518L285 517L286 516L287 516L285 524L285 522L284 520L283 524L282 528L282 532L279 535L277 536L276 535L276 534L276 532L276 531L280 528ZM320 512L321 511L322 512L322 513L322 519L321 521L319 522L318 520L318 517L319 514L320 511L320 512ZM324 514L324 508L324 506L326 506L326 509L326 511L325 513L324 514ZM322 510L320 509L320 507L321 505L322 504L322 499L323 496L324 494L325 495L325 497L326 499L326 501L325 504L322 510ZM341 495L342 498L344 499L345 503L345 506L345 510L344 513L343 515L342 516L341 519L339 520L337 521L336 522L335 524L333 525L330 525L328 524L327 524L327 522L330 518L332 515L332 514L333 508L333 500L334 492L336 491L339 493L341 495ZM287 488L287 487L286 487L286 486L286 485L287 485L289 487L290 489L291 493L292 495L291 493L290 492L290 494L290 499L290 500L289 500L289 498L289 497L289 496L290 496L289 494L288 490L287 488ZM290 488L291 481L292 481L292 483L292 484L292 486L291 487L290 488ZM342 479L347 478L348 480L347 482L345 484L342 485L340 485L338 483L339 480L342 479ZM374 470L383 482L384 486L383 490L378 491L375 489L372 484L370 480L370 476L372 471L374 470ZM305 480L309 484L312 486L309 497L310 515L309 518L303 526L302 528L301 528L301 526L298 529L298 530L295 534L294 534L292 535L291 536L290 536L290 533L291 530L292 526L294 524L288 532L287 532L286 530L286 527L287 524L289 521L288 519L289 515L293 505L294 503L294 501L294 495L294 493L294 489L294 487L294 486L294 485L293 483L291 476L290 474L289 472L283 468L281 468L281 464L281 460L283 450L284 449L285 448L287 448L289 447L291 447L292 450L293 454L294 457L296 461L297 464L299 466L301 468L301 474L302 477L305 480ZM290 440L292 442L294 445L292 445L288 444L284 444L282 447L280 448L278 449L278 452L279 454L277 456L276 454L275 453L275 452L274 451L273 450L271 449L272 448L272 447L272 444L272 442L272 440L273 438L274 438L277 439L279 438L280 437L281 436L285 436L286 437L288 439L290 440ZM292 429L290 429L289 429L290 429L291 430L292 431L292 433L289 432L288 432L287 431L286 429L286 428L284 428L283 429L282 429L279 429L278 429L276 426L278 423L282 420L284 420L286 422L290 426L292 428L292 429ZM276 416L277 417L277 418L275 419L273 422L272 423L271 418L271 416L275 416L276 416ZM278 388L276 388L274 388L272 386L269 383L268 382L268 380L271 380L274 382L279 384L283 387L284 390L280 387L278 386L278 388Z" transform="translate(46 46)"/>
+            <g class="labels"><text x="66" y="32" text-anchor="middle">88°E</text><text x="168" y="32" text-anchor="middle">89°E</text><text x="270" y="32" text-anchor="middle">90°E</text><text x="372" y="32" text-anchor="middle">91°E</text><text x="474" y="32" text-anchor="middle">92°E</text><text x="36" y="696" text-anchor="end">21°N</text><text x="36" y="585" text-anchor="end">22°N</text><text x="36" y="473" text-anchor="end">23°N</text><text x="36" y="362" text-anchor="end">24°N</text><text x="36" y="251" text-anchor="end">25°N</text><text x="36" y="139" text-anchor="end">26°N</text></g>
+            <g class="site"><circle cx="194" cy="164" r="9" class="halo"/><circle cx="194" cy="164" r="4"/><text x="206" y="168" text-anchor="start">Rangpur</text></g><g class="site"><circle cx="128" cy="317" r="9" class="halo"/><circle cx="128" cy="317" r="4"/><text x="140" y="321" text-anchor="start">Rajshahi</text></g><g class="site"><circle cx="391" cy="418" r="9" class="halo"/><circle cx="391" cy="418" r="4"/><text x="379" y="422" text-anchor="end">Cumilla</text></g><g class="site"><circle cx="224" cy="489" r="9" class="halo"/><circle cx="224" cy="489" r="4"/><text x="236" y="493" text-anchor="start">Khulna</text></g>
+            <g class="scale" transform="translate(-374 -22)"><line x1="446" y1="720" x2="546" y2="720"/><line x1="446" y1="715" x2="446" y2="725"/><line x1="496" y1="717" x2="496" y2="723"/><line x1="546" y1="715" x2="546" y2="725"/><text x="446" y="738">0</text><text x="546" y="738" text-anchor="end">100 km</text></g>
+            <g class="north"><path d="M530 64L538 92L530 86L522 92Z"/><text x="530" y="110" text-anchor="middle">N</text></g>
+          </svg>
+          <figcaption class="mono"><span>FIG. 01 · STUDY AREAS</span><span>BANGLADESH · WGS 84</span></figcaption>
         </figure>
-      </div>
     </div>
 
     <dl class="stats">
@@ -145,11 +152,44 @@
   </div>
 </section>
 
+<!-- ============ EDUCATION ============ -->
+<section id="education" class="section section-alt">
+  <div class="container">
+    <header class="section-head reveal">
+      <p class="mono">02 · Education</p>
+      <h2>Education</h2>
+    </header>
+    <div class="edu-grid">
+      <article class="edu reveal">
+        <div class="edu-top mono"><span>Undergraduate · 4 years · 162 credits</span><span>Graduated April 2023</span></div>
+        <h3><a href="https://www.kuet.ac.bd/urp" target="_blank" rel="noopener">Bachelor of Urban and Regional Planning (BURP)</a></h3>
+        <p class="edu-school"><a href="https://kuet.ac.bd/" target="_blank" rel="noopener">Khulna University of Engineering &amp; Technology (KUET), Khulna, Bangladesh</a></p>
+        <dl>
+          <div><dt>CGPA</dt><dd>3.59 / 4.00</dd></div>
+          <div><dt>Total credit</dt><dd>162</dd></div>
+          <div><dt>Duration</dt><dd>4 years</dd></div>
+        </dl>
+        <p><strong>Thesis:</strong> Machine Learning based Meteorological Drought Assessment through Remote Sensing Indices in Northern Bangladesh</p>
+        <p><strong>Achievements:</strong> Dean's Award in 3rd and 4th years, University Merit Scholarship in all the years</p>
+      </article>
+      <article class="edu reveal">
+        <div class="edu-top mono"><span>Science · 2 years</span><span>Passed 2017</span></div>
+        <h3>Higher Secondary Certificate (HSC)</h3>
+        <p class="edu-school"><a href="https://rc.gov.bd/" target="_blank" rel="noopener">Rajshahi Government City College, Rajshahi, Bangladesh</a></p>
+        <dl>
+          <div><dt>GPA</dt><dd>5.00 / 5.00</dd></div>
+          <div><dt>Subject</dt><dd>Science</dd></div>
+        </dl>
+      </article>
+    </div>
+  </div>
+</section>
+
 <!-- ============ RESEARCH ============ -->
-<section id="research" class="section section-alt">
+<section id="research" class="section">
   <div class="container">
     <header class="section-head split-head reveal">
-      <p class="mono">02 · Research &amp; publications</p>
+      <p class="mono">03 · Research &amp; publications</p>
       <h2>Published research</h2>
       <p>Machine learning and remote sensing applied to drought, groundwater and sustainability questions. Each study opens into a full case page with the maps and methods.</p>
     </header>
@@ -166,7 +206,6 @@
           </ul>
           <span class="read-more" aria-hidden="true">Read case study <svg class="icon"><use href="icons.svg#arrow-right"/></svg></span>
         </div>
-        <div class="pub-thumb"><img width="720" height="216" src="Images/thumb/drought-finalmap.webp" alt="" loading="lazy" decoding="async"></div>
       </article>
 
       <article id="research-groundwater" class="pub reveal">
@@ -180,7 +219,6 @@
           </ul>
           <span class="read-more" aria-hidden="true">Read case study <svg class="icon"><use href="icons.svg#arrow-right"/></svg></span>
         </div>
-        <div class="pub-thumb"><img width="720" height="467" src="Images/thumb/gwv-finalmap.webp" alt="" loading="lazy" decoding="async"></div>
       </article>
 
       <article id="research-environment" class="pub reveal">
@@ -194,7 +232,6 @@
           </ul>
           <span class="read-more" aria-hidden="true">Read case study <svg class="icon"><use href="icons.svg#arrow-right"/></svg></span>
         </div>
-        <div class="pub-thumb"><img width="720" height="553" src="Images/thumb/env-studyarea.webp" alt="" loading="lazy" decoding="async"></div>
       </article>
 
       <article id="research-community" class="pub reveal">
@@ -208,17 +245,16 @@
           </ul>
           <span class="read-more" aria-hidden="true">Read case study <svg class="icon"><use href="icons.svg#arrow-right"/></svg></span>
         </div>
-        <div class="pub-thumb"><img width="720" height="331" src="Images/thumb/pra-studyarea.webp" alt="" loading="lazy" decoding="async"></div>
       </article>
     </div>
   </div>
 </section>
 
 <!-- ============ EXPERIENCE ============ -->
-<section id="experience" class="section">
+<section id="experience" class="section section-alt">
   <div class="container">
     <header class="section-head reveal">
-      <p class="mono">03 · Work experience</p>
+      <p class="mono">04 · Work experience</p>
       <h2>Where I’ve worked</h2>
     </header>
 
@@ -290,10 +326,10 @@
 </section>
 
 <!-- ============ PROJECTS ============ -->
-<section id="projects" class="section section-alt">
+<section id="projects" class="section">
   <div class="container">
     <header class="section-head split-head reveal">
-      <p class="mono">04 · Academic projects</p>
+      <p class="mono">05 · Academic projects</p>
       <h2>Planning studio work</h2>
       <p>Six studio projects from the BURP programme at KUET, from site planning in second year to regional analysis in final year.</p>
     </header>
@@ -368,74 +404,65 @@
   </div>
 </section>
 
-<!-- ============ EDUCATION ============ -->
-<section id="education" class="section">
-  <div class="container">
-    <header class="section-head reveal">
-      <p class="mono">05 · Education</p>
-      <h2>Education</h2>
-    </header>
-    <div class="edu-grid">
-      <article class="edu reveal">
-        <div class="edu-top mono"><span>Undergraduate · 4 years · 162 credits</span><span>Graduated April 2023</span></div>
-        <h3><a href="https://www.kuet.ac.bd/urp" target="_blank" rel="noopener">Bachelor of Urban and Regional Planning (BURP)</a></h3>
-        <p class="edu-school"><a href="https://kuet.ac.bd/" target="_blank" rel="noopener">Khulna University of Engineering &amp; Technology (KUET), Khulna, Bangladesh</a></p>
-        <dl>
-          <div><dt>CGPA</dt><dd>3.59 / 4.00</dd></div>
-          <div><dt>Total credit</dt><dd>162</dd></div>
-          <div><dt>Duration</dt><dd>4 years</dd></div>
-        </dl>
-        <p><strong>Thesis:</strong> Machine Learning based Meteorological Drought Assessment through Remote Sensing Indices in Northern Bangladesh</p>
-        <p><strong>Achievements:</strong> Dean's Award in 3rd and 4th years, University Merit Scholarship in all the years</p>
-      </article>
-      <article class="edu reveal">
-        <div class="edu-top mono"><span>Science · 2 years</span><span>Passed 2017</span></div>
-        <h3>Higher Secondary Certificate (HSC)</h3>
-        <p class="edu-school"><a href="https://rc.gov.bd/" target="_blank" rel="noopener">Rajshahi Government City College, Rajshahi, Bangladesh</a></p>
-        <dl>
-          <div><dt>GPA</dt><dd>5.00 / 5.00</dd></div>
-          <div><dt>Subject</dt><dd>Science</dd></div>
-        </dl>
-      </article>
-    </div>
-  </div>
-</section>
-
 <!-- ============ SKILLS ============ -->
 <section id="skills" class="section section-alt">
   <div class="container">
     <header class="section-head reveal">
-      <p class="mono">06 · Technical skills</p>
-      <h2>Tools I work with</h2>
+      <p class="mono">06 · Skills</p>
+      <h2>Technical and Research Skills</h2>
     </header>
     <div class="skill-groups">
       <div class="skill-group reveal">
-        <h3>GIS &amp; Remote Sensing <span class="mono">07</span></h3>
-        <ul>
-          <li>ArcGIS Pro</li><li>ArcMap</li><li>ArcGIS Online</li><li>QGIS</li><li>Global Mapper</li><li>Google Earth Engine (GEE)</li><li>Google Earth Pro</li>
-        </ul>
+        <h3>GIS <span class="mono">05</span></h3>
+        <ul><li>ArcGIS Pro</li><li>ArcMap</li><li>QGIS</li><li>Global Mapper</li><li>ArcGIS Online</li></ul>
       </div>
       <div class="skill-group reveal">
-        <h3>Programming &amp; analysis <span class="mono">05</span></h3>
-        <ul>
-          <li>Python</li><li>R (RStudio)</li><li>Machine Learning</li><li>SPSS</li><li>HTML</li>
-        </ul>
+        <h3>Remote Sensing &amp; Earth Observation <span class="mono">01</span></h3>
+        <ul><li>Google Earth Engine</li></ul>
       </div>
       <div class="skill-group reveal">
-        <h3>Field data &amp; office <span class="mono">03</span></h3>
-        <ul>
-          <li>KoBoToolbox</li><li>Microsoft 365</li><li>Canva</li>
-        </ul>
+        <h3>Geospatial Programming <span class="mono">06</span></h3>
+        <ul><li>Python</li><li>R</li></ul>
+        <p class="skill-sub mono">Libraries / modules</p>
+        <ul><li>ArcPy</li><li>Pandas</li><li>NumPy</li><li>scikit-learn</li></ul>
       </div>
+      <div class="skill-group reveal">
+        <h3>Machine Learning &amp; Spatial Modeling <span class="mono">03</span></h3>
+        <ul><li>Random Forest</li><li>XGBoost</li><li>Moran’s I</li></ul>
+      </div>
+      <div class="skill-group reveal">
+        <h3>Survey &amp; Statistical Analysis <span class="mono">03</span></h3>
+        <ul><li>SPSS</li><li>Microsoft Excel</li><li>KoboToolbox</li></ul>
+      </div>
+      <div class="skill-group reveal">
+        <h3>Reporting &amp; Visualization <span class="mono">04</span></h3>
+        <ul><li>Microsoft Word</li><li>Microsoft PowerPoint</li><li>ArcGIS StoryMaps</li><li>Canva</li></ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ AWARDS ============ -->
+<section id="awards" class="section">
+  <div class="container">
+    <header class="section-head reveal">
+      <p class="mono">07 · Awards</p>
+      <h2>Dean’s Award, twice</h2>
+    </header>
+    <p class="award-intro reveal">Received the Dean’s Award for outstanding academic performance in the third and final years of the Bachelor of Urban and Regional Planning program at KUET.</p>
+    <div class="gallery">
+      <button class="zoom reveal" type="button" data-zoom="Images/Dean 1.png" aria-label="Enlarge: Dean's Award certificate 1"><img width="720" height="509" src="Images/thumb/dean-1.webp" alt="Dean's Award certificate 1" loading="lazy" decoding="async"></button>
+      <button class="zoom reveal" type="button" data-zoom="Images/Award.jpg" aria-label="Enlarge: Dean's Award ceremony"><img width="720" height="516" src="Images/thumb/award.webp" alt="Dean's Award ceremony" loading="lazy" decoding="async"></button>
+      <button class="zoom reveal" type="button" data-zoom="Images/Dean 2.png" aria-label="Enlarge: Dean's Award certificate 2"><img width="720" height="509" src="Images/thumb/dean-2.webp" alt="Dean's Award certificate 2" loading="lazy" decoding="async"></button>
     </div>
   </div>
 </section>
 
 <!-- ============ CERTIFICATIONS ============ -->
-<section id="certifications" class="section">
+<section id="certifications" class="section section-alt">
   <div class="container">
     <header class="section-head reveal">
-      <p class="mono">07 · Certifications</p>
+      <p class="mono">08 · Certifications</p>
       <h2>Certifications</h2>
     </header>
     <div class="cert-grid">
@@ -475,22 +502,6 @@
         <button class="zoom" type="button" data-zoom="Images/Location.png" aria-label="Enlarge certificate: The Location Advantage"><img width="720" height="528" src="Images/thumb/location.webp" alt="The Location Advantage certificate" loading="lazy" decoding="async"></button>
         <div class="cert-info"><h3>The Location Advantage</h3><p>ESRI</p></div>
       </article>
-    </div>
-  </div>
-</section>
-
-<!-- ============ AWARDS ============ -->
-<section id="awards" class="section section-alt">
-  <div class="container">
-    <header class="section-head reveal">
-      <p class="mono">08 · Awards</p>
-      <h2>Dean’s Award, twice</h2>
-    </header>
-    <p class="award-intro reveal">Received the Dean’s Award for outstanding academic performance in the third and final years of the Bachelor of Urban and Regional Planning program at KUET.</p>
-    <div class="gallery">
-      <button class="zoom reveal" type="button" data-zoom="Images/Dean 1.png" aria-label="Enlarge: Dean's Award certificate 1"><img width="720" height="509" src="Images/thumb/dean-1.webp" alt="Dean's Award certificate 1" loading="lazy" decoding="async"></button>
-      <button class="zoom reveal" type="button" data-zoom="Images/Award.jpg" aria-label="Enlarge: Dean's Award ceremony"><img width="720" height="516" src="Images/thumb/award.webp" alt="Dean's Award ceremony" loading="lazy" decoding="async"></button>
-      <button class="zoom reveal" type="button" data-zoom="Images/Dean 2.png" aria-label="Enlarge: Dean's Award certificate 2"><img width="720" height="509" src="Images/thumb/dean-2.webp" alt="Dean's Award certificate 2" loading="lazy" decoding="async"></button>
     </div>
   </div>
 </section>
