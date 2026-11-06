@@ -15,12 +15,13 @@
   --text: #1b2220;
   --text-2: #46504c;
   --muted: #66706b;
-  --accent: #0e0b08;
-  --accent-hover: #3a3228;
+  --accent: #94590f;
+  --accent-hover: #7a4708;
   --accent-ink: #ffffff;
-  --accent-soft: rgba(14, 11, 8, 0.07);
+  --accent-soft: rgba(148, 89, 15, 0.12);
   --ochre: #9c5612;
-  --grid: rgba(27, 34, 32, 0.06);
+  --bg-img-opacity: 0.13;
+  --bg-img-filter: invert(1) grayscale(1);
   --figure-bg: #ffffff;
   --header-bg: rgba(244, 241, 234, 0.82);
   --shadow-sm: 0 1px 2px rgba(27, 34, 32, 0.06);
@@ -55,7 +56,8 @@
     --accent-ink: #0e0b08;
     --accent-soft: rgba(227, 168, 87, 0.13);
     --ochre: #d9b48a;
-    --grid: rgba(244, 243, 236, 0.045);
+    --bg-img-opacity: 0.16;
+  --bg-img-filter: grayscale(1);
     --figure-bg: #f7f6f1;
     --header-bg: rgba(14, 11, 8, 0.86);
     --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.35);
@@ -81,7 +83,8 @@
   --accent-ink: #0e0b08;
   --accent-soft: rgba(227, 168, 87, 0.13);
   --ochre: #d9b48a;
-  --grid: rgba(244, 243, 236, 0.045);
+  --bg-img-opacity: 0.16;
+  --bg-img-filter: grayscale(1);
   --figure-bg: #f7f6f1;
   --header-bg: rgba(14, 11, 8, 0.86);
   --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.35);
@@ -259,14 +262,18 @@ p, li { text-wrap: pretty; }
 .hero { position: relative; overflow: hidden; padding-block: clamp(48px, 8vw, 104px) clamp(40px, 6vw, 72px); }
 .hero-bg {
   position: absolute; inset: 0; z-index: -1; pointer-events: none;
-  background-image:
-    linear-gradient(var(--grid) 1px, transparent 1px),
-    linear-gradient(90deg, var(--grid) 1px, transparent 1px);
-  background-size: 96px 96px;
-  background-position: -1px -1px;
-  -webkit-mask-image: radial-gradient(ellipse 80% 70% at 70% 40%, #000 30%, transparent 75%);
-  mask-image: radial-gradient(ellipse 80% 70% at 70% 40%, #000 30%, transparent 75%);
+  background: url("Images/web/sundarbans-bg.webp") center 40% / cover no-repeat;
+  opacity: var(--bg-img-opacity);
+  filter: var(--bg-img-filter);
+  -webkit-mask-image: radial-gradient(ellipse 85% 95% at 72% 35%, #000 20%, transparent 80%);
+  mask-image: radial-gradient(ellipse 85% 95% at 72% 35%, #000 20%, transparent 80%);
 }
+.bg-credit {
+  position: absolute; right: var(--gutter); bottom: 10px; z-index: 1;
+  font-family: var(--font-mono); font-size: 0.62rem; letter-spacing: 0.03em;
+  color: var(--muted); opacity: 0.75; text-decoration: none;
+}
+.bg-credit:hover { opacity: 1; color: var(--text-2); }
 .hero::after {
   content: ""; position: absolute; inset: auto 0 0 0; height: 40%; z-index: -1; pointer-events: none;
   background: linear-gradient(to bottom, transparent, var(--bg));
@@ -283,27 +290,17 @@ p, li { text-wrap: pretty; }
 .hero-status .dot { width: 8px; height: 8px; border-radius: 50%; background: var(--accent); box-shadow: 0 0 0 4px var(--accent-soft); }
 .hero-status .icon { width: 16px; height: 16px; }
 
-/* Hero figure: Bangladesh on a graticule, drawn like a map sheet */
-.hero-map { justify-self: end; width: min(100%, 420px); margin: 0; }
-.sheet { width: 100%; height: auto; overflow: visible; }
-.sheet .neat-outer { fill: none; stroke: var(--line-strong); stroke-width: 1; }
-.sheet .neat { fill: var(--surface); fill-opacity: 0.55; stroke: var(--text-2); stroke-width: 1.2; }
-.sheet .grat line { stroke: var(--line-strong); stroke-width: 1; stroke-dasharray: 2 5; }
-.sheet .land { fill: var(--accent-soft); stroke: var(--accent); stroke-width: 1.6; stroke-linejoin: round; }
-.sheet text { font-family: var(--font-mono); font-size: 15px; letter-spacing: 0.04em; fill: var(--muted); }
-.sheet .site circle { fill: var(--text); }
-.sheet .site .halo { fill: none; stroke: var(--text); stroke-opacity: 0.45; }
-.sheet .site text { fill: var(--text); font-size: 19px; font-family: var(--font-body); letter-spacing: 0; paint-order: stroke; stroke: var(--bg); stroke-width: 4px; }
-.sheet .scale line { stroke: var(--text-2); stroke-width: 1.5; }
-.sheet .north path { fill: var(--text-2); }
-.sheet .north text { fill: var(--text-2); font-weight: 500; }
-.hero-map figcaption { display: flex; justify-content: space-between; gap: 12px; margin-top: -2%; padding: 0 2.5% 0 7.5%; color: var(--muted); font-size: 0.7rem; }
+/* Hero portrait: outlined frame, slightly rounded corners */
+.hero-photo { justify-self: end; width: min(100%, 340px); margin: 0; padding: 10px; border: 1px solid var(--line-strong); border-radius: 18px; background: var(--surface); box-shadow: var(--shadow); }
+.hero-photo img { width: 100%; aspect-ratio: 4 / 5; object-fit: cover; object-position: center 20%; border-radius: 10px; }
 
 @media (min-width: 900px) {
-  .hero-grid { grid-template-columns: minmax(0, 1.3fr) minmax(0, 0.7fr); }
+  .hero-grid { grid-template-columns: minmax(0, 1.35fr) minmax(0, 0.65fr); }
+  .hero-photo { max-height: 100%; }
 }
 @media (max-width: 899px) {
-  .hero-map { justify-self: center; width: min(100%, 340px); }
+  .hero-photo { justify-self: start; width: min(62%, 260px); padding: 8px; border-radius: 16px; }
+  .hero-photo img { border-radius: 9px; }
 }
 
 /* Key figures */
@@ -524,7 +521,7 @@ p, li { text-wrap: pretty; }
    Case-study pages (research-*.html, academic-*.html)
    ========================================================================== */
 .case-hero { position: relative; overflow: hidden; padding-block: clamp(32px, 6vw, 72px) clamp(32px, 5vw, 56px); border-bottom: 1px solid var(--line); }
-.case-hero .hero-bg { -webkit-mask-image: radial-gradient(ellipse 70% 90% at 85% 30%, #000 20%, transparent 70%); mask-image: radial-gradient(ellipse 70% 90% at 85% 30%, #000 20%, transparent 70%); }
+.case-hero .hero-bg { -webkit-mask-image: radial-gradient(ellipse 70% 100% at 85% 30%, #000 15%, transparent 72%); mask-image: radial-gradient(ellipse 70% 100% at 85% 30%, #000 15%, transparent 72%); }
 .back-link { display: flex; width: fit-content; align-items: center; gap: 8px; color: var(--text-2); text-decoration: none; font-size: 0.92rem; margin-bottom: clamp(24px, 4vw, 40px); padding: 6px 0; }
 .back-link .icon { width: 18px; height: 18px; transition: transform 0.2s var(--ease); }
 .back-link:hover { color: var(--accent); }
