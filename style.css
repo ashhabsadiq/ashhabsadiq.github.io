@@ -15,11 +15,11 @@
   --text: #1b2220;
   --text-2: #46504c;
   --muted: #66706b;
-  --accent: #94590f;
-  --accent-hover: #7a4708;
+  --accent: #7d4a14;
+  --accent-hover: #633a0f;
   --accent-ink: #ffffff;
-  --accent-soft: rgba(148, 89, 15, 0.12);
-  --ochre: #9c5612;
+  --accent-soft: rgba(125, 74, 20, 0.12);
+  --ochre: #7d4a14;
   --bg-img-opacity: 0.13;
   --bg-img-filter: invert(1) grayscale(1);
   --figure-bg: #ffffff;
@@ -27,9 +27,9 @@
   --shadow-sm: 0 1px 2px rgba(27, 34, 32, 0.06);
   --shadow: 0 1px 2px rgba(27, 34, 32, 0.05), 0 12px 32px -16px rgba(27, 34, 32, 0.22);
 
-  --font-display: "Fraunces", Georgia, "Times New Roman", serif;
-  --font-body: "IBM Plex Sans", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
-  --font-mono: "IBM Plex Mono", ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  --font-display: "Newsreader", Georgia, "Times New Roman", serif;
+  --font-body: "Schibsted Grotesk", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  --font-mono: "Spline Sans Mono", ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
 
   --radius: 14px;
   --radius-sm: 8px;
@@ -435,6 +435,10 @@ p, li { text-wrap: pretty; }
 .edu dt { font-family: var(--font-mono); font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.06em; color: var(--muted); }
 .edu dd { margin: 2px 0 0; font-family: var(--font-display); font-size: 1.3rem; }
 .edu p { color: var(--text-2); font-size: 0.96rem; }
+.edu-stack { display: grid; gap: 20px; grid-template-rows: 1fr 1fr; }
+.edu-sm { gap: 10px; }
+.edu-sm dl { padding: 12px 0 0; }
+.edu dl:last-child { border-bottom: 0; padding-bottom: 0; }
 @media (min-width: 900px) { .edu-grid { grid-template-columns: 1.4fr 1fr; } }
 
 /* Skills */
