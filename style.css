@@ -144,16 +144,17 @@ p, li { text-wrap: pretty; }
 
 .container { width: 100%; max-width: calc(var(--maxw) + var(--gutter) * 2); margin-inline: auto; padding-inline: var(--gutter); }
 
-/* Running paragraphs are justified on tablet and wider; phones keep left alignment to avoid wide word gaps */
-@media (min-width: 600px) {
-  .about-text p, .section-head p:not(.mono), .award-intro, .contact-lede,
-  .pub-body > p:not(.pub-venue), .project-body > p:not(.project-course),
-  .edu p:not(.edu-school), .prose p {
-    text-align: justify;
-    -webkit-hyphens: auto;
-    hyphens: auto;
-    text-wrap: wrap;
-  }
+/* Running text is justified on every screen size, without automatic hyphenation (like a word processor) */
+.lede, .about-text p, .section-head p:not(.mono), .award-intro, .contact-lede,
+.pub-body > p:not(.pub-venue), .project-body > p:not(.project-course),
+.edu p:not(.edu-school), .footnote,
+.role li, .extra li, .projects-box li,
+.prose p, .prose li {
+  text-align: justify;
+  text-justify: inter-word;
+  -webkit-hyphens: manual;
+  hyphens: manual;
+  text-wrap: wrap;
 }
 
 /* ---------- Buttons ---------- */
