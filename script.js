@@ -134,7 +134,7 @@
     zooms.forEach(function (z) {
       z.addEventListener("click", function () {
         var img = z.querySelector("img");
-        lbImg.src = img.currentSrc || img.src;
+        lbImg.src = z.getAttribute("data-view") || img.currentSrc || img.src;
         lbImg.alt = img.alt;
         lbCap.textContent = img.alt;
         lbOrig.href = z.getAttribute("data-zoom") || img.src;
